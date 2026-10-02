@@ -5,6 +5,7 @@
 > **Lưu ý:** Các số liệu chưa được phòng khám xác nhận được đánh dấu
 > `[Giả định]` hoặc `[Cần xác nhận]`.
 
+------------------------------------------------------------------------
 
 # A. YÊU CẦU CHỨC NĂNG
 
@@ -26,6 +27,7 @@ lịch làm việc, hệ thống phải hiển thị các khung giờ đang ở 
 **"Khả dụng"**; các khung giờ đã bị khóa/đã đặt không được hiển thị là
 có thể đặt.
 
+------------------------------------------------------------------------
 
 ## FR-02 --- Đặt lịch khám
 
@@ -45,6 +47,7 @@ nhân.
 xác nhận đặt lịch, hệ thống phải tạo bản ghi lịch hẹn tương ứng với bác
 sĩ, chuyên khoa, ngày giờ và hình thức khám đã chọn.
 
+------------------------------------------------------------------------
 
 ## FR-03 --- Xác nhận và thông báo lịch hẹn
 
@@ -67,6 +70,8 @@ bại/chưa hoàn tất → hệ thống không gửi xác nhận lịch chính 
 trực tuyến thanh toán thành công → hệ thống tạo mã lịch, lưu trạng thái
 **"Đã xác nhận"** và kích hoạt gửi SMS/Email.
 
+------------------------------------------------------------------------
+
 ## FR-04 --- Tra cứu và xác thực lịch hẹn
 
   ID          Loại        Nguồn               Độ ưu tiên   Phiên bản
@@ -86,6 +91,7 @@ thống gửi OTP gồm **6 chữ số**; OTP có hiệu lực **3 phút \[Giả
 G-07\]**. Chỉ sau khi OTP hợp lệ, hệ thống mới hiển thị thông tin lịch
 hẹn và các thao tác được phép.
 
+------------------------------------------------------------------------
 
 ## FR-05 --- Đổi hoặc hủy lịch hẹn
 
@@ -106,6 +112,7 @@ phải kiểm tra thời gian còn lại trước giờ khám. Điều kiện t�
 đạt, hệ thống phải từ chối thao tác tự động và hướng dẫn bệnh nhân liên
 hệ phòng khám.
 
+------------------------------------------------------------------------
 
 ## FR-06 --- Kiểm tra và xác thực dữ liệu đặt lịch
 
@@ -123,6 +130,7 @@ liên hệ bệnh nhân và xử lý lịch khám.
 nhập số điện thoại không đủ **10 chữ số**, hệ thống không được tạo lịch
 và phải đánh dấu trường dữ liệu lỗi kèm thông báo để bệnh nhân sửa lại.
 
+------------------------------------------------------------------------
 
 ## FR-07 --- Giải phóng khung giờ sau khi hủy lịch
 
@@ -133,6 +141,7 @@ và phải đánh dấu trường dữ liệu lỗi kèm thông báo để bện
                                 nhận / Bệnh                   
                                 nhân / SC-03                  
 
+  --------------------------------------------------------------------------
 
 **Mô tả:** Khi một lịch hẹn được hủy hợp lệ, hệ thống phải tự động
 chuyển khung giờ tương ứng về trạng thái **"Khả dụng"** để có thể tiếp
@@ -144,6 +153,8 @@ số lượt khám trong ngày.
 **Tiêu chí kiểm chứng:** Sau khi lịch hẹn được hủy thành công, trạng
 thái khung giờ cũ phải chuyển thành **"Khả dụng"** và có thể được bệnh
 nhân khác lựa chọn.
+
+------------------------------------------------------------------------
 
 ## FR-08 --- Xử lý bác sĩ nghỉ ca đột xuất
 
@@ -163,6 +174,7 @@ giờ còn lại của ca phải chuyển sang trạng thái **"Đã khóa do b�
 đột xuất"**; các lịch hẹn thuộc ca bị ảnh hưởng phải được chuyển sang
 trạng thái **"Đã hủy bởi phòng khám do bác sĩ vắng mặt"**.
 
+------------------------------------------------------------------------
 
 ## FR-09 --- Thông báo khi lịch khám bị thay đổi hoặc hủy
 
@@ -173,6 +185,7 @@ trạng thái **"Đã hủy bởi phòng khám do bác sĩ vắng mặt"**.
                                 khám / Bệnh                   
                                 nhân / SC-04                  
 
+  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải gửi SMS/Email thông báo cho bệnh nhân khi lịch
 khám bị hủy hoặc thay đổi do phòng khám, đồng thời cung cấp thông tin
@@ -185,6 +198,8 @@ và giảm số cuộc gọi thông báo thủ công của nhân viên.
 hệ thống phải tạo và gửi thông báo đến **100% bệnh nhân thuộc ca bị ảnh
 hưởng**; trường hợp SMS thất bại phải được đánh dấu để nhân viên tiếp
 nhận thực hiện liên hệ thay thế.
+
+------------------------------------------------------------------------
 
 ## FR-10 --- Ngăn đặt trùng lịch
 
@@ -203,6 +218,7 @@ nhân và ảnh hưởng đến khả năng phục vụ của phòng khám.
 nhân đã có lịch hẹn trong cùng khung giờ, hệ thống phải **không tạo lịch
 mới** và hiển thị thông báo yêu cầu bệnh nhân kiểm tra lại lịch hiện có.
 
+------------------------------------------------------------------------
 
 # B. YÊU CẦU CHỨC NĂNG BỔ SUNG TỪ CR-01
 
@@ -227,6 +243,7 @@ bại/hủy → lịch không được xác nhận và khung giờ được gi�
 Không thanh toán trong **15 phút \[Giả định G-05\]** → hệ thống tự động
 hủy phiên giữ chỗ và chuyển khung giờ về **"Khả dụng"**.
 
+------------------------------------------------------------------------
 
 ## FR-12 --- Tự động hoàn tiền khi hủy lịch khám trực tuyến
 
@@ -255,6 +272,8 @@ phụ trách.
 > **Lưu ý:** Khoảng thời gian 1--3 ngày làm việc để tiền thực tế về tài
 > khoản là **\[Giả định\]**, không phải cam kết của hệ thống.
 
+------------------------------------------------------------------------
+
 # C. YÊU CẦU PHI CHỨC NĂNG
 
 ## Nhóm 1 --- Hiệu năng
@@ -268,6 +287,7 @@ phụ trách.
                  --- Hiệu năng  thống / \[Giả                 
                                 định\]                        
 
+  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải phản hồi các thao tác tra cứu chuyên khoa, bác
 sĩ, lịch khám và gửi dữ liệu đặt lịch trong thời gian phù hợp với quy mô
@@ -280,6 +300,7 @@ của bệnh nhân/nhân viên.
 95%** yêu cầu tra cứu lịch và thao tác đặt lịch phải nhận được phản hồi
 từ hệ thống trong **≤ 2 giây \[Giả định -- Cần xác nhận\]**.
 
+------------------------------------------------------------------------
 
 ### NFR-02 --- Khả năng xử lý đồng thời
 
@@ -289,6 +310,8 @@ từ hệ thống trong **≤ 2 giây \[Giả định -- Cần xác nhận\]**.
   **NFR-02**     Phi chức năng  Quy mô phòng   **Should**     1.0
                  --- Hiệu năng  khám / \[Giả                  
                                 định\]                        
+
+  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải duy trì khả năng phục vụ khi có nhiều bệnh nhân
 đồng thời thực hiện tra cứu và đặt lịch.
@@ -300,6 +323,7 @@ tránh lỗi hoặc mất dữ liệu khi nhiều người thao tác gần cùng
 dùng đồng thời \[Giả định -- Cần xác nhận\]** thực hiện tra cứu/đặt lịch
 mà không phát sinh lỗi tạo lịch trùng hoặc mất bản ghi.
 
+------------------------------------------------------------------------
 
 ## Nhóm 2 --- Bảo mật
 
@@ -311,6 +335,8 @@ mà không phát sinh lỗi tạo lịch trùng hoặc mất bản ghi.
   **NFR-03**     Phi chức năng  Bệnh nhân /    **Must**       1.0
                  --- Bảo mật    SC-03                         
 
+  --------------------------------------------------------------------------
+
 **Mô tả:** Hệ thống phải sử dụng OTP để xác thực bệnh nhân trước khi cho
 phép xem hoặc thay đổi thông tin lịch hẹn.
 
@@ -321,6 +347,7 @@ phép xem hoặc thay đổi thông tin lịch hẹn.
 \[Giả định G-07\]**; sau **3 lần nhập sai**, phiên xác thực phải bị khóa
 và yêu cầu gửi OTP mới.
 
+------------------------------------------------------------------------
 
 ### NFR-04 --- Phân quyền truy cập dữ liệu
 
@@ -332,6 +359,8 @@ và yêu cầu gửi OTP mới.
                                 / Nhân viên /                 
                                 \[Cần xác                     
                                 nhận\]                        
+
+  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải kiểm soát quyền truy cập theo vai trò đối với
 dữ liệu bệnh nhân, lịch khám và chức năng quản lý.
@@ -345,6 +374,7 @@ hoạt xử lý hoàn tiền**. Các thao tác này chỉ được thực hiện
 khoản có quyền quản lý **\[Cần xác nhận danh sách vai trò và quyền chi
 tiết\]**.
 
+------------------------------------------------------------------------
 
 ## Nhóm 3 --- Khả dụng / Lưu trữ
 
@@ -357,6 +387,7 @@ tiết\]**.
                  --- Khả dụng   hành / \[Giả                  
                                 định\]                        
 
+  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải duy trì khả năng truy cập để bệnh nhân có thể
 đặt lịch và nhân viên có thể quản lý lịch khám trong thời gian phục vụ.
@@ -369,6 +400,7 @@ công.
 **99,5% trong mỗi tháng \[Giả định -- Cần xác nhận\]**, không tính thời
 gian bảo trì đã được thông báo trước.
 
+------------------------------------------------------------------------
 
 ### NFR-06 --- Lưu trữ và bảo toàn dữ liệu lịch hẹn/giao dịch
 
@@ -378,6 +410,7 @@ gian bảo trì đã được thông báo trước.
   **NFR-06**     Phi chức năng  CR-01 / SC-01  **Must**       1.1
                  --- Lưu trữ    / SC-04                       
 
+  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải lưu trữ đầy đủ dữ liệu lịch hẹn và giao dịch
 thanh toán/hoàn tiền để phục vụ tra cứu, xử lý nghiệp vụ và đối soát.
@@ -393,6 +426,7 @@ gian thanh toán và Thời gian hoàn tiền**. Dữ liệu phải còn truy xu
 được sau khi lịch hẹn kết thúc **\[Thời gian lưu trữ tối thiểu: Cần xác
 nhận\]**.
 
+------------------------------------------------------------------------
 
 # D. CÁC SỐ LIỆU CẦN XÁC NHẬN
 
