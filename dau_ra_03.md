@@ -1,19 +1,21 @@
-# ĐẦU RA 03 --- ĐẶC TẢ YÊU CẦU HỆ THỐNG
+# ĐẦU RA 03 — ĐẶC TẢ YÊU CẦU HỆ THỐNG
 
 > **Phạm vi:** Phòng khám An Tâm\
 > **Nguồn xây dựng:** Case Study, CR-01 và SC-01 → SC-04.\
 > **Lưu ý:** Các số liệu chưa được phòng khám xác nhận được đánh dấu
 > `[Giả định]` hoặc `[Cần xác nhận]`.
 
-------------------------------------------------------------------------
 
 # A. YÊU CẦU CHỨC NĂNG
 
-## FR-01 --- Tra cứu chuyên khoa, bác sĩ và khung giờ khám
+## FR-01 — Tra cứu chuyên khoa, bác sĩ và khung giờ khám
 
-  ID          Loại        Nguồn               Độ ưu tiên   Phiên bản
-  ----------- ----------- ------------------- ------------ -----------
-  **FR-01**   Chức năng   Bệnh nhân / SC-01   **Must**     1.0
+**ID:** **FR-01**
+**Loại:** Chức năng
+**Nguồn:** Bệnh nhân / SC-01
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
+
 
 **Mô tả:** Hệ thống phải cho phép bệnh nhân lựa chọn hình thức khám,
 chuyên khoa, bác sĩ và xem lịch làm việc cùng các khung giờ còn trống
@@ -27,13 +29,15 @@ lịch làm việc, hệ thống phải hiển thị các khung giờ đang ở 
 **"Khả dụng"**; các khung giờ đã bị khóa/đã đặt không được hiển thị là
 có thể đặt.
 
-------------------------------------------------------------------------
 
-## FR-02 --- Đặt lịch khám
+## FR-02 — Đặt lịch khám
 
-  ID          Loại        Nguồn               Độ ưu tiên   Phiên bản
-  ----------- ----------- ------------------- ------------ -----------
-  **FR-02**   Chức năng   Bệnh nhân / SC-01   **Must**     1.0
+**ID:** **FR-02**
+**Loại:** Chức năng
+**Nguồn:** Bệnh nhân / SC-01
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
+
 
 **Mô tả:** Hệ thống phải cho phép bệnh nhân tạo lịch hẹn bằng cách chọn
 khung giờ và cung cấp các thông tin đăng ký gồm họ tên, số điện thoại,
@@ -47,13 +51,15 @@ nhân.
 xác nhận đặt lịch, hệ thống phải tạo bản ghi lịch hẹn tương ứng với bác
 sĩ, chuyên khoa, ngày giờ và hình thức khám đã chọn.
 
-------------------------------------------------------------------------
 
-## FR-03 --- Xác nhận và thông báo lịch hẹn
+## FR-03 — Xác nhận và thông báo lịch hẹn
 
-  ID          Loại        Nguồn                       Độ ưu tiên   Phiên bản
-  ----------- ----------- --------------------------- ------------ -----------
-  **FR-03**   Chức năng   Bệnh nhân / SC-01 / CR-01   **Must**     1.1
+**ID:** **FR-03**
+**Loại:** Chức năng
+**Nguồn:** Bệnh nhân / SC-01 / CR-01
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.1`
+
 
 **Mô tả:** Hệ thống phải tạo mã lịch hẹn duy nhất và gửi SMS/Email xác
 nhận cho bệnh nhân sau khi lịch hẹn được xác nhận. Đối với lịch khám
@@ -70,13 +76,15 @@ bại/chưa hoàn tất → hệ thống không gửi xác nhận lịch chính 
 trực tuyến thanh toán thành công → hệ thống tạo mã lịch, lưu trạng thái
 **"Đã xác nhận"** và kích hoạt gửi SMS/Email.
 
-------------------------------------------------------------------------
 
-## FR-04 --- Tra cứu và xác thực lịch hẹn
+## FR-04 — Tra cứu và xác thực lịch hẹn
 
-  ID          Loại        Nguồn               Độ ưu tiên   Phiên bản
-  ----------- ----------- ------------------- ------------ -----------
-  **FR-04**   Chức năng   Bệnh nhân / SC-03   **Must**     1.0
+**ID:** **FR-04**
+**Loại:** Chức năng
+**Nguồn:** Bệnh nhân / SC-03
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
+
 
 **Mô tả:** Hệ thống phải cho phép bệnh nhân tra cứu lịch hẹn bằng Mã
 lịch hẹn và Số điện thoại đăng ký, sau đó xác thực bằng mã OTP trước khi
@@ -91,13 +99,15 @@ thống gửi OTP gồm **6 chữ số**; OTP có hiệu lực **3 phút \[Giả
 G-07\]**. Chỉ sau khi OTP hợp lệ, hệ thống mới hiển thị thông tin lịch
 hẹn và các thao tác được phép.
 
-------------------------------------------------------------------------
 
-## FR-05 --- Đổi hoặc hủy lịch hẹn
+## FR-05 — Đổi hoặc hủy lịch hẹn
 
-  ID          Loại        Nguồn               Độ ưu tiên   Phiên bản
-  ----------- ----------- ------------------- ------------ -----------
-  **FR-05**   Chức năng   Bệnh nhân / SC-03   **Must**     1.0
+**ID:** **FR-05**
+**Loại:** Chức năng
+**Nguồn:** Bệnh nhân / SC-03
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
+
 
 **Mô tả:** Hệ thống phải cho phép bệnh nhân đã xác thực lịch hẹn thực
 hiện đổi khung giờ hoặc hủy lịch khi đáp ứng điều kiện thời gian do
@@ -112,13 +122,15 @@ phải kiểm tra thời gian còn lại trước giờ khám. Điều kiện t�
 đạt, hệ thống phải từ chối thao tác tự động và hướng dẫn bệnh nhân liên
 hệ phòng khám.
 
-------------------------------------------------------------------------
 
-## FR-06 --- Kiểm tra và xác thực dữ liệu đặt lịch
+## FR-06 — Kiểm tra và xác thực dữ liệu đặt lịch
 
-  ID          Loại        Nguồn               Độ ưu tiên   Phiên bản
-  ----------- ----------- ------------------- ------------ -----------
-  **FR-06**   Chức năng   Bệnh nhân / SC-01   **Must**     1.0
+**ID:** **FR-06**
+**Loại:** Chức năng
+**Nguồn:** Bệnh nhân / SC-01
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
+
 
 **Mô tả:** Hệ thống phải kiểm tra tính đầy đủ và hợp lệ của dữ liệu bệnh
 nhân trước khi tạo lịch hẹn.
@@ -130,18 +142,15 @@ liên hệ bệnh nhân và xử lý lịch khám.
 nhập số điện thoại không đủ **10 chữ số**, hệ thống không được tạo lịch
 và phải đánh dấu trường dữ liệu lỗi kèm thông báo để bệnh nhân sửa lại.
 
-------------------------------------------------------------------------
 
-## FR-07 --- Giải phóng khung giờ sau khi hủy lịch
+## FR-07 — Giải phóng khung giờ sau khi hủy lịch
 
-  --------------------------------------------------------------------------
   ID             Loại           Nguồn          Độ ưu tiên     Phiên bản
   -------------- -------------- -------------- -------------- --------------
   **FR-07**      Chức năng      Nhân viên tiếp **Must**       1.0
                                 nhận / Bệnh                   
                                 nhân / SC-03                  
 
-  --------------------------------------------------------------------------
 
 **Mô tả:** Khi một lịch hẹn được hủy hợp lệ, hệ thống phải tự động
 chuyển khung giờ tương ứng về trạng thái **"Khả dụng"** để có thể tiếp
@@ -154,13 +163,15 @@ số lượt khám trong ngày.
 thái khung giờ cũ phải chuyển thành **"Khả dụng"** và có thể được bệnh
 nhân khác lựa chọn.
 
-------------------------------------------------------------------------
 
-## FR-08 --- Xử lý bác sĩ nghỉ ca đột xuất
+## FR-08 — Xử lý bác sĩ nghỉ ca đột xuất
 
-  ID          Loại        Nguồn                        Độ ưu tiên   Phiên bản
-  ----------- ----------- ---------------------------- ------------ -----------
-  **FR-08**   Chức năng   Quản lý phòng khám / SC-04   **Must**     1.0
+**ID:** **FR-08**
+**Loại:** Chức năng
+**Nguồn:** Quản lý phòng khám / SC-04
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
+
 
 **Mô tả:** Hệ thống phải cho phép quản lý phòng khám đóng ca trực của
 bác sĩ khi bác sĩ nghỉ đột xuất, khóa các khung giờ chưa được đặt và
@@ -174,18 +185,18 @@ giờ còn lại của ca phải chuyển sang trạng thái **"Đã khóa do b�
 đột xuất"**; các lịch hẹn thuộc ca bị ảnh hưởng phải được chuyển sang
 trạng thái **"Đã hủy bởi phòng khám do bác sĩ vắng mặt"**.
 
-------------------------------------------------------------------------
 
-## FR-09 --- Thông báo khi lịch khám bị thay đổi hoặc hủy
+## FR-09 — Thông báo khi lịch khám bị thay đổi hoặc hủy
 
-  --------------------------------------------------------------------------
-  ID             Loại           Nguồn          Độ ưu tiên     Phiên bản
-  -------------- -------------- -------------- -------------- --------------
-  **FR-09**      Chức năng      Quản lý phòng  **Must**       1.0
+**ID:** **FR-09**
+**Loại:** Chức năng
+**Nguồn:** Quản lý phòng
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
+
                                 khám / Bệnh                   
                                 nhân / SC-04                  
 
-  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải gửi SMS/Email thông báo cho bệnh nhân khi lịch
 khám bị hủy hoặc thay đổi do phòng khám, đồng thời cung cấp thông tin
@@ -199,13 +210,15 @@ hệ thống phải tạo và gửi thông báo đến **100% bệnh nhân thu�
 hưởng**; trường hợp SMS thất bại phải được đánh dấu để nhân viên tiếp
 nhận thực hiện liên hệ thay thế.
 
-------------------------------------------------------------------------
 
-## FR-10 --- Ngăn đặt trùng lịch
+## FR-10 — Ngăn đặt trùng lịch
 
-  ID          Loại        Nguồn               Độ ưu tiên   Phiên bản
-  ----------- ----------- ------------------- ------------ -----------
-  **FR-10**   Chức năng   Bệnh nhân / SC-01   **Must**     1.0
+**ID:** **FR-10**
+**Loại:** Chức năng
+**Nguồn:** Bệnh nhân / SC-01
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
+
 
 **Mô tả:** Hệ thống phải kiểm tra các lịch hẹn hiện có của bệnh nhân
 trước khi tạo lịch mới và từ chối đặt lịch nếu bệnh nhân đã có lịch
@@ -218,15 +231,17 @@ nhân và ảnh hưởng đến khả năng phục vụ của phòng khám.
 nhân đã có lịch hẹn trong cùng khung giờ, hệ thống phải **không tạo lịch
 mới** và hiển thị thông báo yêu cầu bệnh nhân kiểm tra lại lịch hiện có.
 
-------------------------------------------------------------------------
 
 # B. YÊU CẦU CHỨC NĂNG BỔ SUNG TỪ CR-01
 
-## FR-11 --- Thanh toán trước cho lịch khám trực tuyến
+## FR-11 — Thanh toán trước cho lịch khám trực tuyến
 
-  ID          Loại        Nguồn                        Độ ưu tiên   Phiên bản
-  ----------- ----------- ---------------------------- ------------ -----------
-  **FR-11**   Chức năng   Quản lý phòng khám / CR-01   **Must**     1.1
+**ID:** **FR-11**
+**Loại:** Chức năng
+**Nguồn:** Quản lý phòng khám / CR-01
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.1`
+
 
 **Mô tả:** Đối với hình thức khám trực tuyến, hệ thống phải tích hợp
 cổng thanh toán điện tử và yêu cầu bệnh nhân thanh toán trước khi lịch
@@ -243,13 +258,15 @@ bại/hủy → lịch không được xác nhận và khung giờ được gi�
 Không thanh toán trong **15 phút \[Giả định G-05\]** → hệ thống tự động
 hủy phiên giữ chỗ và chuyển khung giờ về **"Khả dụng"**.
 
-------------------------------------------------------------------------
 
-## FR-12 --- Tự động hoàn tiền khi hủy lịch khám trực tuyến
+## FR-12 — Tự động hoàn tiền khi hủy lịch khám trực tuyến
 
-  ID          Loại        Nguồn                        Độ ưu tiên   Phiên bản
-  ----------- ----------- ---------------------------- ------------ -----------
-  **FR-12**   Chức năng   Quản lý phòng khám / CR-01   **Must**     1.1
+**ID:** **FR-12**
+**Loại:** Chức năng
+**Nguồn:** Quản lý phòng khám / CR-01
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.1`
+
 
 **Mô tả:** Khi bác sĩ hoặc phòng khám chủ động hủy một lịch khám trực
 tuyến đã thanh toán, hệ thống phải tự động phát lệnh hoàn **100% tiền
@@ -272,22 +289,22 @@ phụ trách.
 > **Lưu ý:** Khoảng thời gian 1--3 ngày làm việc để tiền thực tế về tài
 > khoản là **\[Giả định\]**, không phải cam kết của hệ thống.
 
-------------------------------------------------------------------------
 
 # C. YÊU CẦU PHI CHỨC NĂNG
 
-## Nhóm 1 --- Hiệu năng
+## Nhóm 1 — Hiệu năng
 
-### NFR-01 --- Thời gian phản hồi thao tác thông thường
+### NFR-01 — Thời gian phản hồi thao tác thông thường
 
-  --------------------------------------------------------------------------
-  ID             Loại           Nguồn          Độ ưu tiên     Phiên bản
-  -------------- -------------- -------------- -------------- --------------
-  **NFR-01**     Phi chức năng  Nhu cầu hệ     **Must**       1.0
-                 --- Hiệu năng  thống / \[Giả                 
+**ID:** **NFR-01**
+**Loại:** Phi chức năng
+**Nguồn:** Nhu cầu hệ
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
+
+                 — Hiệu năng  thống / \[Giả                 
                                 định\]                        
 
-  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải phản hồi các thao tác tra cứu chuyên khoa, bác
 sĩ, lịch khám và gửi dữ liệu đặt lịch trong thời gian phù hợp với quy mô
@@ -300,18 +317,18 @@ của bệnh nhân/nhân viên.
 95%** yêu cầu tra cứu lịch và thao tác đặt lịch phải nhận được phản hồi
 từ hệ thống trong **≤ 2 giây \[Giả định -- Cần xác nhận\]**.
 
-------------------------------------------------------------------------
 
-### NFR-02 --- Khả năng xử lý đồng thời
+### NFR-02 — Khả năng xử lý đồng thời
 
-  --------------------------------------------------------------------------
-  ID             Loại           Nguồn          Độ ưu tiên     Phiên bản
-  -------------- -------------- -------------- -------------- --------------
-  **NFR-02**     Phi chức năng  Quy mô phòng   **Should**     1.0
-                 --- Hiệu năng  khám / \[Giả                  
+**ID:** **NFR-02**
+**Loại:** Phi chức năng
+**Nguồn:** Quy mô phòng
+**Độ ưu tiên (MoSCoW):** **Should**
+**Phiên bản:** `1.0`
+
+                 — Hiệu năng  khám / \[Giả                  
                                 định\]                        
 
-  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải duy trì khả năng phục vụ khi có nhiều bệnh nhân
 đồng thời thực hiện tra cứu và đặt lịch.
@@ -323,19 +340,19 @@ tránh lỗi hoặc mất dữ liệu khi nhiều người thao tác gần cùng
 dùng đồng thời \[Giả định -- Cần xác nhận\]** thực hiện tra cứu/đặt lịch
 mà không phát sinh lỗi tạo lịch trùng hoặc mất bản ghi.
 
-------------------------------------------------------------------------
 
-## Nhóm 2 --- Bảo mật
+## Nhóm 2 — Bảo mật
 
-### NFR-03 --- Xác thực OTP khi quản lý lịch hẹn
+### NFR-03 — Xác thực OTP khi quản lý lịch hẹn
 
-  --------------------------------------------------------------------------
-  ID             Loại           Nguồn          Độ ưu tiên     Phiên bản
-  -------------- -------------- -------------- -------------- --------------
-  **NFR-03**     Phi chức năng  Bệnh nhân /    **Must**       1.0
-                 --- Bảo mật    SC-03                         
+**ID:** **NFR-03**
+**Loại:** Phi chức năng
+**Nguồn:** Bệnh nhân /
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
 
-  --------------------------------------------------------------------------
+                 — Bảo mật    SC-03                         
+
 
 **Mô tả:** Hệ thống phải sử dụng OTP để xác thực bệnh nhân trước khi cho
 phép xem hoặc thay đổi thông tin lịch hẹn.
@@ -347,20 +364,20 @@ phép xem hoặc thay đổi thông tin lịch hẹn.
 \[Giả định G-07\]**; sau **3 lần nhập sai**, phiên xác thực phải bị khóa
 và yêu cầu gửi OTP mới.
 
-------------------------------------------------------------------------
 
-### NFR-04 --- Phân quyền truy cập dữ liệu
+### NFR-04 — Phân quyền truy cập dữ liệu
 
-  --------------------------------------------------------------------------
-  ID             Loại           Nguồn          Độ ưu tiên     Phiên bản
-  -------------- -------------- -------------- -------------- --------------
-  **NFR-04**     Phi chức năng  Quản lý phòng  **Must**       1.0
-                 --- Bảo mật    khám / Bác sĩ                 
+**ID:** **NFR-04**
+**Loại:** Phi chức năng
+**Nguồn:** Quản lý phòng
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.0`
+
+                 — Bảo mật    khám / Bác sĩ                 
                                 / Nhân viên /                 
                                 \[Cần xác                     
                                 nhận\]                        
 
-  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải kiểm soát quyền truy cập theo vai trò đối với
 dữ liệu bệnh nhân, lịch khám và chức năng quản lý.
@@ -374,20 +391,20 @@ hoạt xử lý hoàn tiền**. Các thao tác này chỉ được thực hiện
 khoản có quyền quản lý **\[Cần xác nhận danh sách vai trò và quyền chi
 tiết\]**.
 
-------------------------------------------------------------------------
 
-## Nhóm 3 --- Khả dụng / Lưu trữ
+## Nhóm 3 — Khả dụng / Lưu trữ
 
-### NFR-05 --- Khả dụng của hệ thống
+### NFR-05 — Khả dụng của hệ thống
 
-  --------------------------------------------------------------------------
-  ID             Loại           Nguồn          Độ ưu tiên     Phiên bản
-  -------------- -------------- -------------- -------------- --------------
-  **NFR-05**     Phi chức năng  Nhu cầu vận    **Should**     1.0
-                 --- Khả dụng   hành / \[Giả                  
+**ID:** **NFR-05**
+**Loại:** Phi chức năng
+**Nguồn:** Nhu cầu vận
+**Độ ưu tiên (MoSCoW):** **Should**
+**Phiên bản:** `1.0`
+
+                 — Khả dụng   hành / \[Giả                  
                                 định\]                        
 
-  --------------------------------------------------------------------------
 
 **Mô tả:** Hệ thống phải duy trì khả năng truy cập để bệnh nhân có thể
 đặt lịch và nhân viên có thể quản lý lịch khám trong thời gian phục vụ.
@@ -400,17 +417,17 @@ công.
 **99,5% trong mỗi tháng \[Giả định -- Cần xác nhận\]**, không tính thời
 gian bảo trì đã được thông báo trước.
 
-------------------------------------------------------------------------
 
-### NFR-06 --- Lưu trữ và bảo toàn dữ liệu lịch hẹn/giao dịch
+### NFR-06 — Lưu trữ và bảo toàn dữ liệu lịch hẹn/giao dịch
 
-  --------------------------------------------------------------------------
-  ID             Loại           Nguồn          Độ ưu tiên     Phiên bản
-  -------------- -------------- -------------- -------------- --------------
-  **NFR-06**     Phi chức năng  CR-01 / SC-01  **Must**       1.1
-                 --- Lưu trữ    / SC-04                       
+**ID:** **NFR-06**
+**Loại:** Phi chức năng
+**Nguồn:** CR-01 / SC-01
+**Độ ưu tiên (MoSCoW):** **Must**
+**Phiên bản:** `1.1`
 
-  --------------------------------------------------------------------------
+                 — Lưu trữ    / SC-04                       
+
 
 **Mô tả:** Hệ thống phải lưu trữ đầy đủ dữ liệu lịch hẹn và giao dịch
 thanh toán/hoàn tiền để phục vụ tra cứu, xử lý nghiệp vụ và đối soát.
@@ -426,7 +443,6 @@ gian thanh toán và Thời gian hoàn tiền**. Dữ liệu phải còn truy xu
 được sau khi lịch hẹn kết thúc **\[Thời gian lưu trữ tối thiểu: Cần xác
 nhận\]**.
 
-------------------------------------------------------------------------
 
 # D. CÁC SỐ LIỆU CẦN XÁC NHẬN
 
