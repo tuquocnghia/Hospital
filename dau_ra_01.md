@@ -32,12 +32,12 @@ Hệ thống được xây dựng nhằm hỗ trợ số hóa quy trình đặt 
 
 ## 2. Stakeholder
 
-| Stakeholder | Vai trò | Nhu cầu | Ảnh hưởng đến hệ thống |
-|---|---|---|---|
-| **Quản lý phòng khám** | Quản lý hoạt động chung và định hướng cải tiến quy trình | Muốn bệnh nhân đặt lịch nhanh hơn, giảm việc gọi điện và giảm thao tác thủ công | Ảnh hưởng đến phạm vi, mục tiêu và các quy tắc vận hành của hệ thống |
-| **Nhân viên tiếp nhận** | Trực tiếp quản lý lịch, tiếp nhận bệnh nhân và xử lý thay đổi | Cần xem và cập nhật lịch dễ dàng, thông tin phải thống nhất giữa các nhân viên | Ảnh hưởng lớn đến thiết kế quy trình quản lý lịch và tiếp nhận |
-| **Bác sĩ** | Trực tiếp khám bệnh | Cần biết bệnh nhân nào sẽ đến và những thông tin cần chuẩn bị | Ảnh hưởng đến chức năng xem lịch, danh sách bệnh nhân và thông tin liên quan |
-| **Bệnh nhân** | Người đặt lịch và sử dụng dịch vụ khám | Muốn đặt, đổi hoặc hủy lịch thuận tiện mà không phải đến trực tiếp | Ảnh hưởng đến các chức năng phía người dùng và mức độ dễ sử dụng của hệ thống |
+| Mã ID | Tên Stakeholder | Vai trò trong hệ thống | Nhu cầu chính | Mức độ ảnh hưởng đến hệ thống |
+| :---: | :--- | :--- | :--- | :--- |
+| **STK-01** | **Quản lý phòng khám** | Quản lý hoạt động chung và định hướng cải tiến quy trình | Muốn bệnh nhân đặt lịch nhanh hơn, giảm việc gọi điện và giảm thao tác thủ công | Ảnh hưởng đến phạm vi, mục tiêu và các quy tắc vận hành của hệ thống (Cao) |
+| **STK-02** | **Bác sĩ** | Trực tiếp khám bệnh | Cần biết bệnh nhân nào sẽ đến và những thông tin cần chuẩn bị | Ảnh hưởng đến chức năng xem lịch, danh sách bệnh nhân và thông tin liên quan (Cao) |
+| **STK-03** | **Nhân viên tiếp nhận** | Trực tiếp quản lý lịch, tiếp nhận bệnh nhân và xử lý thay đổi | Cần xem và cập nhật lịch dễ dàng, thông tin phải thống nhất giữa các nhân viên | Ảnh hưởng lớn đến thiết kế quy trình quản lý lịch và tiếp nhận (Cao) |
+| **STK-04** | **Bệnh nhân** | Người đặt lịch và sử dụng dịch vụ khám | Muốn đặt, đổi hoặc hủy lịch thuận tiện mà không phải đến trực tiếp | Ảnh hưởng đến các chức năng phía người dùng và mức độ dễ sử dụng của hệ thống (Rất cao) |
 
 ## 3. Phạm vi hệ thống
 

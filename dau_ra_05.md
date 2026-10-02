@@ -12,41 +12,60 @@
 ---
 
 ## 1. GIỚI THIỆU & PHẠM VI HỆ THỐNG
-<!-- [THÀNH VIÊN 1 PHỤ TRÁCH ĐIỀN TOÀN BỘ MỤC 1] -->
+<!-- [THÀNH VIÊN 1: CAO XUÂN DƯƠNG - MSSV: 24120292 HOÀN THIỆN] -->
 
 ### 1.1. Phát biểu bài toán hiện tại (Problem Statement)
-* **Hiện trạng phòng khám:** [TV 1 điền: Mô tả quy mô 6 bác sĩ, 80-120 lượt/ngày, 2 lễ tân/ca, đặt lịch bằng sổ và gọi điện...]
-* **Các vấn đề tồn đọng:** [TV 1 điền: Nêu 3-4 khó khăn: nhầm lịch sổ sách, nghẽn cuộc gọi, bác sĩ bị động hồ sơ, mất đồng bộ khi đổi ca...]
-* **Mục tiêu hệ thống:** [TV 1 điền: Mục tiêu xây dựng phần mềm hỗ trợ đặt lịch trực tuyến, check-in tại quầy và theo dõi lịch khám...]
-* **Giá trị kỳ vọng:** [TV 1 điền: Giảm cuộc gọi thủ công, xóa bỏ trùng lịch, chuẩn bị trước hồ sơ bệnh nhân...]
+* **Hiện trạng phòng khám:** Phòng khám đa khoa An Tâm hiện tại quản lý đặt lịch hoàn toàn thủ công thông qua điện thoại và ghi chép vào sổ sách. Quy mô hoạt động gồm 06 bác sĩ thuộc nhiều chuyên khoa, tiếp nhận trung bình 80–120 lượt bệnh nhân mỗi ngày, với 02 nhân viên tiếp nhận mỗi ca trực.
+* **Các vấn đề tồn đọng:**
+  1. *Quy trình đặt lịch nghẽn và tốn thời gian:* Bệnh nhân muốn đặt hoặc đổi lịch phải gọi điện trực tiếp, gây quá tải cho 02 nhân viên tiếp nhận khi lượng bệnh nhân đạt 80–120 lượt/ngày.
+  2. *Thông tin lịch khám bị phân tán và thiếu đồng bộ:* Lịch ghi trong sổ sách giấy; khi một nhân viên điều chỉnh mà bộ phận khác chưa kịp cập nhật dẫn đến việc các bên sử dụng thông tin lệch nhau, dễ gây nhầm lẫn hoặc trùng lặp.
+  3. *Xử lý sự cố đột xuất tốn công sức:* Khi bác sĩ nghỉ đột xuất, nhân viên tiếp nhận phải gọi điện thoại đến từng bệnh nhân trong ca trực để thông báo, gây chậm trễ và tốn nhiều nguồn lực.
+  4. *Bác sĩ bị động trong công tác chuẩn bị:* Bác sĩ chỉ nhận danh sách lịch khám vào đầu mỗi ca trực, không thể nắm trước hồ sơ hay danh sách bệnh nhân để chuẩn bị chuyên môn trước ca khám.
+* **Mục tiêu hệ thống:** Xây dựng phần mềm tập trung hỗ trợ đặt lịch trực tuyến, tiếp nhận bệnh nhân tại quầy và theo dõi lịch khám đồng bộ theo thời gian thực tại Phòng khám An Tâm.
+* **Giá trị kỳ vọng:**
+  * Giảm phụ thuộc vào cuộc gọi điện thoại, hỗ trợ bệnh nhân chủ động đặt/đổi/hủy lịch 24/7.
+  * Tập trung dữ liệu trên một hệ thống duy nhất, chấm dứt tình trạng lệch thông tin giữa các bộ phận.
+  * Giúp bác sĩ chủ động theo dõi lịch khám và chuẩn bị hồ sơ bệnh nhân từ sớm.
+  * Tự động hóa quy trình xử lý khi bác sĩ nghỉ đột xuất (tự động thông báo và hoàn tiền online theo CR-01).
 
 ### 1.2. Danh sách Stakeholder (Tối thiểu 4 Stakeholder)
 
-| Stakeholder ID | Tên Stakeholder | Vai trò trong hệ thống | Nhu cầu chính | Mức độ ảnh hưởng |
-| :---: | :--- | :--- | :--- | :---: |
-| **STK-01** | Quản lý phòng khám | [TV 1 điền vai trò] | [TV 1 điền nhu cầu] | [Cao / TB / Thấp] |
-| **STK-02** | Bác sĩ | [TV 1 điền vai trò] | [TV 1 điền nhu cầu] | [Cao / TB / Thấp] |
-| **STK-03** | Nhân viên tiếp nhận | [TV 1 điền vai trò] | [TV 1 điền nhu cầu] | [Cao / TB / Thấp] |
-| **STK-04** | Bệnh nhân | [TV 1 điền vai trò] | [TV 1 điền nhu cầu] | [Cao / TB / Thấp] |
+| Stakeholder ID | Tên Stakeholder | Vai trò trong hệ thống | Nhu cầu chính | Mức độ ảnh hưởng đến hệ thống |
+| :---: | :--- | :--- | :--- | :--- |
+| **STK-01** | **Quản lý phòng khám** | Quản lý hoạt động chung và định hướng cải tiến quy trình | Muốn bệnh nhân đặt lịch nhanh hơn, giảm việc gọi điện và giảm thao tác thủ công | Ảnh hưởng đến phạm vi, mục tiêu và các quy tắc vận hành của hệ thống (Cao) |
+| **STK-02** | **Bác sĩ** | Trực tiếp khám bệnh | Cần biết bệnh nhân nào sẽ đến và những thông tin cần chuẩn bị | Ảnh hưởng đến chức năng xem lịch, danh sách bệnh nhân và thông tin liên quan (Cao) |
+| **STK-03** | **Nhân viên tiếp nhận** | Trực tiếp quản lý lịch, tiếp nhận bệnh nhân và xử lý thay đổi | Cần xem và cập nhật lịch dễ dàng, thông tin phải thống nhất giữa các nhân viên | Ảnh hưởng lớn đến thiết kế quy trình quản lý lịch và tiếp nhận (Cao) |
+| **STK-04** | **Bệnh nhân** | Người đặt lịch và sử dụng dịch vụ khám | Muốn đặt, đổi hoặc hủy lịch thuận tiện mà không phải đến trực tiếp | Ảnh hưởng đến các chức năng phía người dùng và mức độ dễ sử dụng của hệ thống (Rất cao) |
 
 ### 1.3. Phạm vi hệ thống (Scope)
 * **Trong phạm vi (In-Scope):**
-  * [TV 1 liệt kê các phân hệ chính: đặt lịch online, check-in tại quầy, quản lý lịch bác sĩ, hủy/đổi lịch, thông báo...]
-* **Ngoài phạm vi (Out-of-Scope - Tối thiểu 3 nội dung):**
-  1. [TV 1 điền Out-of-scope 1: VD: Quản lý kho dược và bán thuốc]
-  2. [TV 1 điền Out-of-scope 2: VD: Hồ sơ bệnh án chuyên sâu EMR / PACS]
-  3. [TV 1 điền Out-of-scope 3: VD: Kế toán tài chính phòng khám và xuất hóa đơn đỏ]
+  * Đặt lịch khám trực tiếp tại phòng khám và đặt lịch khám trực tuyến từ xa (CR-01).
+  * Tra cứu, đổi khung giờ hoặc hủy lịch hẹn trực tuyến với xác thực OTP SMS.
+  * Quản lý khung giờ và phân bổ lịch làm việc của bác sĩ theo ca.
+  * Quản lý danh sách ca khám và hồ sơ chuẩn bị cho bác sĩ.
+  * Hỗ trợ nhân viên quầy tiếp nhận (check-in) và xử lý ngoại lệ (đến trễ, khám gấp).
+  * Hỗ trợ Quản lý báo nghỉ đột xuất: tự động khóa ca, gửi thông báo hàng loạt và hoàn tiền viện phí trực tuyến (CR-01).
+* **Ngoài phạm vi (Out-of-Scope):**
+  1. *Quản lý kho dược và cấp phát/bán thuốc:* Phòng khám sử dụng phần mềm quản lý nhà thuốc riêng biệt.
+  2. *Hồ sơ bệnh án điện tử chuyên sâu (EMR/PACS):* Hệ thống không lưu trữ chi tiết phác đồ điều trị, kết quả xét nghiệm máu hay hình ảnh X-quang/CT.
+  3. *Quản lý tài chính kế toán & Xuất hóa đơn đỏ:* Không bao gồm nghiệp vụ báo cáo thuế, bảng lương nhân viên và xuất hóa đơn giá trị gia tăng.
+  4. *Khám cấp cứu nguy kịch (Emergency):* Bệnh nhân trong tình trạng đe dọa tính mạng đi thẳng vào phòng cấp cứu, không qua hệ thống đặt lịch hẹn.
 
 ### 1.4. Bảng thuật ngữ nghiệp vụ (Glossary) & Từ viết tắt
 
 | Thuật ngữ / Viết tắt | Tên tiếng Anh | Định nghĩa nghiệp vụ |
 | :--- | :--- | :--- |
-| **Khung giờ khám** | Time slot | [TV 1 định nghĩa] |
-| **Tiếp nhận** | Check-in | [TV 1 định nghĩa] |
-| **Vắng mặt** | No-show | [TV 1 định nghĩa] |
-| **Khám gấp** | Walk-in / Urgent | [TV 1 định nghĩa] |
-| **FR / NFR** | Functional / Non-Functional Req | [TV 1 định nghĩa] |
-| **CR-01** | Change Request 01 | [TV 1 định nghĩa] |
+| **Bệnh nhân** | Patient | Khách hàng đăng ký và sử dụng dịch vụ khám chữa bệnh tại phòng khám. |
+| **Bác sĩ** | Doctor / Physician | Nhân sự y tế trực tiếp thực hiện khám, chẩn đoán và tư vấn sức khỏe. |
+| **Nhân viên tiếp nhận** | Receptionist | Nhân viên phụ trách đón tiếp, xác nhận thông tin (check-in) và điều phối tại quầy. |
+| **Khung giờ khám** | Time slot | Đơn vị thời gian nhỏ nhất (15 phút) được phân bổ cho 1 lượt khám của bác sĩ. |
+| **Lịch khám / Lịch hẹn** | Appointment | Bản ghi thông tin về một lần bệnh nhân đăng ký khám bệnh cụ thể. |
+| **Tiếp nhận** | Check-in | Thao tác ghi nhận bệnh nhân đã có mặt thực tế tại phòng khám. |
+| **Vắng mặt** | No-show | Tình trạng bệnh nhân đã đặt lịch nhưng không đến khám và không thông báo trước. |
+| **Khám gấp** | Walk-in / Urgent | Bệnh nhân không hẹn trước, đến trực tiếp phòng khám và cần được bố trí ca khám phù hợp. |
+| **FR / NFR** | Functional / Non-Functional Req | Yêu cầu chức năng / Yêu cầu phi chức năng của hệ thống phần mềm. |
+| **CR-01** | Change Request 01 | Yêu cầu thay đổi tích hợp tính năng Khám trực tuyến và Thanh toán điện tử. |
+
 
 ---
 
