@@ -7,7 +7,7 @@
 * **Học phần:** Nhập môn công nghệ phần mềm
 * **Đề tài:** Phân tích yêu cầu, xác định phạm vi, đặc tả yêu cầu có thể kiểm chứng và xử lý thay đổi cho hệ thống quản lý lịch khám
 * **Thời lượng thực hiện:** 01 tuần
-* **Sản phẩm:** Mini-SRS tổng hợp toàn diện (Tệp nộp bài: `BT04_Nhom18_MiniSRS.pdf`)
+* **Sản phẩm:** Mini-SRS tổng hợp toàn diện
 * **Đơn vị thực hiện:** Nhóm 18
 * **Ngày nộp bài:** 03/10/2026
 * **Phiên bản tài liệu:** v1.1 (Đã tích hợp toàn diện Peer Review & Yêu cầu thay đổi CR-01)
