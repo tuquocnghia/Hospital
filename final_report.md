@@ -546,31 +546,25 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 * **Tiền điều kiện:** Hệ thống web hoạt động bình thường, kết nối cơ sở dữ liệu ổn định; Bác sĩ thuộc chuyên khoa yêu cầu có ít nhất 01 khung giờ khám (time slot) ở trạng thái "Khả dụng".
 * **Kích hoạt:** Bệnh nhân truy cập trang web phòng khám và chọn nút "Đặt lịch khám".
 
-**Luồng chính:**
-1. Bệnh nhân lựa chọn hình thức khám mong muốn: "Khám trực tiếp tại phòng khám" hoặc "Khám trực tuyến (theo CR-01)".
-2. Bệnh nhân chọn Chuyên khoa và chọn Bác sĩ phụ trách từ danh mục hệ thống.
-3. Hệ thống hiển thị lịch làm việc trong tuần và các khung giờ còn trống (Khả dụng) của bác sĩ đã chọn.
-4. Bệnh nhân bấm chọn 01 khung giờ khám phù hợp.
-5. Hệ thống hiển thị biểu mẫu thu thập thông tin đăng ký khám bệnh.
-6. Bệnh nhân nhập đầy đủ thông tin: Họ và tên, Số điện thoại liên hệ, Ngày tháng năm sinh, Giới tính và Mô tả tóm tắt triệu chứng bệnh lý ban đầu.
-7. Hệ thống hiển thị bảng tóm tắt: Bác sĩ, Chuyên khoa, Ngày giờ, Hình thức khám và Mức viện phí niêm yết (Khám trực tiếp: Miễn phí đặt trước; Khám online: 150.000 VNĐ [G-04] cần thanh toán trước theo CR-01).
-8. Bệnh nhân kiểm tra thông tin, tích chọn đồng ý điều khoản dịch vụ và nhấn nút "Xác nhận đặt lịch".
-9. Hệ thống phân nhánh xử lý: Nếu khám trực tiếp, hệ thống ghi nhận lịch hẹn "Đã đặt", khóa khung giờ thành "Không khả dụng" và chuyển tiếp đến bước 11. Nếu khám online (theo CR-01), hệ thống tạm khóa khung giờ tối đa 15 phút [G-05], tạo phiên giao dịch và chuyển hướng trình duyệt sang cổng thanh toán trực tuyến (VNPay/MoMo).
-10. *(Dành riêng cho khám online):* Bệnh nhân xác thực và thanh toán thành công 150.000 VNĐ trên cổng thanh toán; cổng thanh toán gửi mã phản hồi thành công (IPN/Webhook) về hệ thống phòng khám.
-11. Hệ thống tạo mã lịch hẹn duy nhất (`AT-XXXXXX`), tự sinh đường link phòng khám trực tuyến (nếu là ca online) và lưu trạng thái lịch hẹn là "Đã xác nhận".
-12. Hệ thống hoàn tất lưu CSDL, tự động kích hoạt hàng đợi ngầm gửi tin nhắn SMS Brandname và Email xác nhận (chứa Mã lịch, Tên bác sĩ, Chuyên khoa, Thời gian, Link khám).
-13. Hệ thống hiển thị màn hình thông báo hoàn tất đặt lịch thành công kèm hướng dẫn chuẩn bị trước khi khám bệnh.
+| Bước | Luồng chính (Tác nhân ↔ Hệ thống) | Luồng thay thế / Ngoại lệ (Rẽ nhánh & Phản hồi) |
+| :---: | :--- | :--- |
+| **1** | Bệnh nhân lựa chọn hình thức khám mong muốn: "Khám trực tiếp tại phòng khám" hoặc "Khám trực tuyến (theo CR-01)". | — |
+| **2** | Bệnh nhân chọn Chuyên khoa và chọn Bác sĩ phụ trách từ danh mục hệ thống. | — |
+| **3** | Hệ thống hiển thị lịch làm việc trong tuần và các khung giờ còn trống (Khả dụng) của bác sĩ đã chọn. | — |
+| **4** | Bệnh nhân bấm chọn 01 khung giờ khám phù hợp. | **Rẽ nhánh tại bước 4 (Khung giờ vừa bị người khác đặt trước):** Hệ thống phát hiện slot đã kín $\rightarrow$ Chuyển sang `SC-02` để gợi ý các khung giờ hoặc bác sĩ thay thế. |
+| **5** | Hệ thống hiển thị biểu mẫu thu thập thông tin đăng ký khám bệnh. | — |
+| **6** | Bệnh nhân nhập đầy đủ thông tin: Họ và tên, Số điện thoại liên hệ, Ngày tháng năm sinh, Giới tính và Mô tả tóm tắt triệu chứng bệnh lý ban đầu. | **Rẽ nhánh tại bước 6 (Nhập sai định dạng hoặc thiếu thông tin - `FR-06`):** Bỏ trống Họ tên/SĐT hoặc SĐT không đủ 10 chữ số $\rightarrow$ Hệ thống dừng xử lý, đánh dấu đỏ trường vi phạm và yêu cầu sửa lại. |
+| **7** | Hệ thống hiển thị bảng tóm tắt: Bác sĩ, Chuyên khoa, Ngày giờ, Hình thức khám và Mức viện phí niêm yết (Khám trực tiếp: Miễn phí đặt trước; Khám online: 150.000 VNĐ [G-04] cần thanh toán trước theo CR-01). | — |
+| **8** | Bệnh nhân kiểm tra thông tin, tích chọn đồng ý điều khoản dịch vụ và nhấn nút "Xác nhận đặt lịch". | **Rẽ nhánh tại bước 8 (Phát hiện trùng lịch hẹn - `FR-10`):** CSDL thấy số điện thoại đã có lịch hẹn khác trong cùng khung giờ $\rightarrow$ Hệ thống từ chối tạo lịch, hiển thị cảnh báo lỗi trùng lịch và không gửi SMS. |
+| **9** | **Hệ thống phân nhánh xử lý:**<br>• *Khám trực tiếp:* Ghi nhận lịch hẹn "Đã đặt", khóa khung giờ thành "Không khả dụng" và chuyển tiếp đến bước 11.<br>• *Khám online (theo CR-01):* Tạm khóa khung giờ tối đa 15 phút [G-05], tạo phiên giao dịch và chuyển hướng trình duyệt sang cổng thanh toán trực tuyến (VNPay/MoMo). | — |
+| **10** | *(Dành riêng cho khám online):* Bệnh nhân xác thực và thanh toán thành công 150.000 VNĐ trên cổng thanh toán; cổng thanh toán gửi mã phản hồi thành công (IPN/Webhook) về hệ thống phòng khám. | **Rẽ nhánh tại bước 10a (Thanh toán online thất bại hoặc người dùng hủy - `CR-01`):** Cổng thanh toán báo lỗi hoặc người dùng hủy $\rightarrow$ Hủy phiên tạm giữ, mở lại khung giờ "Khả dụng", thông báo thanh toán chưa hoàn tất.<br><br>**Rẽ nhánh tại bước 10b (Quá hạn 15 phút chờ thanh toán - `G-05`, `CR-01`):** Bệnh nhân không hoàn tất thanh toán sau 15 phút $\rightarrow$ Tiến trình nền tự động hủy đơn đặt, giải phóng khung giờ về trạng thái "Khả dụng".<br><br>**Rẽ nhánh tại bước 10c (Webhook bất thường, sai chữ ký hoặc đến muộn - `VR-18`, `TC-18`):** Nếu Webhook gửi lặp lại (Idempotency) $\rightarrow$ Hệ thống chỉ ghi nhận 1 lần, bỏ qua thông điệp lặp; Nếu Webhook gửi sau khi slot đã bị hủy do quá hạn 15 phút và có người khác đặt mất $\rightarrow$ Không ghi đè slot, tự động chuyển khoản tiền thu được sang danh sách đối soát hoàn tiền tự động kèm lý do quá hạn. |
+| **11** | Hệ thống tạo mã lịch hẹn duy nhất (`AT-XXXXXX`), tự sinh đường link phòng khám trực tuyến (nếu là ca online) và lưu trạng thái lịch hẹn là "Đã xác nhận". | — |
+| **12** | Hệ thống hoàn tất lưu CSDL, tự động kích hoạt hàng đợi ngầm gửi tin nhắn SMS Brandname và Email xác nhận (chứa Mã lịch, Tên bác sĩ, Chuyên khoa, Thời gian, Link khám). | **Rẽ nhánh tại bước 12a (Lỗi mạng viễn thông gửi tin nhắn SMS - `TC-17`, `VR-26`):** Tiến trình gửi SMS thất bại do mạng viễn thông $\rightarrow$ Bản ghi lịch hẹn vẫn được lưu thành công trong CSDL, hệ thống tự động gắn cờ cảnh báo "Lỗi gửi SMS" trên giao diện quầy tiếp nhận để nhân viên gọi điện thoại trực tiếp hỗ trợ bệnh nhân. |
+| **13** | Hệ thống hiển thị màn hình thông báo hoàn tất đặt lịch thành công kèm hướng dẫn chuẩn bị trước khi khám bệnh. | — |
 
-**Luồng thay thế/ngoại lệ:**
-* *Rẽ nhánh tại bước 4 (Khung giờ vừa bị người khác đặt trước):* Hệ thống phát hiện khung giờ vừa chuyển sang kín chỗ ở phiên khác $\rightarrow$ Hệ thống hiển thị thông báo và chuyển hướng sang kịch bản `SC-02` để gợi ý các khung giờ hoặc bác sĩ thay thế.
-* *Rẽ nhánh tại bước 6 (Nhập sai định dạng hoặc thiếu thông tin - `FR-06`):* Bệnh nhân bỏ trống Họ tên/SĐT hoặc SĐT không đủ 10 chữ số $\rightarrow$ Hệ thống dừng xử lý, đánh dấu đỏ trường vi phạm và yêu cầu sửa lại.
-* *Rẽ nhánh tại bước 8 (Phát hiện trùng lịch hẹn - `FR-10`):* CSDL thấy số điện thoại đã có lịch hẹn khác trong cùng khung giờ $\rightarrow$ Hệ thống từ chối tạo lịch, hiển thị cảnh báo lỗi trùng lịch và không gửi SMS.
-* *Rẽ nhánh tại bước 10a (Thanh toán online thất bại hoặc người dùng hủy - `CR-01`):* Cổng thanh toán trả về mã lỗi hoặc người dùng bấm hủy $\rightarrow$ Hệ thống hủy phiên tạm giữ, mở lại khung giờ thành "Khả dụng", hiển thị thông báo thanh toán chưa hoàn tất.
-* *Rẽ nhánh tại bước 10b (Quá hạn 15 phút chờ thanh toán - `G-05`, `CR-01`):* Bệnh nhân không hoàn tất thanh toán sau 15 phút $\rightarrow$ Tiến trình nền tự động hủy đơn đặt, giải phóng khung giờ về trạng thái "Khả dụng".
-
-**Hậu điều kiện:**
-* **Trạng thái thành công:** Khung giờ đã chọn chuyển sang trạng thái "Không khả dụng" trên lịch của bác sĩ; Bản ghi lịch hẹn được lưu thành công trong CSDL; Bác sĩ phụ trách thấy tên bệnh nhân xuất hiện trên danh sách ca khám tương ứng; Bệnh nhân nhận được tin nhắn SMS xác nhận hợp lệ trong vòng $\le 60\text{ giây}$.
-* **Trạng thái thất bại:** Khung giờ khám được mở lại trạng thái "Khả dụng" (hoặc giữ nguyên nếu trùng lịch/lỗi nhập liệu); không có lịch hẹn mới nào được tạo trong CSDL; không gửi SMS xác nhận.
+* **Hậu điều kiện:**
+  * **Trạng thái thành công:** Khung giờ đã chọn chuyển sang trạng thái "Không khả dụng" trên lịch của bác sĩ; Bản ghi lịch hẹn được lưu thành công trong CSDL; Bác sĩ phụ trách thấy tên bệnh nhân xuất hiện trên danh sách ca khám tương ứng; Bệnh nhân nhận được tin nhắn SMS xác nhận hợp lệ trong vòng $\le 60\text{ giây}$.
+  * **Trạng thái thất bại:** Khung giờ khám được mở lại trạng thái "Khả dụng" (hoặc giữ nguyên nếu trùng lịch/lỗi nhập liệu); không có lịch hẹn mới nào được tạo trong CSDL; không gửi SMS xác nhận.
 
 ---
 
@@ -580,23 +574,19 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 * **Tiền điều kiện:** Bệnh nhân đang truy cập màn hình chọn thời gian khám bệnh của một bác sĩ cụ thể.
 * **Kích hoạt:** Bệnh nhân nhấn chọn một khung giờ vừa bị người khác đăng ký giữ chỗ trước đó vài giây hoặc bác sĩ vừa được quản lý đánh dấu khóa lịch đột xuất.
 
-**Luồng chính:**
-1. Bệnh nhân bấm chọn khung giờ khám và nhấn nút "Tiếp tục".
-2. Hệ thống gửi truy vấn kiểm tra trạng thái khóa thực tế (real-time lock) của khung giờ trong cơ sở dữ liệu.
-3. Hệ thống phát hiện khung giờ đã chuyển sang trạng thái "Đã kín" (Unavailable) hoặc "Bị khóa".
-4. Hệ thống hiển thị hộp thoại thông báo nổi (Modal popup): *"Rất tiếc! Khung giờ [Giờ:Phút - Ngày] bạn vừa chọn hiện không còn khả dụng do đã có người đặt trước hoặc bác sĩ có lịch đột xuất"*.
-5. Hệ thống kích hoạt thuật toán gợi ý phương án thay thế: tự động quét và hiển thị 03 khung giờ còn trống gần nhất trong cùng ngày của chính bác sĩ đó.
-6. Bệnh nhân quan sát các phương án gợi ý và bấm chọn 01 khung giờ thay thế phù hợp.
-7. Hệ thống làm mới giao diện, tạm giữ khung giờ mới được chọn và điều hướng bệnh nhân sang bước điền thông tin cá nhân (tiếp tục Bước 5 của kịch bản `SC-01`).
+| Bước | Luồng chính (Tác nhân ↔ Hệ thống) | Luồng thay thế / Ngoại lệ (Rẽ nhánh & Phản hồi) |
+| :---: | :--- | :--- |
+| **1** | Bệnh nhân bấm chọn khung giờ khám và nhấn nút "Tiếp tục". | — |
+| **2** | Hệ thống gửi truy vấn kiểm tra trạng thái khóa thực tế (real-time lock) của khung giờ trong cơ sở dữ liệu. | — |
+| **3** | Hệ thống phát hiện khung giờ đã chuyển sang trạng thái "Đã kín" (Unavailable) hoặc "Bị khóa". | — |
+| **4** | Hệ thống hiển thị hộp thoại thông báo nổi (Modal popup): *"Rất tiếc! Khung giờ [Giờ:Phút - Ngày] bạn vừa chọn hiện không còn khả dụng do đã có người đặt trước hoặc bác sĩ có lịch đột xuất"*. | — |
+| **5** | Hệ thống kích hoạt thuật toán gợi ý phương án thay thế: tự động quét và hiển thị 03 khung giờ còn trống gần nhất trong cùng ngày của chính bác sĩ đó. | **Rẽ nhánh tại bước 5a (Bác sĩ kín lịch, nhưng khoa còn bác sĩ khác trống):** Bác sĩ đã chọn không còn slot trống trong ngày $\rightarrow$ Hệ thống tự động quét và gợi ý danh sách Bác sĩ khác cùng chuyên khoa có lịch trống trong ngày.<br><br>**Rẽ nhánh tại bước 5b (Toàn bộ chuyên khoa đã kín lịch trong ngày):** Tất cả bác sĩ trong chuyên khoa đều không còn slot trống nào trong ngày $\rightarrow$ Hệ thống hiển thị lịch trống của ngày làm việc tiếp theo gần nhất; hoặc cung cấp số hotline phòng khám để lễ tân hỗ trợ xếp lịch trực tiếp. |
+| **6** | Bệnh nhân quan sát các phương án gợi ý và bấm chọn 01 khung giờ thay thế phù hợp. | **Rẽ nhánh tại bước 6a (Bệnh nhân từ chối các gợi ý):** Bệnh nhân đóng hộp thoại gợi ý và không chọn khung giờ mới $\rightarrow$ Hệ thống đưa người dùng quay lại màn hình tổng quan chọn chuyên khoa/bác sĩ ban đầu. |
+| **7** | Hệ thống làm mới giao diện, tạm giữ khung giờ mới được chọn và điều hướng bệnh nhân sang bước điền thông tin cá nhân (tiếp tục Bước 5 của kịch bản `SC-01`). | — |
 
-**Luồng thay thế/ngoại lệ:**
-* *Rẽ nhánh tại bước 5a (Bác sĩ kín lịch, nhưng khoa còn bác sĩ khác trống):* Bác sĩ đã chọn không còn slot trống trong ngày, nhưng các bác sĩ khác cùng khoa vẫn còn slot trống $\rightarrow$ Hệ thống tự động quét và gợi ý danh sách các Bác sĩ khác cùng chuyên khoa có lịch trống trong ngày.
-* *Rẽ nhánh tại bước 5b (Toàn bộ chuyên khoa đã kín lịch trong ngày):* Tất cả bác sĩ trong chuyên khoa đều không còn slot trống nào trong ngày $\rightarrow$ Hệ thống hiển thị lịch trống của ngày làm việc tiếp theo gần nhất; hoặc cung cấp số hotline phòng khám để lễ tân hỗ trợ xếp lịch trực tiếp.
-* *Rẽ nhánh tại bước 6a (Bệnh nhân từ chối các gợi ý):* Bệnh nhân đóng hộp thoại gợi ý và không chọn khung giờ mới $\rightarrow$ Hệ thống đưa người dùng quay lại màn hình tổng quan chọn chuyên khoa/bác sĩ ban đầu.
-
-**Hậu điều kiện:**
-* **Trạng thái thành công:** Bệnh nhân chọn được khung giờ thay thế hợp lệ và tiếp tục quy trình đặt lịch (`SC-01`); khung giờ mới được tạm giữ an toàn.
-* **Trạng thái thất bại:** Không phát sinh bất kỳ bản ghi rác hay lịch hẹn trùng lặp nào trong cơ sở dữ liệu; giao diện lịch khám được làm mới đồng bộ với trạng thái khả dụng thực tế của cơ sở dữ liệu.
+* **Hậu điều kiện:**
+  * **Trạng thái thành công:** Bệnh nhân chọn được khung giờ thay thế hợp lệ và tiếp tục quy trình đặt lịch (`SC-01`); khung giờ mới được tạm giữ an toàn.
+  * **Trạng thái thất bại:** Không phát sinh bất kỳ bản ghi rác hay lịch hẹn trùng lặp nào trong cơ sở dữ liệu; giao diện lịch khám được làm mới đồng bộ với trạng thái khả dụng thực tế của cơ sở dữ liệu.
 
 ---
 
@@ -606,28 +596,22 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 * **Tiền điều kiện:** Bệnh nhân đã có lịch hẹn được xác nhận trên hệ thống và còn lưu giữ Mã lịch hẹn cùng Số điện thoại đã đăng ký; Lịch hẹn đang ở trạng thái "Đã đặt" hoặc "Đã xác nhận" (chưa diễn ra và chưa bị hủy).
 * **Kích hoạt:** Bệnh nhân truy cập trang "Tra cứu & Quản lý lịch hẹn", nhập thông tin tra cứu và nhấn nút "Tra cứu lịch hẹn".
 
-**Luồng chính:**
-1. Bệnh nhân nhập Mã lịch hẹn và Số điện thoại đăng ký, sau đó nhấn nút "Tiếp tục".
-2. Hệ thống kiểm tra tính hợp lệ của mã và SĐT, tự động sinh mã xác thực OTP gồm 6 chữ số gửi qua SMS đến SĐT bệnh nhân (thời hạn hiệu lực 180 giây [G-07]).
-3. Bệnh nhân nhập mã OTP và nhấn nút "Xác thực".
-4. Hệ thống xác thực OTP thành công và hiển thị chi tiết ca khám kèm 02 nút hành động: "Hủy lịch hẹn" và "Đổi khung giờ khám".
-5. Bệnh nhân chọn "Hủy lịch hẹn". Hệ thống tính toán khoảng thời gian chênh lệch từ hiện tại đến giờ hẹn khám và xác nhận đạt điều kiện $\ge 120$ phút trước giờ khám [G-06].
-6. Bệnh nhân chọn lý do hủy và nhấn nút "Xác nhận hủy lịch".
-7. Hệ thống chuyển trạng thái lịch hẹn sang "Đã hủy bởi bệnh nhân", ghi nhận lý do và thời gian hủy.
-8. *(CR-01):* Nếu là ca khám online đã thanh toán trước hủy $\ge 2$ tiếng, hệ thống tự động gọi API cổng thanh toán hoàn trả 100% viện phí, cập nhật bảng `GiaoDich` sang "Đã hoàn tiền".
-9. Hệ thống tự động giải phóng khung giờ (`FR-07`), đổi slot về "Khả dụng" (với điều kiện ca trực bác sĩ vẫn mở bình thường [VR-10]).
-10. Hệ thống tự động gửi tin nhắn SMS xác nhận hủy lịch thành công cho bệnh nhân (kèm xác nhận lệnh hoàn tiền 100% đối với ca khám online).
+| Bước | Luồng chính (Tác nhân ↔ Hệ thống) | Luồng thay thế / Ngoại lệ (Rẽ nhánh & Phản hồi) |
+| :---: | :--- | :--- |
+| **1** | Bệnh nhân nhập Mã lịch hẹn và Số điện thoại đăng ký, sau đó nhấn nút "Tiếp tục". | **Rẽ nhánh tại bước 1a (Sai thông tin tra cứu):** Mã lịch hẹn hoặc SĐT không khớp với bản ghi nào $\rightarrow$ Hệ thống hiển thị cảnh báo không tìm thấy thông tin, yêu cầu kiểm tra lại. |
+| **2** | Hệ thống kiểm tra tính hợp lệ của mã và SĐT, tự động sinh mã xác thực OTP gồm 6 chữ số gửi qua SMS đến SĐT bệnh nhân (thời hạn hiệu lực 180 giây [G-07]). | — |
+| **3** | Bệnh nhân nhập mã OTP và nhấn nút "Xác thực". | **Rẽ nhánh tại bước 3a (Nhập sai hoặc hết hạn OTP - `NFR-03`):** Bệnh nhân nhập sai OTP đến lần thứ 3 hoặc để quá hạn 180 giây [G-07] $\rightarrow$ Hệ thống khóa ngay phiên xác thực, hiển thị nút yêu cầu gửi lại OTP mới. |
+| **4** | Hệ thống xác thực OTP thành công và hiển thị chi tiết ca khám kèm 02 nút hành động: "Hủy lịch hẹn" và "Đổi khung giờ khám". | — |
+| **5** | Bệnh nhân chọn "Hủy lịch hẹn". Hệ thống tính toán khoảng thời gian chênh lệch từ hiện tại đến giờ hẹn khám và xác nhận đạt điều kiện $\ge 120$ phút trước giờ khám [G-06]. | **Rẽ nhánh tại bước 5a (Hủy quá trễ < 120 phút - `G-06`):** Thời gian đến giờ hẹn $< 120$ phút $\rightarrow$ Hệ thống làm mờ nút hủy trực tuyến, thông báo hướng dẫn gọi hotline phòng khám; không hỗ trợ hoàn tiền online tự động [Q-03].<br><br>**Rẽ nhánh tại bước 5b (Bệnh nhân chọn Đổi khung giờ khám thay vì Hủy):** Bệnh nhân bấm chọn "Đổi khung giờ khám" $\rightarrow$ Hệ thống kiểm tra điều kiện $\ge 120$ phút [G-06]; mở bảng lịch công tác của bác sĩ và hiển thị các khung giờ còn trống khác; bệnh nhân chọn 01 khung giờ khám mới và nhấn "Lưu thay đổi"; hệ thống cập nhật giờ mới, khóa slot mới, giải phóng slot cũ về "Khả dụng" và gửi SMS thông báo cập nhật thành công. *(Quy tắc tài chính CR-01: Khoản viện phí 150.000 VNĐ đã thanh toán được tự động bảo lưu gắn với mã lịch hẹn ở khung giờ mới, không yêu cầu thanh toán lại).* (Nếu slot mới vừa bị người khác chọn trước, hệ thống giữ nguyên lịch cũ và yêu cầu chọn lại). |
+| **6** | Bệnh nhân chọn lý do hủy và nhấn nút "Xác nhận hủy lịch". | — |
+| **7** | Hệ thống chuyển trạng thái lịch hẹn sang "Đã hủy bởi bệnh nhân", ghi nhận lý do và thời gian hủy. | — |
+| **8** | *(CR-01):* Nếu là ca khám online đã thanh toán trước hủy $\ge 2$ tiếng, hệ thống tự động gọi API cổng thanh toán hoàn trả 100% viện phí, cập nhật bảng `GiaoDich` sang "Đã hoàn tiền". | **Rẽ nhánh tại bước 8a (Lỗi kết nối cổng TT khi hoàn tiền - `CR-01`):** Cổng thanh toán timeout hoặc lỗi hệ thống $\rightarrow$ Tự động chuyển trạng thái sang "Chờ xử lý hoàn tiền thủ công" và tạo cảnh báo đỏ trên giao diện Quản lý để kế toán đối soát trực tiếp, lịch hẹn vẫn được hủy thành công. |
+| **9** | Hệ thống tự động giải phóng khung giờ (`FR-07`), đổi slot về "Khả dụng" (với điều kiện ca trực bác sĩ vẫn mở bình thường [VR-10]). | — |
+| **10** | Hệ thống tự động gửi tin nhắn SMS xác nhận hủy lịch thành công cho bệnh nhân (kèm xác nhận lệnh hoàn tiền 100% đối với ca khám online). | — |
 
-**Luồng thay thế/ngoại lệ:**
-* *Rẽ nhánh tại bước 1a (Sai thông tin tra cứu):* Mã lịch hẹn hoặc SĐT không khớp với bản ghi nào $\rightarrow$ Hệ thống hiển thị cảnh báo không tìm thấy thông tin, yêu cầu kiểm tra lại.
-* *Rẽ nhánh tại bước 3a (Nhập sai hoặc hết hạn OTP - `NFR-03`):* Bệnh nhân nhập sai OTP đến lần thứ 3 hoặc để quá hạn 180 giây [G-07] $\rightarrow$ Hệ thống khóa ngay phiên xác thực, hiển thị nút yêu cầu gửi lại OTP mới.
-* *Rẽ nhánh tại bước 5a (Hủy quá trễ < 120 phút - `G-06`):* Thời gian đến giờ hẹn $< 120$ phút $\rightarrow$ Hệ thống làm mờ nút hủy trực tuyến, thông báo hướng dẫn gọi hotline phòng khám; phòng khám không hỗ trợ hoàn tiền online tự động [Q-03].
-* *Rẽ nhánh tại bước 5b (Bệnh nhân chọn Đổi khung giờ khám thay vì Hủy):* Bệnh nhân bấm chọn "Đổi khung giờ khám" $\rightarrow$ Hệ thống kiểm tra điều kiện $\ge 120$ phút [G-06]; mở bảng lịch công tác của bác sĩ và hiển thị các khung giờ còn trống khác; bệnh nhân chọn 01 khung giờ khám mới và nhấn "Lưu thay đổi"; hệ thống cập nhật giờ mới, khóa slot mới, giải phóng slot cũ về "Khả dụng" và gửi SMS thông báo cập nhật thành công. (Nếu slot mới vừa bị người khác chọn trước, hệ thống giữ nguyên lịch cũ và yêu cầu chọn lại).
-* *Rẽ nhánh tại bước 8a (Lỗi kết nối cổng TT khi hoàn tiền - `CR-01`):* Cổng thanh toán timeout hoặc lỗi hệ thống $\rightarrow$ Tự động chuyển trạng thái sang "Chờ xử lý hoàn tiền thủ công" và tạo cảnh báo đỏ trên giao diện Quản lý để kế toán đối soát trực tiếp, lịch hẹn vẫn được hủy thành công.
-
-**Hậu điều kiện:**
-* **Trạng thái thành công:** Lịch hẹn chuyển sang trạng thái "Đã hủy bởi bệnh nhân" (hoặc "Đã dời lịch"); Khung giờ cũ được mở lại ở trạng thái "Khả dụng", sẵn sàng cho bệnh nhân khác đặt; Danh sách khám của bác sĩ và màn hình điều phối lễ tân được đồng bộ theo thời gian thực; Nghĩa vụ hoàn tiền (nếu hủy lịch online hợp lệ) được thực thi minh bạch.
-* **Trạng thái thất bại:** Trạng thái lịch hẹn và khung giờ giữ nguyên; không phát sinh giao dịch tài chính hay hủy lịch sai quy định.
+* **Hậu điều kiện:**
+  * **Trạng thái thành công:** Lịch hẹn chuyển sang trạng thái "Đã hủy bởi bệnh nhân" (hoặc "Đã dời lịch"); Khung giờ cũ được mở lại ở trạng thái "Khả dụng", sẵn sàng cho bệnh nhân khác đặt; Danh sách khám của bác sĩ và màn hình điều phối lễ tân được đồng bộ theo thời gian thực; Nghĩa vụ hoàn tiền (nếu hủy lịch online hợp lệ) được thực thi minh bạch.
+  * **Trạng thái thất bại:** Trạng thái lịch hẹn và khung giờ giữ nguyên; không phát sinh giao dịch tài chính hay hủy lịch sai quy định.
 
 ---
 
@@ -637,24 +621,20 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 * **Tiền điều kiện:** Quản lý phòng khám đã đăng nhập thành công vào hệ thống với vai trò Quản trị viên (Admin); Bác sĩ có lịch làm việc trong ngày phát sinh sự cố khẩn cấp (ốm đau, việc gia đình) và đã thông báo nghỉ đột xuất; Đã có bệnh nhân đặt hẹn trước trong ca làm việc bị ảnh hưởng.
 * **Kích hoạt:** Quản lý phòng khám chọn ca trực của bác sĩ trên giao diện điều hành và nhấn nút "Báo nghỉ đột xuất / Hủy ca trực".
 
-**Luồng chính:**
-1. Quản lý chọn Bác sĩ, Ngày khám và Ca trực cần báo nghỉ (Sáng/Chiều), sau đó chọn hoặc nhập lý do nghỉ đột xuất.
-2. Hệ thống truy vấn CSDL và hiển thị danh sách tổng hợp toàn bộ bệnh nhân đã đặt hẹn trong ca trực, phân tách rõ 02 nhóm: Khám trực tiếp và Khám trực tuyến (đã thanh toán trước).
-3. Quản lý kiểm tra thông tin và nhấn nút "Xác nhận đóng ca trực & Kích hoạt xử lý sự cố".
-4. Hệ thống tự động chuyển trạng thái của toàn bộ các khung giờ còn lại trong ca trực sang "Đã khóa do bác sĩ nghỉ đột xuất" (`FR-08`) để ngăn chặn đặt lịch mới.
-5. Hệ thống chuyển đổi trạng thái của toàn bộ lịch hẹn thuộc ca trực sang "Đã hủy bởi phòng khám do bác sĩ vắng mặt".
-6. Hệ thống tự động kích hoạt quy trình hoàn tiền cho ca khám trực tuyến (theo `CR-01` & `FR-12`): lọc danh sách bệnh nhân thuộc Nhóm 2 có trạng thái "Đã thanh toán", tự động gọi API sang cổng thanh toán (VNPay/MoMo) phát lệnh hoàn 100% tiền viện phí về tài khoản ban đầu, nhận mã xác nhận và cập nhật bảng `GiaoDich` sang "Đã hoàn tiền".
-7. Hệ thống tự động kích hoạt tiến trình gửi thông báo hàng loạt (theo `FR-09`): gửi tin nhắn SMS Brandname và Email đồng loạt đến 100% bệnh nhân bị ảnh hưởng (bệnh nhân khám trực tiếp nhận thông báo xin lỗi kèm link ưu tiên dời lịch; bệnh nhân khám online nhận thông báo xin lỗi, link dời lịch và xác nhận lệnh hoàn tiền 100% kèm mã đối soát).
-8. Hệ thống xuất báo cáo tổng kết trên màn hình Quản lý: Tổng số lịch hẹn đã hủy, số SMS gửi thành công, số giao dịch hoàn tiền online đã xử lý thành công.
+| Bước | Luồng chính (Tác nhân ↔ Hệ thống) | Luồng thay thế / Ngoại lệ (Rẽ nhánh & Phản hồi) |
+| :---: | :--- | :--- |
+| **1** | Quản lý chọn Bác sĩ, Ngày khám và Ca trực cần báo nghỉ (Sáng/Chiều), sau đó chọn hoặc nhập lý do nghỉ đột xuất. | — |
+| **2** | Hệ thống truy vấn CSDL và hiển thị danh sách tổng hợp toàn bộ bệnh nhân đã đặt hẹn trong ca trực, phân tách rõ 02 nhóm: Khám trực tiếp và Khám trực tuyến (đã thanh toán trước). | — |
+| **3** | Quản lý kiểm tra thông tin và nhấn nút "Xác nhận đóng ca trực & Kích hoạt xử lý sự cố". | **Rẽ nhánh tại bước 3a (Người dùng không có quyền Quản trị viên - `NFR-04`):** Tài khoản thao tác không có quyền Admin $\rightarrow$ Hệ thống từ chối thực hiện, trả về mã lỗi HTTP 403 Forbidden và ghi nhật ký vi phạm bảo mật (Audit Log). |
+| **4** | Hệ thống tự động chuyển trạng thái của toàn bộ các khung giờ còn lại trong ca trực sang "Đã khóa do bác sĩ nghỉ đột xuất" (`FR-08`) để ngăn chặn đặt lịch mới. | **Rẽ nhánh tại bước 4a (Xử lý các phiên đặt online đang trong 15 phút chờ thanh toán - `TC-15`, `TC-18`):** Các phiên đặt lịch online đang trong thời gian giữ chỗ 15 phút bị hủy ngay lập tức; nếu bệnh nhân đã kịp hoàn tất trừ tiền trên app ngân hàng trước đó vài giây $\rightarrow$ Hệ thống từ chối xác nhận lịch vào ca đã đóng, tự động kích hoạt lệnh hoàn tiền 100% về tài khoản bệnh nhân kèm SMS thông báo ca trực đã bị hủy khẩn cấp. |
+| **5** | Hệ thống chuyển đổi trạng thái của toàn bộ lịch hẹn thuộc ca trực sang "Đã hủy bởi phòng khám do bác sĩ vắng mặt". | — |
+| **6** | Hệ thống tự động kích hoạt quy trình hoàn tiền cho ca khám trực tuyến (theo `CR-01` & `FR-12`): lọc danh sách bệnh nhân thuộc Nhóm 2 có trạng thái "Đã thanh toán", tự động gọi API sang cổng thanh toán (VNPay/MoMo) phát lệnh hoàn 100% tiền viện phí về tài khoản ban đầu, nhận mã xác nhận và cập nhật bảng `GiaoDich` sang "Đã hoàn tiền". | **Rẽ nhánh tại bước 6a (Lỗi kết nối cổng thanh toán / Giao dịch hoàn thất bại - `CR-01`):** Cổng thanh toán bị timeout hoặc trả về lỗi $\rightarrow$ Ghi log cảnh báo đỏ, tự chuyển trạng thái giao dịch sang "Chờ xử lý hoàn tiền thủ công" và hiển thị cảnh báo đỏ trên UI Quản lý để kế toán đối soát trực tiếp. |
+| **7** | Hệ thống tự động kích hoạt tiến trình gửi thông báo hàng loạt (theo `FR-09`): gửi tin nhắn SMS Brandname và Email đồng loạt đến 100% bệnh nhân bị ảnh hưởng (bệnh nhân khám trực tiếp nhận thông báo xin lỗi kèm link ưu tiên dời lịch; bệnh nhân khám online nhận thông báo xin lỗi, link dời lịch và xác nhận lệnh hoàn tiền 100% kèm mã đối soát). | **Rẽ nhánh tại bước 7a (Lỗi mạng viễn thông gửi tin nhắn SMS thất bại):** Tin nhắn gửi đến một số thuê bao bị lỗi mạng viễn thông $\rightarrow$ Hệ thống đánh dấu cờ "Chưa gửi được SMS" trên danh sách bệnh nhân để nhân viên quầy tiếp nhận gọi điện thoại trực tiếp. |
+| **8** | Hệ thống xuất báo cáo tổng kết trên màn hình Quản lý: Tổng số lịch hẹn đã hủy, số SMS gửi thành công, số giao dịch hoàn tiền online đã xử lý thành công. | — |
 
-**Luồng thay thế/ngoại lệ:**
-* *Rẽ nhánh tại bước 3a (Người dùng không có quyền Quản trị viên - `NFR-04`):* Tài khoản thao tác không có quyền Admin $\rightarrow$ Hệ thống từ chối thực hiện, trả về mã lỗi HTTP 403 Forbidden và ghi nhật ký vi phạm bảo mật (Audit Log).
-* *Rẽ nhánh tại bước 6a (Lỗi kết nối cổng thanh toán / Giao dịch hoàn thất bại - `CR-01`):* Cổng thanh toán bị timeout hoặc trả về lỗi $\rightarrow$ Ghi log cảnh báo đỏ, tự chuyển trạng thái giao dịch sang "Chờ xử lý hoàn tiền thủ công" và hiển thị cảnh báo đỏ trên UI Quản lý để kế toán đối soát trực tiếp.
-* *Rẽ nhánh tại bước 7a (Lỗi mạng viễn thông gửi tin nhắn SMS thất bại):* Tin nhắn gửi đến một số thuê bao bị lỗi mạng viễn thông $\rightarrow$ Hệ thống đánh dấu cờ "Chưa gửi được SMS" trên danh sách bệnh nhân để nhân viên quầy tiếp nhận gọi điện thoại trực tiếp.
-
-**Hậu điều kiện:**
-* **Trạng thái thành công:** Toàn bộ ca trực bị đóng hoàn toàn, không thể tiếp nhận thêm lịch hẹn; 100% bệnh nhân bị ảnh hưởng nhận được thông báo sự cố kịp thời, hạn chế tối đa việc bệnh nhân di chuyển đến phòng khám trong vô vọng; Nghĩa vụ hoàn trả tài chính cho các ca khám online được xử lý minh bạch và chính xác.
-* **Trạng thái thất bại:** Thao tác bị từ chối nếu không đủ thẩm quyền Admin; dữ liệu ca trực và lịch hẹn giữ nguyên trạng thái ban đầu.
+* **Hậu điều kiện:**
+  * **Trạng thái thành công:** Toàn bộ ca trực bị đóng hoàn toàn, không thể tiếp nhận thêm lịch hẹn; 100% bệnh nhân bị ảnh hưởng nhận được thông báo sự cố kịp thời, hạn chế tối đa việc bệnh nhân di chuyển đến phòng khám trong vô vọng; Nghĩa vụ hoàn trả tài chính cho các ca khám online được xử lý minh bạch và chính xác.
+  * **Trạng thái thất bại:** Thao tác bị từ chối nếu không đủ thẩm quyền Admin; dữ liệu ca trực và lịch hẹn giữ nguyên trạng thái ban đầu.
 
 ---
 
