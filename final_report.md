@@ -40,38 +40,46 @@
    * 1.3. Bảng phân tích các bên liên quan
    * 1.4. Phạm vi hệ thống
    * 1.5. Bảng thuật ngữ nghiệp vụ và từ viết tắt
+
    **PHẦN 2: MÔI TRƯỜNG VẬN HÀNH, GIẢ ĐỊNH VÀ PHỤ THUỘC**
    * 2.1. Môi trường vận hành kỹ thuật
    * 2.2. Bảng danh mục giả định nghiệp vụ và kỹ thuật
    * 2.3. Các dịch vụ phụ thuộc bên ngoài
+
    **PHẦN 3: KẾ HOẠCH VÀ MINH CHỨNG KHẢO SÁT**
    * 3.1. Kỹ thuật thu thập yêu cầu lựa chọn
    * 3.2. Bộ câu hỏi khảo sát phân nhóm chuẩn hóa
    * 3.3. Kết quả nghiệp vụ kỳ vọng thu được từ khảo sát
    * 3.4. Biên bản phỏng vấn mẫu
    * 3.5. Bảng câu hỏi mở và các vấn đề cần xác nhận
+
    **PHẦN 4: ĐẶC TẢ YÊU CẦU HỆ THỐNG**
    * 4.1. Bảng tổng hợp yêu cầu chức năng
    * 4.2. Đặc tả chi tiết từng yêu cầu chức năng theo mẫu chuẩn
    * 4.3. Bảng tổng hợp yêu cầu phi chức năng
    * 4.4. Đặc tả chi tiết từng yêu cầu phi chức năng theo mẫu chuẩn
+
    **PHẦN 5: ĐẶC TẢ TÌNH HUỐNG SỬ DỤNG**
    * 5.1. SC-01: Bệnh nhân đặt lịch khám thành công
    * 5.2. SC-02: Khung giờ hoặc bác sĩ không còn khả dụng
    * 5.3. SC-03: Bệnh nhân đổi hoặc hủy lịch hẹn
    * 5.4. SC-04: Bác sĩ nghỉ ca đột xuất và xử lý hoàn tiền
+
    **PHẦN 6: QUẢN LÝ THAY ĐỔI YÊU CẦU**
    * 6.1. Bối cảnh và mô tả nghiệp vụ CR-01
    * 6.2. Bảng phân tích tác động toàn diện
    * 6.3. Nhận diện rủi ro phát sinh và biện pháp kiểm soát đề xuất
    * 6.4. Danh mục câu hỏi cần làm rõ thêm từ CR-01
+
    **PHẦN 7: BÁO CÁO KIỂM ĐỊNH YÊU CẦU**
    * 7.1. Tổ chức đánh giá chéo và 6 tiêu chí kiểm nghiệm chất lượng
    * 7.2. Bảng kết quả kiểm định chi tiết 27 vấn đề
    * 7.3. Bảng rà soát và chuyển đổi các thuật ngữ định tính mơ hồ
+
    **PHẦN 8: BỘ KỊCH BẢN KIỂM THỬ ĐẶC TẢ**
    * 8.1. Bộ kịch bản kiểm thử nghiệp vụ cơ sở
    * 8.2. Bộ kịch bản kiểm thử mở rộng và kiểm tra biên chi tiết
+   
    **PHẦN 9: MA TRẬN TRUY VẾT YÊU CẦU**
    * 9.1. Danh mục nhu cầu nghiệp vụ gốc
    * 9.2. Bảng ma trận truy vết yêu cầu
