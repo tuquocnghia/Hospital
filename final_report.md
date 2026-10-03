@@ -16,10 +16,10 @@
 
 | STT | Họ và tên | MSSV | Vai trò | Phân hệ & Nhiệm vụ phụ trách chi tiết |
 | :---: | :--- | :---: | :--- | :--- |
-| **1** | **Cao Xuân Dương** | **24120292** | **Thành viên 1 (BA)** | • **Phần 1 (Bài toán & Phạm vi):** Phát biểu hiện trạng bài toán, mục tiêu, giá trị kỳ vọng; Lập Bảng 4 Stakeholder (`STK-01` → `STK-04`); Xác định phạm vi trong và ngoài hệ thống; Xây dựng Bảng thuật ngữ và từ viết tắt.<br>• **Phần 3 (Khảo sát yêu cầu):** Lập Kế hoạch thu thập yêu cầu (2 kỹ thuật); Soạn Bộ câu hỏi khảo sát phân nhóm chuẩn hóa; Thực hiện và lập Biên bản phỏng vấn mẫu Quản lý phòng khám; Lập bảng câu hỏi mở.<br>• **Phần 2 (Môi trường & Giả định):** Thiết lập môi trường vận hành; Bảng Danh mục Giả định & Phụ thuộc (`G-01` → `G-12`); Khởi tạo Bảng lịch sử thay đổi phiên bản; Kiểm tra định dạng và xuất file PDF tổng hợp `BT04_Nhom18_MiniSRS.pdf`. |
+| **1** | **Cao Xuân Dương** | **24120292** | **Thành viên 1 (BA)** | • **Phần 1 (Bài toán & Phạm vi):** Phát biểu hiện trạng bài toán, mục tiêu, giá trị kỳ vọng; Lập Bảng Stakeholder hệ thống (4 Core `STK-01` → `STK-04` và 2 Extended `STK-05`, `STK-06`); Xác định phạm vi trong và ngoài hệ thống; Xây dựng Bảng thuật ngữ và từ viết tắt.<br>• **Phần 3 (Khảo sát yêu cầu):** Lập Kế hoạch thu thập yêu cầu (2 kỹ thuật); Soạn Bộ câu hỏi khảo sát phân nhóm chuẩn hóa; Thực hiện và lập Biên bản phỏng vấn mẫu Quản lý phòng khám; Lập bảng câu hỏi mở.<br>• **Phần 2 (Môi trường & Giả định):** Thiết lập môi trường vận hành; Bảng Danh mục Giả định & Phụ thuộc (`G-01` → `G-12`); Khởi tạo Bảng lịch sử thay đổi phiên bản; Kiểm tra định dạng và xuất file PDF tổng hợp `BT04_Nhom18_MiniSRS.pdf`. |
 | **2** | **Lê Hùng Thắng** | **24120137** | **Thành viên 2 (Requirements Engineer)** | • **Phần 4 (Đặc tả yêu cầu hệ thống):** Đặc tả chi tiết 12 Yêu cầu Chức năng (`FR-01` → `FR-12`) theo chuẩn: Bối cảnh – Hành vi hệ thống – Lý do – Tiêu chí kiểm chứng đo lường được.<br>• **Yêu cầu phi chức năng:** Đặc tả chi tiết 6 NFR (`NFR-01` → `NFR-06`) thuộc đủ 3 nhóm (Hiệu năng, Bảo mật, Khả dụng và Lưu trữ) với các chỉ số định lượng cụ thể.<br>• **Chuẩn hóa đo lường & Hỗ trợ CR-01:** Gắn nhãn minh bạch `[Giả định]` hoặc `[Cần xác nhận]` cho các tiêu chí chưa chốt số liệu; Bổ sung mới `FR-11` (Thanh toán online trước) và `FR-12` (Tự động hoàn tiền 100%). |
-| **3** | **Từ Quốc Nghĩa** | **24120389** | **Thành viên 3 (Solution & Test Analyst)** | • **Phần 5 (Kịch bản nghiệp vụ):** Đặc tả chi tiết 4 Scenarios nghiệp vụ (`SC-01` → `SC-04`) dạng bảng 4 cột: Tác nhân, Tiền điều kiện, Kích hoạt, Luồng sự kiện chính song song cùng các Luồng ngoại lệ, Hậu điều kiện.<br>• **Phần 6 (CR-01):** Lập Bảng phân tích tác động 4 chiều; Nhận diện các rủi ro kỹ thuật & đề xuất kiểm soát; Tích hợp nhánh thanh toán vào `SC-01` và nhánh hoàn tiền tự động vào `SC-03`, `SC-04`.<br>• **Phần 8 (Kịch bản kiểm thử cơ sở):** Thiết kế Bộ 6 Test Scenarios cơ sở (`TC-01` → `TC-06`), mỗi test case ánh xạ trực tiếp đến Requirement ID tương ứng. |
-| **4** | **Nguyễn Hồ Quang Tiến** | **24120463** | **Thành viên 4 (QA & Traceability Lead)** | • **Phần 7 (Kiểm định yêu cầu):** Chủ trì buổi đánh giá chéo nội bộ, đối chiếu hồ sơ theo 6 tiêu chí kiểm nghiệm; Lập Bảng báo cáo kiểm định chi tiết toàn văn 27 vấn đề (25 Sửa, 2 Không sửa kèm lý do kỹ thuật).<br>• **Phần 9 (Ma trận truy vết):** Lập bảng truy vết hoàn chỉnh 6 cột, 18 hàng không có bất kỳ ô trống nào (Nhu cầu gốc → STK → Req ID → Scenario → Test case → CR-01); Lập báo cáo độ bao phủ yêu cầu.<br>• **Kiểm thử mở rộng:** Bổ sung chi tiết Bộ 12 Test Cases mở rộng (`TC-07` → `TC-18`); Rà soát bảng chuyển đổi từ ngữ mơ hồ và chuẩn hóa định lượng toàn bộ tài liệu. |
+| **3** | **Từ Quốc Nghĩa** | **24120389** | **Thành viên 3 (Solution & Test Analyst)** | • **Phần 5 (Kịch bản nghiệp vụ):** Đặc tả chi tiết 4 Scenarios nghiệp vụ (`SC-01` → `SC-04`) theo mẫu chuẩn: Tác nhân, Tiền điều kiện, Kích hoạt, Luồng chính đánh số tương tác, Luồng thay thế/ngoại lệ rẽ nhánh, Hậu điều kiện thành công/thất bại.<br>• **Phần 6 (CR-01):** Lập Bảng phân tích tác động 4 chiều; Nhận diện các rủi ro kỹ thuật & đề xuất kiểm soát; Tích hợp nhánh thanh toán vào `SC-01` và nhánh hoàn tiền tự động vào `SC-03`, `SC-04`.<br>• **Phần 8 (Kịch bản kiểm thử cơ sở):** Thiết kế Bộ 6 Test Scenarios cơ sở (`TC-01` → `TC-06`), mỗi test case ánh xạ trực tiếp đến Requirement ID tương ứng. |
+| **4** | **Nguyễn Hồ Quang Tiến** | **24120463** | **Thành viên 4 (QA & Traceability)** | • **Phần 7 (Kiểm định yêu cầu):** Chủ trì buổi đánh giá chéo nội bộ, đối chiếu hồ sơ theo 6 tiêu chí kiểm nghiệm; Lập Bảng báo cáo kiểm định chi tiết toàn văn 27 vấn đề (25 Sửa, 2 Không sửa kèm lý do kỹ thuật).<br>• **Phần 9 (Ma trận truy vết):** Lập bảng truy vết hoàn chỉnh 6 cột, 18 hàng không có bất kỳ ô trống nào (Nhu cầu gốc → STK → Req ID → Scenario → Test case → CR-01); Lập báo cáo độ bao phủ yêu cầu.<br>• **Kiểm thử mở rộng:** Bổ sung chi tiết Bộ 12 Test Cases mở rộng (`TC-07` → `TC-18`); Rà soát bảng chuyển đổi từ ngữ mơ hồ và chuẩn hóa định lượng toàn bộ tài liệu. |
 
 ---
 
@@ -83,6 +83,8 @@
    **PHẦN 9: MA TRẬN TRUY VẾT YÊU CẦU**
    * 9.1. Danh mục nhu cầu nghiệp vụ gốc
    * 9.2. Bảng ma trận truy vết yêu cầu
+   * 9.3. Bảng phân tích độ bao phủ và tác động tập trung của CR-01
+   * 9.4. Ghi nhận khoảng trống phạm vi và định hướng giai đoạn 2
 
 ---
 
@@ -123,6 +125,8 @@ Hệ thống phần mềm được xây dựng nhằm số hóa và tập trung 
 | **STK-02** | **Bác sĩ** | Nhân sự y tế trực tiếp thực hiện khám bệnh, tư vấn và chẩn đoán điều trị. | Cần biết trước hôm nay những bệnh nhân nào sẽ đến khám trong ca trực, khung giờ cụ thể và triệu chứng ban đầu để chủ động chuẩn bị hồ sơ/trang thiết bị y tế. | **Cao** |
 | **STK-03** | **Nhân viên tiếp nhận** | Tiếp đón bệnh nhân tại quầy lễ tân, hỗ trợ đặt lịch cho người không dùng web, check-in và xử lý ngoại lệ. | Cần xem và cập nhật lịch hẹn trên một giao diện thống nhất theo thời gian thực; thông tin sửa đổi phải đồng bộ tức thì, tránh nhầm lẫn giữa các nhân viên. | **Cao** |
 | **STK-04** | **Bệnh nhân** | Khách hàng sử dụng dịch vụ khám chữa bệnh tại phòng khám. | Muốn tự tra cứu lịch bác sĩ, đặt lịch hẹn nhanh chóng, nhận tin nhắn xác nhận và có thể tự đổi hoặc hủy lịch từ xa mà không phải đến trực tiếp phòng khám. | **Rất cao** |
+| **STK-05** | **Kế toán phòng khám** | Quản lý tài chính, đối soát viện phí và xử lý nghiệp vụ hoàn tiền (phát sinh từ `CR-01`). | Cần dữ liệu giao dịch tài chính chính xác (mã thanh toán, mã hoàn tiền, thời gian); nhận cảnh báo đối soát khi cổng thanh toán gặp sự cố timeout/lỗi. | **Trung bình** |
+| **STK-06** | **Đối tác dịch vụ trung gian** *(Cổng thanh toán & Viễn thông)* | Đơn vị bên thứ ba cung cấp hạ tầng thanh toán điện tử (VNPay/MoMo) và SMS Brandname/OTP. | Yêu cầu tích hợp đúng chuẩn API/Webhook, tuân thủ an toàn giao dịch tài chính, đối soát chữ ký số và bảo mật thông tin liên lạc viễn thông. | **Trung bình** |
 
 ### 1.4. Phạm vi hệ thống
 * **Trong phạm vi:**
@@ -183,15 +187,15 @@ Hệ thống phần mềm được xây dựng nhằm số hóa và tập trung 
 | **G-01** | Thời lượng tiêu chuẩn 1 lượt khám là 15 phút. Mỗi ca trực 4 tiếng của 1 bác sĩ tiếp nhận tối đa 16 lượt khám hẹn trước (240 phút / 15 phút). | Đề bài chưa cho quy tắc phân bổ khung giờ và giới hạn số bệnh nhân. | Mục 4 (`FR-01`), Mục 5 (`SC-01`) | Quản lý (`STK-01`), Bác sĩ (`STK-02`) | *Chờ xác nhận* |
 | **G-02** | Bệnh nhân đăng ký bằng số điện thoại di động chính chủ hợp lệ tại Việt Nam (gồm 10 chữ số), có thể nhận tin nhắn SMS OTP và thông báo. | Bệnh nhân đặt lịch công khai qua web chưa có tài khoản định danh. | Mục 4 (`FR-02`), Mục 5 (`SC-01`) | Bệnh nhân (`STK-04`) | *Đã giả định* |
 | **G-03** | Trường hợp cấp cứu nguy kịch đi thẳng vào phòng cấp cứu, không qua hệ thống đặt lịch hẹn trước. | Đề bài yêu cầu khảo sát phương án tiếp nhận ca khám gấp. | Mục 1.4 (Phạm vi), Mục 5 (Luồng ngoại lệ) | Quản lý (`STK-01`), Bác sĩ (`STK-02`) | *Đã giả định* |
-| **G-04** | Viện phí khám trực tuyến từ xa tạm tính minh họa là 150.000 VNĐ/lượt khám (theo CR-01). | Đề bài CR-01 chỉ yêu cầu thanh toán trước, không cho biểu phí cụ thể. | Mục 4 (`FR-11`), Mục 5 (`SC-01`), Mục 8 (`TC-05`) | Quản lý phòng khám (`STK-01`) | *Chờ xác nhận* |
-| **G-05** | Thời gian tạm khóa giữ chỗ khung giờ khám online chờ hoàn tất thanh toán là 15 phút. Sau 15 phút không thanh toán thành công sẽ tự giải phóng slot. | Tránh tình trạng giữ chỗ ảo làm lãng phí khung giờ của bác sĩ theo CR-01. | Mục 4 (`FR-11`), Mục 5 (`SC-01`), Mục 8 (`TC-15`) | Kỹ thuật / Đơn vị cổng TT | *Đã giả định* |
+| **G-04** | Viện phí khám trực tuyến từ xa tạm tính minh họa là 150.000 VNĐ/lượt khám (theo CR-01). | Đề bài CR-01 chỉ yêu cầu thanh toán trước, không cho biểu phí cụ thể. | Mục 4 (`FR-11`), Mục 5 (`SC-01`), Mục 8 (`TC-05`) | Quản lý (`STK-01`), Kế toán (`STK-05`) | *Chờ xác nhận* |
+| **G-05** | Thời gian tạm khóa giữ chỗ khung giờ khám online chờ hoàn tất thanh toán là 15 phút. Sau 15 phút không thanh toán thành công sẽ tự giải phóng slot. | Tránh tình trạng giữ chỗ ảo làm lãng phí khung giờ của bác sĩ theo CR-01. | Mục 4 (`FR-11`), Mục 5 (`SC-01`), Mục 8 (`TC-15`) | Quản lý (`STK-01`), Đối tác Cổng TT (`STK-06`) | *Đã giả định* |
 | **G-06** | Bệnh nhân chỉ được tự đổi hoặc hủy lịch trên web trước giờ khám tối thiểu 2 tiếng (120 phút). Hủy trễ dưới 2 tiếng không được hủy tự động và không hoàn tiền online. | Đề bài yêu cầu khảo sát phương án hủy/đổi lịch để bảo vệ quyền lợi bác sĩ. | Mục 4 (`FR-05`), Mục 5 (`SC-03`), Mục 8 (`TC-03`, `TC-10`) | Quản lý (`STK-01`), Bác sĩ (`STK-02`) | *Chờ xác nhận* |
-| **G-07** | Mã xác thực SMS OTP cho thao tác tra cứu/hủy lịch có độ dài 6 chữ số, thời hạn hiệu lực 3 phút (180 giây), khóa phiên ngay sau lần nhập sai thứ 3. | Đảm bảo an toàn thông tin, ngăn chặn hành vi brute-force để sửa/hủy lịch của người khác. | Mục 4 (`NFR-03`), Mục 5 (`SC-03`), Mục 8 (`TC-09`) | Chuyên gia An toàn thông tin | *Đã giả định* |
+| **G-07** | Mã xác thực SMS OTP cho thao tác tra cứu/hủy lịch có độ dài 6 chữ số, thời hạn hiệu lực 3 phút (180 giây), khóa phiên ngay sau lần nhập sai thứ 3. | Đảm bảo an toàn thông tin, ngăn chặn hành vi brute-force để sửa/hủy lịch của người khác. | Mục 4 (`NFR-03`), Mục 5 (`SC-03`), Mục 8 (`TC-09`) | Quản lý (`STK-01`), Chuyên gia ATTT | *Đã giả định* |
 | **G-08** | Quầy tiếp nhận được trang bị máy tính kết nối LAN ổn định và máy in nhiệt để in phiếu số thứ tự tiếp nhận tại quầy. | Cơ sở vật chất tối thiểu để 02 nhân viên tiếp nhận vận hành tại quầy. | Mục 2.1, Mục 3.1 | Nhân viên tiếp nhận (`STK-03`) | *Đã giả định* |
 | **G-09** | Hồ sơ bệnh án chuyên sâu và kê đơn/bán thuốc nằm ngoài phạm vi phần mềm. | Tránh phình to phạm vi dự án Mini-SRS của phòng khám đa khoa nhỏ. | Mục 1.4 (Phạm vi) | Quản lý phòng khám (`STK-01`) | *Đã giả định* |
-| **G-10** | Bệnh nhân đến trễ quá 15 phút so với giờ hẹn bị chuyển trạng thái "Đến trễ" và xếp thứ tự khám sau các ca đến đúng giờ. | Đề bài yêu cầu khảo sát quy tắc xử lý bệnh nhân đến trễ. | Mục 3.4 (`Q-02`), Quy trình tiếp nhận | Bác sĩ (`STK-02`), Lễ tân (`STK-03`) | *Chờ xác nhận* |
+| **G-10** | Bệnh nhân đến trễ quá 15 phút so với giờ hẹn bị chuyển trạng thái "Đến trễ" và xếp thứ tự khám sau các ca đến đúng giờ. | Đề bài yêu cầu khảo sát quy tắc xử lý bệnh nhân đến trễ. | Mục 3.4 (`Q-02`), Quy trình tiếp nhận | Bác sĩ (`STK-02`), Tiếp nhận (`STK-03`) | *Chờ xác nhận* |
 | **G-11** | Nhân viên tiếp nhận chỉ được xem thông tin hành chính và triệu chứng tóm tắt, không được xem hoặc sửa chẩn đoán bệnh án của bác sĩ. | Đề bài yêu cầu khảo sát quyền xem và chỉnh sửa thông tin. | Mục 4 (`NFR-04`) | Quản lý (`STK-01`), Bác sĩ (`STK-02`) | *Đã giả định* |
-| **G-12** | Dữ liệu lịch hẹn và nhật ký giao dịch tài chính (thanh toán/hoàn tiền) được lưu trữ an toàn trên hệ thống tối thiểu 05 năm. | Đề bài yêu cầu khảo sát yêu cầu lưu trữ và bảo mật dữ liệu y tế. | Mục 4 (`NFR-06`), Mục 8 (`TC-14`) | Quản lý phòng khám (`STK-01`) | *Chờ xác nhận* |
+| **G-12** | Dữ liệu lịch hẹn và nhật ký giao dịch tài chính (thanh toán/hoàn tiền) được lưu trữ an toàn trên hệ thống tối thiểu 05 năm. | Đề bài yêu cầu khảo sát yêu cầu lưu trữ và bảo mật dữ liệu y tế. | Mục 4 (`NFR-06`), Mục 8 (`TC-14`) | Quản lý (`STK-01`), Kế toán (`STK-05`) | *Chờ xác nhận* |
 
 ### 2.3. Các dịch vụ phụ thuộc bên ngoài
 1. **Dịch vụ Viễn thông & SMS Brandname:** Phụ thuộc vào API của nhà cung cấp dịch vụ SMS Brandname (Viettel/VNPT/eSMS) để gửi mã OTP xác thực và thông báo lịch hẹn đến số điện thoại bệnh nhân.
@@ -284,15 +288,19 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 ---
 
 ### 3.4. Biên bản phỏng vấn mẫu
-* **Thời gian phỏng vấn:** 09:00 – 09:35, ngày 25/09/2026.
+* **Mã biên bản:** `IV-STK01-01`
+* **Thời gian thực hiện:** 09:00 – 09:40, ngày 25/09/2026.
 * **Địa điểm:** Văn phòng Ban Quản lý Phòng khám Đa khoa An Tâm.
-* **Người phỏng vấn:** Cao Xuân Dương (Trưởng nhóm).
-* **Người được phỏng vấn:** Bác sĩ Trần Hải Nam — Quản lý Điều hành Phòng khám An Tâm (`STK-01`).
-* **Tóm tắt nội dung ghi nhận chính:**
-  1. *Về quy mô & mục tiêu:* Phòng khám hiện có 6 bác sĩ cơ hữu, tiếp nhận bình quân 100 lượt bệnh nhân/ngày. Mục tiêu hàng đầu là chuyển dịch ít nhất 70% lượng đăng ký khám từ gọi điện thoại sang đặt trực tuyến qua website, giúp 02 nhân viên tiếp nhận tập trung vào việc đón tiếp và chăm sóc bệnh nhân tại chỗ.
-  2. *Về phân bổ khung giờ:* Bác sĩ Nam đồng ý chia ca làm việc thành các khung giờ nhỏ 15 phút. Mỗi ca trực 4 tiếng của một bác sĩ sẽ nhận tối đa 16 lượt hẹn trước để đảm bảo chất lượng chẩn đoán y khoa.
-  3. *Về quy định đổi/hủy lịch:* Phòng khám ủng hộ cho bệnh nhân tự hủy/đổi lịch trên web, nhưng yêu cầu phải thực hiện trước giờ khám ít nhất 2 tiếng để bác sĩ không bị lãng phí ca trực.
-  4. *Về sự cố bác sĩ nghỉ:* Đây là nỗi ám ảnh lớn nhất của quầy lễ tân. Bác sĩ Nam yêu cầu phần mềm phải có nút bấm đóng ca khẩn cấp dành cho quản lý, sau đó hệ thống tự quét toàn bộ bệnh nhân trong ca để gửi tin nhắn xin lỗi đồng loạt và tự động hoàn tiền viện phí nếu là ca khám online (theo CR-01).
+* **Người phỏng vấn:** Cao Xuân Dương (BA - Nhóm 18).
+* **Người được phỏng vấn:** Đại diện Ban Quản lý Phòng khám Đa khoa An Tâm (`STK-01`).
+* **Nguyên tắc kỹ thuật yêu cầu áp dụng:** Tách bạch 100% giữa **Dữ kiện đề bài đã cho (Ground Truth Facts)** và **Nội dung chưa có câu trả lời**. Tuyệt đối không tự suy đoán hoặc bịa câu trả lời của stakeholder; các thông tin còn thiếu được ghi nhận thành **[Giả định nghiệp vụ G-xx]** hoặc **[Câu hỏi mở Q-xx]** để stakeholder phê duyệt chính thức.
+* **Tóm tắt nội dung ghi nhận theo phiên làm việc:**
+  1. *Dữ kiện đề bài đã xác nhận:* Phòng khám đa khoa quy mô nhỏ gồm 06 bác sĩ thuộc nhiều chuyên khoa, tiếp nhận 80–120 lượt bệnh nhân/ngày, 02 nhân viên tiếp nhận/ca. Đặt lịch hiện qua điện thoại và ghi sổ. Phát biểu chính thức của Quản lý: *"Tôi muốn bệnh nhân đặt lịch nhanh, không phải gọi nhiều lần."* $\rightarrow$ Giải pháp: Xây dựng hệ thống web đặt lịch trực tuyến 24/7, đồng bộ dữ liệu thời gian thực.
+  2. *Về quy tắc phân bổ khung giờ (Chưa có số liệu đề bài):* Tạm thời áp dụng **[Giả định G-01]** thời lượng chuẩn 15 phút/lượt khám; mỗi ca trực 4 tiếng của 1 bác sĩ nhận tối đa 16 lượt hẹn trước; chuyển giao câu hỏi `Q-01` để Ban Quản lý xác nhận số liệu chốt.
+  3. *Về chính sách đổi/hủy lịch (Chưa có số liệu đề bài):* Tạm thời áp dụng **[Giả định G-06]** cho phép bệnh nhân tự đổi/hủy trực tuyến trước giờ khám tối thiểu 120 phút (2 tiếng) có xác thực OTP; dưới 120 phút phải liên hệ trực tiếp quầy; chuyển giao câu hỏi `Q-03` để Ban Quản lý ban hành quy chế.
+  4. *Về quy trình xử lý bác sĩ nghỉ đột xuất:* Hiện trạng quầy tiếp nhận phải gọi điện thủ công từng người rất dễ sai sót; hệ thống mới yêu cầu chức năng đóng ca khẩn cấp dành cho Quản trị viên (`FR-08`), tự động gửi tin nhắn SMS Brandname/Email xin lỗi đồng loạt đến 100% bệnh nhân trong ca (`FR-09`) và kích hoạt hoàn tiền tự động cho ca khám online (`FR-12`).
+  5. *Về khám trực tuyến và thanh toán trước (phát sinh từ CR-01):* Áp dụng **[Giả định G-04]** mức viện phí tạm tính 150.000 VNĐ; **[Giả định G-05]** tạm khóa giữ chỗ 15 phút; nếu bác sĩ hủy ca thì hoàn tiền 100%; chuyển giao các câu hỏi `QA-Q01` đến `QA-Q05` để Quản lý và đối tác Cổng thanh toán chốt phương án vận hành.
+*(Chi tiết toàn văn biểu mẫu phỏng vấn kỹ thuật và nhật ký quan sát thực địa được lưu trữ tại file minh chứng: `minh_chung/Bien_ban_phong_van_va_nhat_ky_quan_sat.md`).*
 
 ---
 
@@ -301,10 +309,10 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 | Mã | Nội dung nghiệp vụ cần khảo sát thêm | Giả định tạm thời áp dụng | Người chịu trách nhiệm xác nhận | Phần ảnh hưởng trong hệ thống |
 | :---: | :--- | :--- | :---: | :---: |
 | **Q-01** | Quy tắc phân bổ khung giờ chuẩn và giới hạn số lượt khám tối đa của từng bác sĩ trong mỗi ca trực. | Áp dụng `G-01`: 15 phút/lượt; tối đa 16 lượt/ca 4 tiếng. | Quản lý (`STK-01`), Bác sĩ (`STK-02`) | `FR-01`, `SC-01`, Quy trình xếp lịch |
-| **Q-02** | Quy trình chuẩn xử lý bệnh nhân đến trễ hẹn quá 15 phút hoặc bệnh nhân không đến khám. | Áp dụng `G-10`: Trễ quá 15 phút chuyển xuống cuối ca trực; vắng mặt không báo trước sẽ bị hủy ca sau khi ca trực kết thúc. | Quản lý (`STK-01`), Nhân viên quầy (`STK-03`) | Quy trình tiếp nhận, Thống kê ca khám |
-| **Q-03** | Chính sách hoàn tiền cho bệnh nhân khi tự hủy lịch khám trực tuyến trước giờ khám (CR-01). | Đề bài CR-01 chỉ bắt buộc hoàn tiền khi bác sĩ hủy. Tạm thời giả định: Bệnh nhân tự hủy hợp lệ $\ge 2$ tiếng được hoàn tiền tự động; hủy trễ $< 2$ tiếng không hỗ trợ hoàn tiền. | Quản lý phòng khám (`STK-01`), Kế toán | `FR-05`, `FR-12`, `SC-03` |
-| **Q-04** | Biểu phí dịch vụ khám bệnh trực tuyến từ xa chính thức áp dụng. | Áp dụng `G-04`: Minh họa mức phí 150.000 VNĐ/lượt khám online. | Quản lý phòng khám (`STK-01`) | `FR-11`, `SC-01`, `TC-05` |
-| **Q-05** | Thời gian lưu trữ tối thiểu bắt buộc đối với dữ liệu lịch hẹn và nhật ký giao dịch tài chính. | Áp dụng `G-12`: Tạm lưu trữ an toàn tối thiểu 05 năm. | Quản lý phòng khám (`STK-01`) | `NFR-06`, `TC-14` |
+| **Q-02** | Quy trình chuẩn xử lý bệnh nhân đến trễ hẹn quá 15 phút hoặc bệnh nhân không đến khám. | Áp dụng `G-10`: Trễ quá 15 phút chuyển xuống cuối ca trực; vắng mặt không báo trước sẽ bị hủy ca sau khi ca trực kết thúc. | Quản lý (`STK-01`), Tiếp nhận (`STK-03`) | Quy trình tiếp nhận, Thống kê ca khám |
+| **Q-03** | Chính sách hoàn tiền cho bệnh nhân khi tự hủy lịch khám trực tuyến trước giờ khám (CR-01). | Đề bài CR-01 chỉ bắt buộc hoàn tiền khi bác sĩ hủy. Tạm thời giả định: Bệnh nhân tự hủy hợp lệ $\ge 2$ tiếng được hoàn tiền tự động; hủy trễ $< 2$ tiếng không hỗ trợ hoàn tiền. | Quản lý (`STK-01`), Kế toán (`STK-05`) | `FR-05`, `FR-12`, `SC-03` |
+| **Q-04** | Biểu phí dịch vụ khám bệnh trực tuyến từ xa chính thức áp dụng. | Áp dụng `G-04`: Minh họa mức phí 150.000 VNĐ/lượt khám online. | Quản lý (`STK-01`), Kế toán (`STK-05`) | `FR-11`, `SC-01`, `TC-05` |
+| **Q-05** | Thời gian lưu trữ tối thiểu bắt buộc đối với dữ liệu lịch hẹn và nhật ký giao dịch tài chính. | Áp dụng `G-12`: Tạm lưu trữ an toàn tối thiểu 05 năm. | Quản lý (`STK-01`), Kế toán (`STK-05`) | `NFR-06`, `TC-14` |
 
 ---
 
@@ -314,108 +322,142 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 
 | Mã ID | Tên chức năng tóm tắt | Nguồn gốc | Độ ưu tiên | Phiên bản |
 | :---: | :--- | :---: | :---: | :---: |
-| **FR-01** | Tra cứu chuyên khoa, bác sĩ và khung giờ khám khả dụng | Bệnh nhân / `SC-01` | **Must Have** | 1.0 |
-| **FR-02** | Đăng ký thông tin và tạo lịch khám mới | Bệnh nhân / `SC-01` | **Must Have** | 1.0 |
-| **FR-03** | Xác nhận và thông báo lịch hẹn (Điều kiện thanh toán trực tuyến) | Bệnh nhân / Quản lý / CR-01 | **Must Have** | 1.1 |
-| **FR-04** | Tra cứu và xác thực thông tin lịch hẹn bằng SMS OTP | Bệnh nhân / `SC-03` | **Must Have** | 1.0 |
-| **FR-05** | Đổi khung giờ hoặc hủy lịch hẹn trực tuyến | Bệnh nhân / `SC-03` | **Must Have** | 1.0 |
-| **FR-06** | Kiểm tra và xác thực tính hợp lệ của dữ liệu đăng ký | Tiếp nhận / `SC-01` | **Must Have** | 1.0 |
-| **FR-07** | Tự động giải phóng khung giờ sau khi hủy lịch | Tiếp nhận / `SC-03` | **Must Have** | 1.0 |
-| **FR-08** | Khóa ca trực khẩn cấp khi bác sĩ nghỉ đột xuất | Quản lý / `SC-04` | **Must Have** | 1.0 |
-| **FR-09** | Tự động gửi thông báo khi lịch bị thay đổi/hủy bởi phòng khám | Quản lý / Bệnh nhân / `SC-04` | **Must Have** | 1.0 |
-| **FR-10** | Ngăn chặn đặt trùng lịch hẹn trên cùng một khung giờ | Bệnh nhân / Tiếp nhận / `SC-01` | **Must Have** | 1.0 |
-| **FR-11** | Bắt buộc thanh toán online trước cho lịch khám trực tuyến | Quản lý / CR-01 | **Must Have** | 1.1 |
-| **FR-12** | Tự động hoàn tiền 100% khi bác sĩ hủy lịch khám online | Quản lý / CR-01 | **Must Have** | 1.1 |
+| **FR-01** | Tra cứu chuyên khoa, bác sĩ và khung giờ khám khả dụng | Bệnh nhân / `SC-01` | **Must** | 1.0 |
+| **FR-02** | Đăng ký thông tin và tạo lịch khám mới | Bệnh nhân / `SC-01` | **Must** | 1.0 |
+| **FR-03** | Xác nhận và thông báo lịch hẹn (Điều kiện thanh toán trực tuyến) | Bệnh nhân / Quản lý / CR-01 | **Must** | 1.1 |
+| **FR-04** | Tra cứu và xác thực thông tin lịch hẹn bằng SMS OTP | Bệnh nhân / `SC-03` | **Must** | 1.0 |
+| **FR-05** | Đổi khung giờ hoặc hủy lịch hẹn trực tuyến | Bệnh nhân / `SC-03` | **Must** | 1.0 |
+| **FR-06** | Kiểm tra và xác thực tính hợp lệ của dữ liệu đăng ký | Tiếp nhận / `SC-01` | **Must** | 1.0 |
+| **FR-07** | Tự động giải phóng khung giờ sau khi hủy lịch | Tiếp nhận / `SC-03` | **Must** | 1.0 |
+| **FR-08** | Khóa ca trực khẩn cấp khi bác sĩ nghỉ đột xuất | Quản lý / `SC-04` | **Must** | 1.0 |
+| **FR-09** | Tự động gửi thông báo khi lịch bị thay đổi/hủy bởi phòng khám | Quản lý / Bệnh nhân / `SC-04` | **Must** | 1.0 |
+| **FR-10** | Ngăn chặn đặt trùng lịch hẹn trên cùng một khung giờ | Bệnh nhân / Tiếp nhận / `SC-01` | **Must** | 1.0 |
+| **FR-11** | Bắt buộc thanh toán online trước cho lịch khám trực tuyến | Quản lý / CR-01 | **Must** | 1.1 |
+| **FR-12** | Tự động hoàn tiền 100% khi bác sĩ hủy lịch khám online | Quản lý / CR-01 | **Must** | 1.1 |
 
 ---
 
 ### 4.2. Đặc tả chi tiết từng Yêu cầu Chức năng theo mẫu chuẩn
 
-#### FR-01 — Tra cứu chuyên khoa, bác sĩ và khung giờ khám
-* **ID:** `FR-01` | **Loại:** Chức năng | **Nguồn:** Bệnh nhân (`STK-04`) / `SC-01` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
+#### FR-01 · Tra cứu chuyên khoa, bác sĩ và khung giờ khám
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-01** | Chức năng | Bệnh nhân (`STK-04`) / `SC-01` | Must | 1.0 |
+
 * **Mô tả:** Trong bối cảnh bệnh nhân truy cập vào hệ thống đặt lịch, hệ thống phải cho phép bệnh nhân lựa chọn hình thức khám (Trực tiếp hoặc Trực tuyến), chuyên khoa, danh sách bác sĩ tương ứng và hiển thị lịch làm việc cùng các khung giờ còn trống (ở trạng thái "Khả dụng") của bác sĩ đã chọn trong tuần.
 * **Lý do:** Giúp bệnh nhân chủ động nắm bắt thời gian biểu của bác sĩ và tự chọn thời điểm khám phù hợp, giảm bớt cuộc gọi hỏi thông tin đến lễ tân.
 * **Tiêu chí kiểm chứng:** Khi người dùng chọn chuyên khoa và bác sĩ có lịch làm việc, hệ thống hiển thị danh sách các khung giờ ở trạng thái "Khả dụng" trong vòng $\le 2$ giây; các khung giờ đã có người đặt hoặc bị quản lý khóa tuyệt đối không hiển thị ở trạng thái có thể bấm đặt chỗ.
 
-#### FR-02 — Đăng ký thông tin và tạo lịch khám
-* **ID:** `FR-02` | **Loại:** Chức năng | **Nguồn:** Bệnh nhân (`STK-04`) / `SC-01` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
+#### FR-02 · Đăng ký thông tin và tạo lịch khám
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-02** | Chức năng | Bệnh nhân (`STK-04`) / `SC-01` | Must | 1.0 |
+
 * **Mô tả:** Trong bối cảnh bệnh nhân đã chọn được một khung giờ khám còn trống, hệ thống phải cung cấp biểu mẫu để bệnh nhân nhập thông tin đăng ký bắt buộc gồm: Họ và tên, Số điện thoại liên hệ, Ngày tháng năm sinh, Giới tính và Mô tả tóm tắt triệu chứng/lý do khám bệnh ban đầu, sau đó ghi nhận bản ghi lịch hẹn vào cơ sở dữ liệu.
 * **Lý do:** Thu thập đầy đủ dữ liệu hành chính và triệu chứng sơ bộ của bệnh nhân để phục vụ tiếp nhận và giúp bác sĩ chuẩn bị trước ca khám.
 * **Tiêu chí kiểm chứng:** Khi bệnh nhân nhập đầy đủ các trường dữ liệu hợp lệ và bấm xác nhận, hệ thống tạo thành công bản ghi lịch hẹn mới trong cơ sở dữ liệu với trạng thái "Đã đặt" (đối với khám trực tiếp) hoặc "Chờ thanh toán" (đối với khám online), đồng thời khóa khung giờ đã chọn sang trạng thái không khả dụng trên giao diện người dùng.
 
-#### FR-03 — Xác nhận và gửi thông báo lịch hẹn
-* **ID:** `FR-03` | **Loại:** Chức năng | **Nguồn:** Bệnh nhân (`STK-04`) / Quản lý (`STK-01`) / CR-01 | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.1` (Cập nhật logic từ CR-01)
-* **Mô tả:** Trong bối cảnh lịch hẹn được ghi nhận thành công, hệ thống phải tự sinh một mã lịch hẹn duy nhất (định dạng `AT-XXXXXX`) và tự động kích hoạt tiến trình gửi tin nhắn SMS Brandname / Email thông báo xác nhận chứa đầy đủ: Mã lịch hẹn, Tên bệnh nhân, Bác sĩ, Chuyên khoa, Thời gian khám và Địa điểm/Link khám. Đối với lịch khám trực tuyến, hệ thống **chỉ được phép gửi xác nhận sau khi nhận được tín hiệu phản hồi giao dịch thanh toán thành công từ cổng thanh toán điện tử**.
-* **Lý do:** Cung cấp bằng chứng đặt chỗ chính thức cho bệnh nhân và ngăn chặn việc xác nhận nhầm cho các ca khám online chưa hoàn tất thanh toán.
-* **Tiêu chí kiểm chứng:**
-  * Lịch khám trực tiếp: Sinh mã `AT-XXXXXX`, chuyển trạng thái "Đã xác nhận" và đẩy tin nhắn vào hàng đợi gửi SMS trong vòng $\le 30$ giây.
-  * Lịch khám online: Nếu chưa nhận Webhook thanh toán thành công hoặc thanh toán thất bại $\rightarrow$ Tuyệt đối không gửi tin nhắn xác nhận lịch chính thức. Khi nhận Webhook thanh toán thành công $\rightarrow$ Ghi nhận "Đã xác nhận", sinh đường link khám online và kích hoạt gửi SMS/Email xác nhận ngay lập tức.
+#### FR-03 · Xác nhận và gửi thông báo lịch hẹn
 
-#### FR-04 — Tra cứu và xác thực thông tin lịch hẹn
-* **ID:** `FR-04` | **Loại:** Chức năng | **Nguồn:** Bệnh nhân (`STK-04`) / `SC-03` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-03** | Chức năng | Bệnh nhân (`STK-04`), Quản lý (`STK-01`) / CR-01 | Must | 1.1 |
+
+* **Mô tả:** Trong bối cảnh lịch hẹn được ghi nhận thành công, hệ thống phải tự sinh một mã lịch hẹn duy nhất (định dạng `AT-XXXXXX`) và tự động kích hoạt tiến trình gửi tin nhắn SMS Brandname / Email thông báo xác nhận chứa đầy đủ: Mã lịch hẹn, Tên bệnh nhân, Bác sĩ, Chuyên khoa, Thời gian khám và Địa điểm/Link khám. Đối với lịch khám trực tuyến, hệ thống chỉ được phép gửi xác nhận sau khi nhận được tín hiệu phản hồi giao dịch thanh toán thành công từ cổng thanh toán điện tử.
+* **Lý do:** Cung cấp bằng chứng đặt chỗ chính thức cho bệnh nhân và ngăn chặn việc xác nhận nhầm cho các ca khám online chưa hoàn tất thanh toán.
+* **Tiêu chí kiểm chứng:** Lịch khám trực tiếp: Sinh mã `AT-XXXXXX`, chuyển trạng thái "Đã xác nhận" và đẩy tin nhắn vào hàng đợi gửi SMS trong vòng $\le 30$ giây. Lịch khám online: Chỉ gửi SMS/Email xác nhận khi nhận Webhook thanh toán thành công; nếu thanh toán thất bại thì tuyệt đối không gửi tin nhắn xác nhận.
+
+#### FR-04 · Tra cứu và xác thực thông tin lịch hẹn
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-04** | Chức năng | Bệnh nhân (`STK-04`) / `SC-03` | Must | 1.0 |
+
 * **Mô tả:** Trong bối cảnh bệnh nhân muốn kiểm tra hoặc thay đổi lịch hẹn đã đặt, hệ thống phải cho phép bệnh nhân tra cứu bằng cách nhập Mã lịch hẹn và Số điện thoại đăng ký, sau đó bắt buộc phải vượt qua bước xác thực bằng mã OTP gồm 6 chữ số gửi về số điện thoại trước khi hiển thị chi tiết thông tin ca khám.
 * **Lý do:** Cho phép người dùng quản lý lịch khám từ xa nhưng vẫn đảm bảo tính bảo mật và quyền riêng tư dữ liệu y tế, ngăn người lạ can thiệp vào lịch hẹn.
 * **Tiêu chí kiểm chứng:** Khi người dùng nhập đúng cặp Mã lịch hẹn và Số điện thoại khớp trong CSDL, hệ thống phát sinh mã OTP 6 chữ số có hiệu lực trong 180 giây [G-07]; chỉ khi nhập đúng mã OTP thì thông tin chi tiết lịch khám mới được hiển thị. Nhập sai quá 3 lần sẽ tự động khóa phiên xác thực.
 
-#### FR-05 — Đổi khung giờ hoặc hủy lịch hẹn trực tuyến
-* **ID:** `FR-05` | **Loại:** Chức năng | **Nguồn:** Bệnh nhân (`STK-04`) / `SC-03` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
+#### FR-05 · Đổi khung giờ hoặc hủy lịch hẹn trực tuyến
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-05** | Chức năng | Bệnh nhân (`STK-04`) / `SC-03` | Must | 1.0 |
+
 * **Mô tả:** Trong bối cảnh bệnh nhân đã xác thực thành công vào màn hình quản lý lịch hẹn, hệ thống phải cho phép bệnh nhân thực hiện đổi sang một khung giờ khám còn trống khác của cùng bác sĩ hoặc bấm hủy lịch hẹn, với điều kiện thời gian thực hiện phải cách giờ hẹn khám tối thiểu 120 phút [G-06].
 * **Lý do:** Giúp bệnh nhân chủ động điều chỉnh kế hoạch cá nhân, đồng thời bảo vệ lịch làm việc của bác sĩ không bị hủy đột ngột sát giờ.
-* **Tiêu chí kiểm chứng:**
-  * Nếu thời gian từ thời điểm bấm đổi/hủy đến giờ hẹn khám $\ge 120$ phút [G-06]: Hệ thống thực thi đổi khung giờ (cập nhật giờ mới, khóa slot mới, giải phóng slot cũ) hoặc hủy lịch (chuyển trạng thái sang "Đã hủy bởi bệnh nhân", giải phóng slot cũ) và gửi SMS xác nhận.
-  * Nếu thời gian còn lại $< 120$ phút: Hệ thống từ chối cho phép tự thao tác trên web, hiển thị thông báo hướng dẫn bệnh nhân liên hệ trực tiếp hotline lễ tân phòng khám để được hỗ trợ thủ công.
+* **Tiêu chí kiểm chứng:** Nếu thời gian từ thời điểm bấm đổi/hủy đến giờ hẹn khám $\ge 120$ phút [G-06]: Hệ thống thực thi đổi khung giờ (cập nhật giờ mới, khóa slot mới, giải phóng slot cũ) hoặc hủy lịch (chuyển trạng thái sang "Đã hủy bởi bệnh nhân", giải phóng slot cũ) và gửi SMS xác nhận. Nếu thời gian còn lại $< 120$ phút: Hệ thống từ chối cho phép tự thao tác trên web, hiển thị thông báo hướng dẫn bệnh nhân liên hệ trực tiếp hotline lễ tân phòng khám để được hỗ trợ thủ công.
 
-#### FR-06 — Kiểm tra và xác thực tính hợp lệ của dữ liệu đăng ký
-* **ID:** `FR-06` | **Loại:** Chức năng | **Nguồn:** Nhân viên tiếp nhận (`STK-03`) / `SC-01` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
+#### FR-06 · Kiểm tra và xác thực tính hợp lệ của dữ liệu đăng ký
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-06** | Chức năng | Nhân viên tiếp nhận (`STK-03`) / `SC-01` | Must | 1.0 |
+
 * **Mô tả:** Trong bối cảnh bệnh nhân gửi thông tin biểu mẫu đặt lịch hẹn, hệ thống phải thực hiện kiểm tra tính đầy đủ và đúng định dạng của toàn bộ các trường thông tin bắt buộc trước khi ghi nhận dữ liệu vào máy chủ.
 * **Lý do:** Ngăn chặn các dữ liệu rác, thiếu số điện thoại hoặc sai định dạng làm ảnh hưởng đến khả năng liên hệ và tiếp nhận bệnh nhân.
 * **Tiêu chí kiểm chứng:** Nếu bệnh nhân bỏ trống trường bắt buộc (Họ tên, SĐT) hoặc nhập số điện thoại không đúng định dạng 10 chữ số tại Việt Nam, hệ thống chặn không cho gửi form, đánh dấu đỏ trường vi phạm và hiển thị câu thông báo lỗi cụ thể ngay dưới trường dữ liệu đó.
 
-#### FR-07 — Tự động giải phóng khung giờ sau khi hủy lịch
-* **ID:** `FR-07` | **Loại:** Chức năng | **Nguồn:** Nhân viên tiếp nhận (`STK-03`) / `SC-03` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
-* **Mô tả:** Trong bối cảnh một lịch hẹn được hủy hợp lệ bởi bệnh nhân, hệ thống phải tự động cập nhật trạng thái của khung giờ khám tương ứng trở lại trạng thái "Khả dụng" trên toàn hệ thống, **với điều kiện ca trực của bác sĩ tại thời điểm đó vẫn đang mở bình thường và không bị khóa bởi phòng khám** [VR-10].
+#### FR-07 · Tự động giải phóng khung giờ sau khi hủy lịch
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-07** | Chức năng | Nhân viên tiếp nhận (`STK-03`) / `SC-03` | Must | 1.0 |
+
+* **Mô tả:** Trong bối cảnh một lịch hẹn được hủy hợp lệ bởi bệnh nhân, hệ thống phải tự động cập nhật trạng thái của khung giờ khám tương ứng trở lại trạng thái "Khả dụng" trên toàn hệ thống, với điều kiện ca trực của bác sĩ tại thời điểm đó vẫn đang mở bình thường và không bị khóa bởi phòng khám [VR-10].
 * **Lý do:** Tối ưu hóa công suất phục vụ của phòng khám, giúp các bệnh nhân khác có cơ hội đặt chỗ vào khung giờ vừa được giải phóng.
 * **Tiêu chí kiểm chứng:** Ngay sau khi lệnh hủy lịch hoàn tất thành công trong CSDL, khung giờ cũ chuyển từ trạng thái "Không khả dụng" sang "Khả dụng" trên giao diện đặt lịch công khai; các người dùng khác truy cập trang có thể nhìn thấy và bấm chọn khung giờ này để đặt lịch bình thường.
 
-#### FR-08 — Khóa ca trực khẩn cấp khi bác sĩ nghỉ đột xuất
-* **ID:** `FR-08` | **Loại:** Chức năng | **Nguồn:** Quản lý phòng khám (`STK-01`) / `SC-04` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
+#### FR-08 · Khóa ca trực khẩn cấp khi bác sĩ nghỉ đột xuất
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-08** | Chức năng | Quản lý phòng khám (`STK-01`) / `SC-04` | Must | 1.0 |
+
 * **Mô tả:** Trong bối cảnh bác sĩ có lịch làm việc phát sinh sự cố đột xuất không thể tiếp tục khám bệnh, hệ thống phải cung cấp chức năng dành riêng cho tài khoản Quản trị viên (Admin) cho phép báo nghỉ đột xuất và đóng toàn bộ ca trực của bác sĩ, khóa các khung giờ chưa đặt và chuyển các lịch hẹn bị ảnh hưởng sang trạng thái "Đã hủy bởi phòng khám do bác sĩ vắng mặt".
 * **Lý do:** Chấm dứt tình trạng tiếp nhận thêm lịch hẹn cho bác sĩ đã vắng mặt và làm căn cứ để kích hoạt quy trình khắc phục sự cố tập trung.
 * **Tiêu chí kiểm chứng:** Sau khi Quản lý xác nhận đóng ca trên giao diện điều hành: 100% khung giờ của ca trực chuyển sang trạng thái "Đã khóa do bác sĩ nghỉ đột xuất"; 100% lịch hẹn thuộc ca trực chuyển sang trạng thái "Đã hủy bởi phòng khám do bác sĩ vắng mặt".
 
-#### FR-09 — Tự động gửi thông báo khi lịch khám bị thay đổi hoặc hủy bởi phòng khám
-* **ID:** `FR-09` | **Loại:** Chức năng | **Nguồn:** Quản lý (`STK-01`) / Bệnh nhân (`STK-04`) / `SC-04` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
+#### FR-09 · Tự động gửi thông báo khi lịch khám bị thay đổi hoặc hủy bởi phòng khám
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-09** | Chức năng | Quản lý (`STK-01`), Bệnh nhân (`STK-04`) / `SC-04` | Must | 1.0 |
+
 * **Mô tả:** Trong bối cảnh Quản lý phòng khám thực hiện đóng ca trực đột xuất (theo `FR-08`), hệ thống phải tự động kích hoạt tiến trình tạo và gửi tin nhắn SMS Brandname / Email thông báo xin lỗi đồng loạt đến 100% bệnh nhân có lịch hẹn bị ảnh hưởng, kèm thông tin hướng dẫn đặt lại lịch hoặc tra cứu đối soát hoàn tiền.
 * **Lý do:** Thay thế hoàn toàn thao tác gọi điện thoại thủ công từng người của nhân viên lễ tân, thông báo kịp thời cho bệnh nhân để họ không di chuyển đến phòng khám trong vô vọng.
 * **Tiêu chí kiểm chứng:** Hệ thống tạo và đẩy lệnh gửi tin nhắn đến 100% số điện thoại của bệnh nhân có lịch bị hủy; ghi nhận nhật ký kết quả gửi tin (Thành công / Thất bại). Trường hợp gửi tin thất bại do lỗi mạng viễn thông, hệ thống đánh dấu cờ để hiển thị vào danh sách nhắc nhân viên gọi điện đối soát thủ công.
 
-#### FR-10 — Ngăn chặn đặt trùng lịch hẹn trên cùng một khung giờ
-* **ID:** `FR-10` | **Loại:** Chức năng | **Nguồn:** Bệnh nhân (`STK-04`) / Nhân viên (`STK-03`) / `SC-01` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
+#### FR-10 · Ngăn chặn đặt trùng lịch hẹn trên cùng một khung giờ
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-10** | Chức năng | Bệnh nhân (`STK-04`), Tiếp nhận (`STK-03`) / `SC-01` | Must | 1.0 |
+
 * **Mô tả:** Trong bối cảnh tiếp nhận yêu cầu đặt lịch hẹn mới, hệ thống phải thực hiện quét đối chiếu cơ sở dữ liệu trước khi lưu và từ chối tạo lịch nếu phát hiện số điện thoại của bệnh nhân đã có một lịch hẹn khác còn hiệu lực trong cùng một khoảng thời gian khám bệnh.
 * **Lý do:** Ngăn chặn tình trạng một người đặt giữ nhiều chỗ cùng lúc ở các bác sĩ khác nhau hoặc spam dữ liệu lịch hẹn gây sai lệch công suất phục vụ.
 * **Tiêu chí kiểm chứng:** Khi người dùng nhập số điện thoại đã tồn tại lịch hẹn ở trạng thái "Đã đặt" hoặc "Đã xác nhận" trong cùng khung giờ, hệ thống từ chối lưu bản ghi, không gửi SMS mới và hiển thị thông báo: *"Số điện thoại này đã có lịch hẹn trong khung giờ được chọn. Vui lòng kiểm tra lại!"*.
 
-#### FR-11 — Bắt buộc thanh toán trực tuyến trước cho dịch vụ khám từ xa
-* **ID:** `FR-11` | **Loại:** Chức năng | **Nguồn:** Quản lý phòng khám (`STK-01`) / CR-01 | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.1` (Bổ sung mới từ CR-01)
+#### FR-11 · Bắt buộc thanh toán trực tuyến trước cho dịch vụ khám từ xa
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-11** | Chức năng | Quản lý phòng khám (`STK-01`) / CR-01 | Must | 1.1 |
+
 * **Mô tả:** Trong bối cảnh bệnh nhân lựa chọn hình thức khám trực tuyến theo CR-01, hệ thống phải tích hợp cổng thanh toán điện tử (VNPay/MoMo), tạm khóa giữ chỗ khung giờ trong tối đa 15 phút [G-05] và chỉ chuyển trạng thái lịch hẹn sang "Đã xác nhận" sau khi nhận được thông điệp giao dịch thanh toán thành công (Webhook/IPN) từ cổng thanh toán.
 * **Lý do:** Đảm bảo bệnh nhân cam kết nghiêm túc khi đăng ký khám từ xa, ngăn chặn việc đặt lịch ảo làm lãng phí thời gian trực trực tuyến của bác sĩ.
-* **Tiêu chí kiểm chứng:**
-  * Bệnh nhân chọn khám trực tuyến: Hệ thống tạm giữ khung giờ và chuyển hướng sang cổng thanh toán.
-  * Thanh toán thành công trong vòng 15 phút: Cổng TT gửi Webhook $\rightarrow$ Hệ thống cập nhật bảng `GiaoDich` là "Đã thanh toán", chuyển lịch sang "Đã xác nhận", sinh đường link khám online và gửi SMS xác nhận.
-  * Hủy giao dịch hoặc thanh toán thất bại: Hủy phiên giữ chỗ, mở lại khung giờ thành "Khả dụng" trên toàn hệ thống.
-  * Quá hạn 15 phút không thanh toán [G-05]: Tiến trình nền tự động quét, hủy đơn đặt và giải phóng khung giờ về trạng thái "Khả dụng".
+* **Tiêu chí kiểm chứng:** Bệnh nhân chọn khám trực tuyến: Hệ thống tạm giữ khung giờ và chuyển hướng sang cổng thanh toán. Thanh toán thành công trong vòng 15 phút: Cập nhật "Đã thanh toán", chuyển lịch sang "Đã xác nhận", sinh đường link khám online và gửi SMS xác nhận. Quá hạn 15 phút không thanh toán [G-05]: Tiến trình nền tự động quét, hủy đơn đặt và giải phóng khung giờ về trạng thái "Khả dụng".
 
-#### FR-12 — Tự động hoàn tiền khi bác sĩ hủy ca trực tuyến
-* **ID:** `FR-12` | **Loại:** Chức năng | **Nguồn:** Quản lý phòng khám (`STK-01`) / CR-01 | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.1` (Bổ sung mới từ CR-01)
-* **Mô tả:** Khi Quản lý phòng khám kích hoạt lệnh đóng ca trực của bác sĩ mà trong ca đó có các lịch khám trực tuyến đã hoàn tất thanh toán trước, hệ thống phải tự động phát lệnh gọi API sang cổng thanh toán trung gian để hoàn trả 100% tiền viện phí đã thu về tài khoản/thẻ ban đầu của bệnh nhân, đồng thời gửi tin nhắn SMS thông báo minh bạch.
+#### FR-12 · Tự động hoàn tiền khi bác sĩ hủy ca trực tuyến
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **FR-12** | Chức năng | Quản lý (`STK-01`), Kế toán (`STK-05`) / CR-01 | Must | 1.1 |
+
+* **Mô tả:** Trong bối cảnh Quản lý phòng khám kích hoạt lệnh đóng ca trực của bác sĩ mà trong ca đó có các lịch khám trực tuyến đã hoàn tất thanh toán trước, hệ thống phải tự động phát lệnh gọi API sang cổng thanh toán trung gian để hoàn trả 100% tiền viện phí đã thu về tài khoản/thẻ ban đầu của bệnh nhân, đồng thời gửi tin nhắn SMS thông báo minh bạch.
 * **Lý do:** Bảo vệ quyền lợi tài chính hợp pháp của người bệnh khi dịch vụ y tế bị hủy bỏ do nguyên nhân chủ quan từ phía phòng khám hoặc bác sĩ.
-* **Tiêu chí kiểm chứng:**
-  1. Hệ thống tự động lọc ra các lịch hẹn online trong ca có trạng thái giao dịch là "Đã thanh toán".
-  2. Tự động phát lệnh gọi API hoàn tiền 100% số tiền viện phí (VD: 150.000 VNĐ [G-04]) sang cổng thanh toán tương ứng.
-  3. Khi nhận mã xác nhận hoàn tiền thành công từ cổng thanh toán: Cập nhật trạng thái bản ghi giao dịch thành "Đã hoàn tiền", lưu mã giao dịch hoàn trả và thời gian hoàn thành.
-  4. Tự động gửi tin nhắn SMS Brandname cho bệnh nhân thông báo rõ: Lời xin lỗi của phòng khám, lý do hủy ca, xác nhận lệnh hoàn tiền 100% kèm mã đối soát tra cứu.
-  5. Nếu cổng thanh toán bị timeout hoặc trả về mã lỗi: Hệ thống tự động chuyển giao dịch sang trạng thái "Chờ xử lý hoàn tiền thủ công" và hiển thị cảnh báo đỏ trên màn hình Quản lý để kế toán đối soát thủ công.
-* **Lưu ý quan trọng:** Khoảng thời gian 1–3 ngày làm việc để tiền thực tế về tài khoản ngân hàng của bệnh nhân là `[Giả định]` phụ thuộc vào chính sách cổng thanh toán/ngân hàng thụ hưởng, không phải cam kết thời gian kỹ thuật của hệ thống phòng khám.
+* **Tiêu chí kiểm chứng:** Hệ thống tự động lọc ra các lịch hẹn online trong ca có trạng thái giao dịch là "Đã thanh toán". Tự động phát lệnh gọi API hoàn tiền 100% số tiền viện phí (VD: 150.000 VNĐ [G-04]) sang cổng thanh toán tương ứng trong vòng $\le 30$ giây. Cập nhật bản ghi "Đã hoàn tiền", lưu mã đối soát và gửi SMS Brandname thông báo rõ ràng cho bệnh nhân. Nếu cổng thanh toán bị timeout hoặc trả về mã lỗi: Hệ thống tự động chuyển giao dịch sang trạng thái "Chờ xử lý hoàn tiền thủ công" và hiển thị cảnh báo đỏ trên màn hình Quản lý để kế toán (`STK-05`) đối soát thủ công.
 
 ---
 
@@ -423,163 +465,196 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 
 | Mã ID | Tên yêu cầu phi chức năng | Phân nhóm chất lượng | Nguồn gốc | Độ ưu tiên | Phiên bản |
 | :---: | :--- | :---: | :---: | :---: | :---: |
-| **NFR-01** | Thời gian phản hồi thao tác tra cứu và đặt lịch | **Hiệu năng** | Nhu cầu hệ thống / `[Giả định]` | **Must Have** | 1.0 |
-| **NFR-02** | Khả năng chịu tải đồng thời trong ca cao điểm | **Hiệu năng** | Quy mô phòng khám / `[Giả định]` | **Should Have** | 1.0 |
-| **NFR-03** | Xác thực hai lớp bằng SMS OTP khi quản lý lịch | **Bảo mật** | Bệnh nhân / `SC-03` | **Must Have** | 1.0 |
-| **NFR-04** | Phân quyền truy cập dữ liệu dựa trên vai trò (RBAC) | **Bảo mật** | Quản lý / Bác sĩ / Tiếp nhận | **Must Have** | 1.0 |
-| **NFR-05** | Mức độ sẵn sàng phục vụ của hệ thống (Uptime) | **Độ sẵn sàng** | Vận hành / `[Giả định]` | **Should Have** | 1.0 |
-| **NFR-06** | Lưu trữ an toàn & bảo toàn dữ liệu lịch và giao dịch | **Lưu trữ** | Quản lý phòng khám / CR-01 | **Must Have** | 1.1 |
+| **NFR-01** | Thời gian phản hồi thao tác tra cứu và đặt lịch | **Hiệu năng** | Nhu cầu hệ thống / `[Giả định]` | **Must** | 1.0 |
+| **NFR-02** | Khả năng chịu tải đồng thời trong ca cao điểm | **Hiệu năng** | Quy mô phòng khám / `[Giả định]` | **Should** | 1.0 |
+| **NFR-03** | Xác thực hai lớp bằng SMS OTP khi quản lý lịch | **Bảo mật** | Bệnh nhân / `SC-03` | **Must** | 1.0 |
+| **NFR-04** | Phân quyền truy cập dữ liệu dựa trên vai trò (RBAC) | **Bảo mật** | Quản lý / Bác sĩ / Tiếp nhận | **Must** | 1.0 |
+| **NFR-05** | Mức độ sẵn sàng phục vụ của hệ thống (Uptime) | **Độ sẵn sàng** | Vận hành / `[Giả định]` | **Should** | 1.0 |
+| **NFR-06** | Lưu trữ an toàn & bảo toàn dữ liệu lịch và giao dịch | **Lưu trữ** | Quản lý phòng khám / CR-01 | **Must** | 1.1 |
 
 ---
 
 ### 4.4. Đặc tả chi tiết từng Yêu cầu Phi chức năng theo mẫu chuẩn
 
-#### NFR-01 — Thời gian phản hồi của các thao tác thông thường
-* **ID:** `NFR-01` | **Loại:** Phi chức năng — Hiệu năng | **Nguồn:** Nhu cầu hệ thống / `[Giả định]` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
-* **Mô tả:** Hệ thống phải phản hồi các thao tác tra cứu chuyên khoa, bác sĩ, lịch khám và gửi dữ liệu đặt lịch trong thời gian phù hợp với quy mô 80–120 lượt bệnh nhân/ngày.
-* **Lý do:** Tránh làm gián đoạn quá trình đặt lịch và giảm thời gian chờ của bệnh nhân/nhân viên.
-* **Tiêu chí kiểm chứng:** Trong điều kiện tải bình thường (30 phiên đồng thời [QA-01]), **ít nhất 95%** yêu cầu tra cứu lịch và thao tác đặt lịch phải nhận được phản hồi từ hệ thống trong thời gian **$\le 2,0\text{ giây}$ [Giả định – Cần xác nhận]**; thời gian phản hồi phân vị 95 (p95) không vượt quá 2,0 giây.
+#### NFR-01 · Thời gian phản hồi của các thao tác thông thường
 
-#### NFR-02 — Khả năng xử lý đồng thời
-* **ID:** `NFR-02` | **Loại:** Phi chức năng — Hiệu năng | **Nguồn:** Quy mô phòng khám / `[Giả định]` | **Độ ưu tiên:** **Should Have** | **Phiên bản:** `1.0`
-* **Mô tả:** Hệ thống phải duy trì khả năng phục vụ khi có nhiều bệnh nhân đồng thời thực hiện tra cứu và đặt lịch trong các khung giờ cao điểm.
-* **Lý do:** Phòng khám có 80–120 lượt bệnh nhân mỗi ngày; hệ thống cần tránh lỗi hoặc mất dữ liệu khi nhiều người thao tác gần cùng thời điểm.
-* **Tiêu chí kiểm chứng:** Hệ thống phải xử lý tối thiểu **30 phiên người dùng đồng thời [Giả định – Cần xác nhận]** thực hiện tra cứu hoặc đặt lịch mà tỷ lệ lỗi HTTP bằng 0,0%, không phát sinh lỗi tạo lịch trùng hoặc mất bản ghi.
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **NFR-01** | Phi chức năng (Hiệu năng) | Dữ kiện hệ thống [Giả định] | Must | 1.0 |
 
-#### NFR-03 — Xác thực OTP khi quản lý lịch hẹn
-* **ID:** `NFR-03` | **Loại:** Phi chức năng — Bảo mật | **Nguồn:** Bệnh nhân (`STK-04`) / `SC-03` | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
-* **Mô tả:** Hệ thống phải sử dụng OTP để xác thực bệnh nhân trước khi cho phép xem hoặc thay đổi thông tin lịch hẹn.
-* **Lý do:** Thông tin lịch hẹn có dữ liệu cá nhân của bệnh nhân và không được để người khác truy cập chỉ bằng Mã lịch hẹn.
-* **Tiêu chí kiểm chứng:** OTP phải gồm **6 chữ số**, có thời hạn **180 giây (3 phút) [G-07]**; **ngay sau 3 lần nhập sai liên tiếp**, phiên xác thực phải bị khóa và yêu cầu gửi OTP mới.
+* **Mô tả:** Trong bối cảnh người dùng thao tác tra cứu và đặt lịch, hệ thống phải phản hồi các thao tác tra cứu chuyên khoa, bác sĩ, lịch khám và gửi dữ liệu đặt lịch trong thời gian phù hợp với quy mô 80–120 lượt bệnh nhân/ngày.
+* **Lý do:** Tránh làm gián đoạn quá trình đặt lịch và giảm thời gian chờ của bệnh nhân và nhân viên.
+* **Tiêu chí kiểm chứng:** Trong điều kiện tải bình thường (30 phiên đồng thời), ít nhất 95% yêu cầu tra cứu lịch và thao tác đặt lịch phải nhận được phản hồi từ hệ thống trong thời gian $\le 2,0$ giây; thời gian phản hồi phân vị 95 (p95) không vượt quá 2,0 giây.
 
-#### NFR-04 — Phân quyền truy cập dữ liệu
-* **ID:** `NFR-04` | **Loại:** Phi chức năng — Bảo mật | **Nguồn:** Quản lý (`STK-01`) / Bác sĩ (`STK-02`) / Tiếp nhận (`STK-03`) | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.0`
-* **Mô tả:** Hệ thống phải kiểm soát quyền truy cập theo vai trò đối với dữ liệu bệnh nhân, lịch khám và chức năng quản lý.
-* **Lý do:** Nhân viên, bác sĩ và quản lý có phạm vi công việc khác nhau; dữ liệu bệnh nhân và quyền tài chính cần được giới hạn nghiêm ngặt.
-* **Tiêu chí kiểm chứng:** Người dùng không có quyền quản trị không được thực hiện thao tác **đóng ca bác sĩ, hủy toàn bộ lịch của ca hoặc kích hoạt xử lý hoàn tiền**. Các thao tác này chỉ được thực hiện bởi tài khoản có quyền quản lý (Admin); mọi vi phạm bị chặn với mã HTTP 403 Forbidden.
+#### NFR-02 · Khả năng xử lý đồng thời
 
-#### NFR-05 — Độ sẵn sàng của hệ thống
-* **ID:** `NFR-05` | **Loại:** Phi chức năng — Khả dụng | **Nguồn:** Nhu cầu vận hành / `[Giả định]` | **Độ ưu tiên:** **Should Have** | **Phiên bản:** `1.0`
-* **Mô tả:** Hệ thống phải duy trì khả năng truy cập để bệnh nhân có thể đặt lịch và nhân viên có thể quản lý lịch khám trong thời gian phục vụ.
-* **Lý do:** Hệ thống là kênh đặt lịch và điều phối lịch khám; việc gián đoạn có thể làm mất lịch hẹn hoặc buộc phòng khám quay lại quy trình thủ công.
-* **Tiêu chí kiểm chứng:** Hệ thống phải đạt thời gian hoạt động tối thiểu **99,5% trong mỗi tháng [Giả định – Cần xác nhận]**, tính theo công thức: $\text{Uptime} = \frac{T - M - D}{T - M} \times 100\% \ge 99,5\%$ (loại trừ thời gian bảo trì $M$ đã thông báo trước tối thiểu 24 giờ).
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **NFR-02** | Phi chức năng (Hiệu năng) | Quy mô phòng khám [Giả định] | Should | 1.0 |
 
-#### NFR-06 — Lưu trữ và bảo toàn dữ liệu lịch hẹn và giao dịch
-* **ID:** `NFR-06` | **Loại:** Phi chức năng — Lưu trữ | **Nguồn:** Quản lý (`STK-01`) / CR-01 | **Độ ưu tiên:** **Must Have** | **Phiên bản:** `1.1` (Cập nhật từ CR-01)
-* **Mô tả:** Hệ thống phải lưu trữ đầy đủ dữ liệu lịch hẹn và giao dịch thanh toán/hoàn tiền để phục vụ tra cứu, xử lý nghiệp vụ và đối soát.
-* **Lý do:** CR-01 yêu cầu lưu thông tin giao dịch, mã giao dịch thanh toán, trạng thái và thời gian hoàn tiền; các dữ liệu này cần được bảo toàn để xử lý khi giao dịch lỗi hoặc cần đối soát.
-* **Tiêu chí kiểm chứng:** Mỗi giao dịch khám trực tuyến phải lưu tối thiểu: Mã giao dịch, Mã lịch hẹn, Số tiền, Phương thức thanh toán, Trạng thái giao dịch, Mã giao dịch cổng thanh toán, Thời gian thanh toán, Thời gian hoàn tiền. Dữ liệu phải còn truy xuất được sau khi lịch hẹn kết thúc (Thời hạn lưu trữ tối thiểu: 05 năm [G-12 – Cần xác nhận]).
+* **Mô tả:** Trong bối cảnh các khung giờ cao điểm có nhiều bệnh nhân cùng truy cập, hệ thống phải duy trì khả năng phục vụ đồng thời cho các yêu cầu tra cứu và đặt lịch.
+* **Lý do:** Phòng khám có 80–120 lượt bệnh nhân mỗi ngày; hệ thống cần tránh nghẽn mạng hoặc mất dữ liệu khi nhiều người thao tác cùng lúc.
+* **Tiêu chí kiểm chứng:** Hệ thống phải xử lý tối thiểu 30 phiên người dùng đồng thời thực hiện tra cứu hoặc đặt lịch mà tỷ lệ lỗi HTTP bằng 0,0%, không phát sinh lỗi tạo lịch trùng hoặc mất bản ghi.
+
+#### NFR-03 · Xác thực OTP khi quản lý lịch hẹn
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **NFR-03** | Phi chức năng (Bảo mật) | Bệnh nhân (`STK-04`) / `SC-03` | Must | 1.0 |
+
+* **Mô tả:** Trong bối cảnh bệnh nhân muốn tra cứu hoặc thay đổi lịch hẹn đã đặt, hệ thống phải sử dụng OTP để xác thực số điện thoại của bệnh nhân trước khi cho phép xem hoặc thao tác đổi/hủy lịch.
+* **Lý do:** Thông tin lịch hẹn chứa dữ liệu cá nhân của người bệnh; cần ngăn chặn việc truy cập trái phép hoặc can thiệp lịch hẹn của người khác chỉ bằng Mã lịch hẹn.
+* **Tiêu chí kiểm chứng:** OTP gồm đúng 6 chữ số, thời hạn hiệu lực 180 giây [G-07]; ngay sau 3 lần nhập sai liên tiếp, phiên xác thực bị khóa và yêu cầu gửi mã OTP mới.
+
+#### NFR-04 · Phân quyền truy cập dữ liệu
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **NFR-04** | Phi chức năng (Bảo mật) | Quản lý (`STK-01`), Bác sĩ (`STK-02`), Tiếp nhận (`STK-03`) | Must | 1.0 |
+
+* **Mô tả:** Trong bối cảnh vận hành nội bộ, hệ thống phải kiểm soát quyền truy cập dựa trên vai trò (RBAC) đối với dữ liệu bệnh nhân, lịch khám và các chức năng quản trị.
+* **Lý do:** Nhân viên quầy, bác sĩ và quản lý có phạm vi công việc khác nhau; quyền xem bệnh án và quyền hủy ca/hoàn tiền cần được giới hạn nghiêm ngặt.
+* **Tiêu chí kiểm chứng:** Người dùng không có quyền quản trị tuyệt đối không được thực hiện thao tác đóng ca bác sĩ, hủy toàn bộ lịch của ca hoặc kích hoạt xử lý hoàn tiền. Các thao tác này chỉ được thực hiện bởi tài khoản có quyền Admin; mọi vi phạm bị chặn với mã HTTP 403 Forbidden.
+
+#### NFR-05 · Độ sẵn sàng của hệ thống
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **NFR-05** | Phi chức năng (Khả dụng) | Nhu cầu vận hành [Giả định] | Should | 1.0 |
+
+* **Mô tả:** Trong bối cảnh cung cấp dịch vụ đặt lịch trực tuyến 24/7, hệ thống phải duy trì khả năng truy cập ổn định để bệnh nhân có thể đặt lịch và nhân viên có thể điều phối lịch khám.
+* **Lý do:** Hệ thống là kênh đặt lịch và điều phối cốt lõi; gián đoạn sẽ gây mất lịch hẹn hoặc buộc phòng khám phải quay lại ghi sổ thủ công.
+* **Tiêu chí kiểm chứng:** Hệ thống phải đạt thời gian hoạt động tối thiểu 99,5% trong mỗi tháng (loại trừ thời gian bảo trì định kỳ đã thông báo trước tối thiểu 24 giờ).
+
+#### NFR-06 · Lưu trữ và bảo toàn dữ liệu lịch hẹn và giao dịch
+
+| ID | Loại | Nguồn | Độ ưu tiên | Phiên bản |
+| :---: | :---: | :---: | :---: | :---: |
+| **NFR-06** | Phi chức năng (Lưu trữ) | Quản lý (`STK-01`), Kế toán (`STK-05`) / CR-01 | Must | 1.1 |
+
+* **Mô tả:** Trong bối cảnh triển khai khám trực tuyến và thanh toán trước theo CR-01, hệ thống phải lưu trữ đầy đủ dữ liệu lịch hẹn và giao dịch tài chính để phục vụ tra cứu, xử lý nghiệp vụ và đối soát.
+* **Lý do:** CR-01 yêu cầu lưu thông tin giao dịch, mã giao dịch thanh toán, trạng thái và thời gian hoàn tiền; các dữ liệu này cần được bảo toàn để xử lý khi giao dịch lỗi hoặc đối soát kế toán.
+* **Tiêu chí kiểm chứng:** Mỗi giao dịch khám trực tuyến phải lưu tối thiểu: Mã giao dịch, Mã lịch hẹn, Số tiền, Phương thức thanh toán, Trạng thái giao dịch, Mã giao dịch cổng thanh toán, Thời gian thanh toán, Thời gian hoàn tiền. Dữ liệu phải còn truy xuất được sau khi lịch hẹn kết thúc (Thời hạn lưu trữ tối thiểu: 05 năm [G-12]).
 
 ---
 
 # PHẦN 5: ĐẶC TẢ TÌNH HUỐNG SỬ DỤNG
 
-### SC-01: Bệnh nhân đặt lịch khám thành công
-* **Mã kịch bản:** `SC-01`
+### SC-01 · Bệnh nhân đặt lịch khám thành công
+
 * **Tác nhân chính:** Bệnh nhân (`STK-04`)
-* **Tiền điều kiện:** 
-  1. Hệ thống web hoạt động bình thường, kết nối cơ sở dữ liệu ổn định.
-  2. Bác sĩ thuộc chuyên khoa yêu cầu có ít nhất 01 khung giờ khám (time slot) ở trạng thái "Khả dụng".
+* **Tiền điều kiện:** Hệ thống web hoạt động bình thường, kết nối cơ sở dữ liệu ổn định; Bác sĩ thuộc chuyên khoa yêu cầu có ít nhất 01 khung giờ khám (time slot) ở trạng thái "Khả dụng".
 * **Kích hoạt:** Bệnh nhân truy cập trang web phòng khám và chọn nút "Đặt lịch khám".
-* **Bảng các bước thực hiện & Ngoại lệ:**
 
-| Bước | Luồng sự kiện chính | Luồng ngoại lệ a | Luồng ngoại lệ b |
-| :---: | :--- | :--- | :--- |
-| **1** | Bệnh nhân lựa chọn hình thức khám mong muốn: "Khám trực tiếp tại phòng khám" hoặc "Khám trực tuyến theo CR-01". | — | — |
-| **2** | Bệnh nhân chọn Chuyên khoa và chọn Bác sĩ phụ trách từ danh mục hệ thống. | — | — |
-| **3** | Hệ thống hiển thị lịch làm việc trong tuần và các khung giờ còn trống (Khả dụng) của bác sĩ đã chọn. | — | — |
-| **4** | Bệnh nhân bấm chọn 01 khung giờ khám phù hợp. | **4a (Khung giờ vừa bị người khác đặt trước):** Hệ thống phát hiện khung giờ vừa chuyển sang kín chỗ ở phiên khác $\rightarrow$ Chuyển hướng xử lý sang kịch bản `SC-02`. | — |
-| **5** | Hệ thống hiển thị biểu mẫu thu thập thông tin đăng ký khám bệnh. | — | — |
-| **6** | Bệnh nhân nhập đầy đủ thông tin: Họ và tên, Số điện thoại liên hệ, Ngày tháng năm sinh, Giới tính và Mô tả tóm tắt triệu chứng bệnh lý ban đầu. | **6a (Nhập sai định dạng hoặc thiếu thông tin - `FR-06`):** Bỏ trống Họ tên/SĐT hoặc SĐT không đủ 10 chữ số $\rightarrow$ Dừng xử lý, đánh dấu đỏ trường vi phạm và yêu cầu sửa lại. | — |
-| **7** | Hệ thống hiển thị bảng tóm tắt: Bác sĩ, Chuyên khoa, Ngày giờ, Hình thức khám và Mức viện phí niêm yết (Trực tiếp: Miễn phí đặt trước; Online: 150.000 VNĐ [G-04] cần thanh toán trước theo `CR-01`). | — | — |
-| **8** | Bệnh nhân kiểm tra thông tin, tích chọn đồng ý điều khoản dịch vụ và nhấn nút "Xác nhận đặt lịch". | **8a (Phát hiện trùng lịch hẹn - `FR-10`):** CSDL thấy số điện thoại đã có lịch hẹn khác trong cùng khung giờ $\rightarrow$ Từ chối tạo lịch, báo lỗi trùng lịch, không gửi SMS. | — |
-| **9** | **Hệ thống phân nhánh theo hình thức khám:**<br>• *Khám trực tiếp:* Ghi nhận lịch hẹn "Đã đặt", khóa khung giờ thành "Không khả dụng" $\rightarrow$ Đi tiếp Bước 11.<br>• *Khám online (theo CR-01):* Tạm khóa khung giờ tối đa 15 phút [G-05], tạo phiên giao dịch và chuyển hướng trình duyệt sang cổng thanh toán (VNPay/MoMo). | — | — |
-| **10** | *(Dành riêng cho khám online):* Bệnh nhân xác thực và thanh toán thành công viện phí 150.000 VNĐ [G-04]. Cổng thanh toán gửi mã phản hồi thành công (IPN/Webhook) về hệ thống phòng khám. | **10a (Thanh toán online thất bại hoặc hủy - `CR-01`):** Cổng TT trả mã lỗi hoặc người dùng hủy $\rightarrow$ Hủy phiên tạm giữ, mở lại khung giờ "Khả dụng", báo lỗi thanh toán chưa hoàn tất. | **10b (Quá hạn 15 phút chờ thanh toán - `G-05`, `CR-01`):** Bệnh nhân không hoàn tất thanh toán sau 15 phút $\rightarrow$ Tiến trình nền tự động hủy đơn đặt, giải phóng khung giờ về "Khả dụng". |
-| **11** | Hệ thống tạo mã lịch hẹn duy nhất (`AT-XXXXXX`), tự sinh đường link phòng khám trực tuyến (nếu khám online) và lưu trạng thái lịch hẹn là "Đã xác nhận". | — | — |
-| **12** | Hệ thống hoàn tất lưu CSDL, tự động kích hoạt hàng đợi ngầm gửi tin nhắn SMS Brandname và Email xác nhận (chứa Mã lịch, Tên bác sĩ, Chuyên khoa, Thời gian, Link khám). | — | — |
-| **13** | Hệ thống hiển thị màn hình thông báo hoàn tất đặt lịch thành công kèm hướng dẫn chuẩn bị trước khi khám bệnh. | — | — |
+**Luồng chính:**
+1. Bệnh nhân lựa chọn hình thức khám mong muốn: "Khám trực tiếp tại phòng khám" hoặc "Khám trực tuyến (theo CR-01)".
+2. Bệnh nhân chọn Chuyên khoa và chọn Bác sĩ phụ trách từ danh mục hệ thống.
+3. Hệ thống hiển thị lịch làm việc trong tuần và các khung giờ còn trống (Khả dụng) của bác sĩ đã chọn.
+4. Bệnh nhân bấm chọn 01 khung giờ khám phù hợp.
+5. Hệ thống hiển thị biểu mẫu thu thập thông tin đăng ký khám bệnh.
+6. Bệnh nhân nhập đầy đủ thông tin: Họ và tên, Số điện thoại liên hệ, Ngày tháng năm sinh, Giới tính và Mô tả tóm tắt triệu chứng bệnh lý ban đầu.
+7. Hệ thống hiển thị bảng tóm tắt: Bác sĩ, Chuyên khoa, Ngày giờ, Hình thức khám và Mức viện phí niêm yết (Khám trực tiếp: Miễn phí đặt trước; Khám online: 150.000 VNĐ [G-04] cần thanh toán trước theo CR-01).
+8. Bệnh nhân kiểm tra thông tin, tích chọn đồng ý điều khoản dịch vụ và nhấn nút "Xác nhận đặt lịch".
+9. Hệ thống phân nhánh xử lý: Nếu khám trực tiếp, hệ thống ghi nhận lịch hẹn "Đã đặt", khóa khung giờ thành "Không khả dụng" và chuyển tiếp đến bước 11. Nếu khám online (theo CR-01), hệ thống tạm khóa khung giờ tối đa 15 phút [G-05], tạo phiên giao dịch và chuyển hướng trình duyệt sang cổng thanh toán trực tuyến (VNPay/MoMo).
+10. *(Dành riêng cho khám online):* Bệnh nhân xác thực và thanh toán thành công 150.000 VNĐ trên cổng thanh toán; cổng thanh toán gửi mã phản hồi thành công (IPN/Webhook) về hệ thống phòng khám.
+11. Hệ thống tạo mã lịch hẹn duy nhất (`AT-XXXXXX`), tự sinh đường link phòng khám trực tuyến (nếu là ca online) và lưu trạng thái lịch hẹn là "Đã xác nhận".
+12. Hệ thống hoàn tất lưu CSDL, tự động kích hoạt hàng đợi ngầm gửi tin nhắn SMS Brandname và Email xác nhận (chứa Mã lịch, Tên bác sĩ, Chuyên khoa, Thời gian, Link khám).
+13. Hệ thống hiển thị màn hình thông báo hoàn tất đặt lịch thành công kèm hướng dẫn chuẩn bị trước khi khám bệnh.
 
-* **Hậu điều kiện:**
-  * Khung giờ đã chọn chuyển sang trạng thái "Không khả dụng" trên lịch làm việc của bác sĩ.
-  * Bản ghi lịch hẹn được lưu thành công trong CSDL.
-  * Bác sĩ phụ trách thấy tên bệnh nhân xuất hiện trên danh sách ca khám tương ứng.
-  * Bệnh nhân nhận được tin nhắn SMS xác nhận hợp lệ trong vòng $\le 60\text{ giây}$.
+**Luồng thay thế/ngoại lệ:**
+* *Rẽ nhánh tại bước 4 (Khung giờ vừa bị người khác đặt trước):* Hệ thống phát hiện khung giờ vừa chuyển sang kín chỗ ở phiên khác $\rightarrow$ Hệ thống hiển thị thông báo và chuyển hướng sang kịch bản `SC-02` để gợi ý các khung giờ hoặc bác sĩ thay thế.
+* *Rẽ nhánh tại bước 6 (Nhập sai định dạng hoặc thiếu thông tin - `FR-06`):* Bệnh nhân bỏ trống Họ tên/SĐT hoặc SĐT không đủ 10 chữ số $\rightarrow$ Hệ thống dừng xử lý, đánh dấu đỏ trường vi phạm và yêu cầu sửa lại.
+* *Rẽ nhánh tại bước 8 (Phát hiện trùng lịch hẹn - `FR-10`):* CSDL thấy số điện thoại đã có lịch hẹn khác trong cùng khung giờ $\rightarrow$ Hệ thống từ chối tạo lịch, hiển thị cảnh báo lỗi trùng lịch và không gửi SMS.
+* *Rẽ nhánh tại bước 10a (Thanh toán online thất bại hoặc người dùng hủy - `CR-01`):* Cổng thanh toán trả về mã lỗi hoặc người dùng bấm hủy $\rightarrow$ Hệ thống hủy phiên tạm giữ, mở lại khung giờ thành "Khả dụng", hiển thị thông báo thanh toán chưa hoàn tất.
+* *Rẽ nhánh tại bước 10b (Quá hạn 15 phút chờ thanh toán - `G-05`, `CR-01`):* Bệnh nhân không hoàn tất thanh toán sau 15 phút $\rightarrow$ Tiến trình nền tự động hủy đơn đặt, giải phóng khung giờ về trạng thái "Khả dụng".
+
+**Hậu điều kiện:**
+* **Trạng thái thành công:** Khung giờ đã chọn chuyển sang trạng thái "Không khả dụng" trên lịch của bác sĩ; Bản ghi lịch hẹn được lưu thành công trong CSDL; Bác sĩ phụ trách thấy tên bệnh nhân xuất hiện trên danh sách ca khám tương ứng; Bệnh nhân nhận được tin nhắn SMS xác nhận hợp lệ trong vòng $\le 60\text{ giây}$.
+* **Trạng thái thất bại:** Khung giờ khám được mở lại trạng thái "Khả dụng" (hoặc giữ nguyên nếu trùng lịch/lỗi nhập liệu); không có lịch hẹn mới nào được tạo trong CSDL; không gửi SMS xác nhận.
 
 ---
 
-### SC-02: Khung giờ hoặc bác sĩ không còn khả dụng
-* **Mã kịch bản:** `SC-02`
+### SC-02 · Khung giờ hoặc bác sĩ không còn khả dụng
+
 * **Tác nhân chính:** Bệnh nhân (`STK-04`)
 * **Tiền điều kiện:** Bệnh nhân đang truy cập màn hình chọn thời gian khám bệnh của một bác sĩ cụ thể.
 * **Kích hoạt:** Bệnh nhân nhấn chọn một khung giờ vừa bị người khác đăng ký giữ chỗ trước đó vài giây hoặc bác sĩ vừa được quản lý đánh dấu khóa lịch đột xuất.
-* **Bảng các bước thực hiện & Ngoại lệ:**
 
-| Bước | Luồng sự kiện chính | Luồng ngoại lệ a | Luồng ngoại lệ b |
-| :---: | :--- | :--- | :--- |
-| **1** | Bệnh nhân bấm chọn khung giờ khám và nhấn nút "Tiếp tục". | — | — |
-| **2** | Hệ thống gửi truy vấn kiểm tra trạng thái khóa thực tế (real-time lock) của khung giờ trong cơ sở dữ liệu. | — | — |
-| **3** | Hệ thống phát hiện khung giờ đã chuyển sang trạng thái "Đã kín" (Unavailable) hoặc "Bị khóa". | — | — |
-| **4** | Hệ thống hiển thị hộp thoại thông báo nổi (Modal popup): *"Rất tiếc! Khung giờ [Giờ:Phút - Ngày] bạn vừa chọn hiện không còn khả dụng do đã có người đặt trước hoặc bác sĩ có lịch đột xuất"*. | — | — |
-| **5** | Hệ thống kích hoạt thuật toán gợi ý phương án thay thế:<br>• Tự động quét và hiển thị 03 khung giờ còn trống gần nhất trong cùng ngày của **chính bác sĩ đó**. | **5a (Bác sĩ kín lịch, nhưng khoa CÒN bác sĩ khác trống):** Bác sĩ đã chọn không còn slot trống trong ngày, nhưng các bác sĩ khác cùng khoa vẫn còn slot trống $\rightarrow$ Hệ thống tự động quét và gợi ý danh sách **các Bác sĩ khác cùng chuyên khoa** có lịch trống trong ngày. | **5b (Toàn bộ chuyên khoa ĐÃ KÍN LỊCH trong ngày):** Tất cả bác sĩ trong chuyên khoa (bao gồm bác sĩ đã chọn) đều không còn slot trống nào trong ngày $\rightarrow$ Hệ thống hiển thị lịch trống của **ngày làm việc tiếp theo gần nhất**; hoặc cung cấp số hotline phòng khám để lễ tân hỗ trợ xếp lịch trực tiếp. |
-| **6** | Bệnh nhân quan sát các phương án gợi ý và bấm chọn 01 khung giờ thay thế phù hợp. | **6a (Bệnh nhân từ chối các gợi ý):** Bệnh nhân đóng hộp thoại gợi ý và không chọn khung giờ mới $\rightarrow$ Hệ thống đưa người dùng quay lại màn hình tổng quan chọn chuyên khoa/bác sĩ ban đầu. | — |
-| **7** | Hệ thống làm mới giao diện, tạm giữ khung giờ mới được chọn và điều hướng bệnh nhân sang bước điền thông tin cá nhân (tiếp tục Bước 5 của kịch bản `SC-01`). | — | — |
+**Luồng chính:**
+1. Bệnh nhân bấm chọn khung giờ khám và nhấn nút "Tiếp tục".
+2. Hệ thống gửi truy vấn kiểm tra trạng thái khóa thực tế (real-time lock) của khung giờ trong cơ sở dữ liệu.
+3. Hệ thống phát hiện khung giờ đã chuyển sang trạng thái "Đã kín" (Unavailable) hoặc "Bị khóa".
+4. Hệ thống hiển thị hộp thoại thông báo nổi (Modal popup): *"Rất tiếc! Khung giờ [Giờ:Phút - Ngày] bạn vừa chọn hiện không còn khả dụng do đã có người đặt trước hoặc bác sĩ có lịch đột xuất"*.
+5. Hệ thống kích hoạt thuật toán gợi ý phương án thay thế: tự động quét và hiển thị 03 khung giờ còn trống gần nhất trong cùng ngày của chính bác sĩ đó.
+6. Bệnh nhân quan sát các phương án gợi ý và bấm chọn 01 khung giờ thay thế phù hợp.
+7. Hệ thống làm mới giao diện, tạm giữ khung giờ mới được chọn và điều hướng bệnh nhân sang bước điền thông tin cá nhân (tiếp tục Bước 5 của kịch bản `SC-01`).
 
-* **Hậu điều kiện:**
-  * Không phát sinh bất kỳ bản ghi rác hay lịch hẹn trùng lặp nào trong cơ sở dữ liệu phòng khám.
-  * Giao diện lịch khám được làm mới đồng bộ với trạng thái khả dụng thực tế của cơ sở dữ liệu.
+**Luồng thay thế/ngoại lệ:**
+* *Rẽ nhánh tại bước 5a (Bác sĩ kín lịch, nhưng khoa còn bác sĩ khác trống):* Bác sĩ đã chọn không còn slot trống trong ngày, nhưng các bác sĩ khác cùng khoa vẫn còn slot trống $\rightarrow$ Hệ thống tự động quét và gợi ý danh sách các Bác sĩ khác cùng chuyên khoa có lịch trống trong ngày.
+* *Rẽ nhánh tại bước 5b (Toàn bộ chuyên khoa đã kín lịch trong ngày):* Tất cả bác sĩ trong chuyên khoa đều không còn slot trống nào trong ngày $\rightarrow$ Hệ thống hiển thị lịch trống của ngày làm việc tiếp theo gần nhất; hoặc cung cấp số hotline phòng khám để lễ tân hỗ trợ xếp lịch trực tiếp.
+* *Rẽ nhánh tại bước 6a (Bệnh nhân từ chối các gợi ý):* Bệnh nhân đóng hộp thoại gợi ý và không chọn khung giờ mới $\rightarrow$ Hệ thống đưa người dùng quay lại màn hình tổng quan chọn chuyên khoa/bác sĩ ban đầu.
+
+**Hậu điều kiện:**
+* **Trạng thái thành công:** Bệnh nhân chọn được khung giờ thay thế hợp lệ và tiếp tục quy trình đặt lịch (`SC-01`); khung giờ mới được tạm giữ an toàn.
+* **Trạng thái thất bại:** Không phát sinh bất kỳ bản ghi rác hay lịch hẹn trùng lặp nào trong cơ sở dữ liệu; giao diện lịch khám được làm mới đồng bộ với trạng thái khả dụng thực tế của cơ sở dữ liệu.
 
 ---
 
-### SC-03: Bệnh nhân đổi hoặc hủy lịch hẹn
-* **Mã kịch bản:** `SC-03`
+### SC-03 · Bệnh nhân đổi hoặc hủy lịch hẹn
+
 * **Tác nhân chính:** Bệnh nhân (`STK-04`)
-* **Tiền điều kiện:** 
-  1. Bệnh nhân đã có lịch hẹn được xác nhận trên hệ thống và còn lưu giữ Mã lịch hẹn cùng Số điện thoại đã đăng ký.
-  2. Lịch hẹn đang ở trạng thái "Đã đặt" hoặc "Đã xác nhận" (chưa diễn ra và chưa bị hủy).
+* **Tiền điều kiện:** Bệnh nhân đã có lịch hẹn được xác nhận trên hệ thống và còn lưu giữ Mã lịch hẹn cùng Số điện thoại đã đăng ký; Lịch hẹn đang ở trạng thái "Đã đặt" hoặc "Đã xác nhận" (chưa diễn ra và chưa bị hủy).
 * **Kích hoạt:** Bệnh nhân truy cập trang "Tra cứu & Quản lý lịch hẹn", nhập thông tin tra cứu và nhấn nút "Tra cứu lịch hẹn".
-* **Bảng các bước thực hiện & Ngoại lệ:**
 
-| Bước | Luồng sự kiện chính | Luồng ngoại lệ a | Luồng ngoại lệ b |
-| :---: | :--- | :--- | :--- |
-| **1** | Bệnh nhân nhập Mã lịch hẹn và Số điện thoại đăng ký, sau đó nhấn nút "Tiếp tục". | **1a (Sai thông tin tra cứu):** Mã lịch hẹn hoặc SĐT không khớp với bản ghi nào $\rightarrow$ Hiển thị cảnh báo không tìm thấy thông tin, yêu cầu kiểm tra lại. | — |
-| **2** | Hệ thống kiểm tra tính hợp lệ của mã và SĐT, tự động sinh mã xác thực OTP gồm 6 chữ số gửi qua SMS đến SĐT bệnh nhân (thời hạn hiệu lực 180 giây [G-07]). | — | — |
-| **3** | Bệnh nhân nhập mã OTP và nhấn nút "Xác thực". | **3a (Nhập sai hoặc hết hạn OTP - `NFR-03`):** Bệnh nhân nhập sai OTP đến lần thứ 3 hoặc để quá hạn 180 giây [G-07] $\rightarrow$ Hệ thống khóa ngay phiên xác thực, hiển thị nút yêu cầu gửi lại OTP mới. | — |
-| **4** | Hệ thống xác thực OTP thành công và hiển thị chi tiết ca khám kèm 02 nút hành động: "Hủy lịch hẹn" và "Đổi khung giờ khám". | — | — |
-| **5** | **Trường hợp A – Bệnh nhân chọn "Hủy lịch hẹn":**<br>• *5.1.* Hệ thống tính toán khoảng thời gian chênh lệch từ hiện tại đến giờ hẹn khám.<br>• *5.2.* Xác nhận thời gian chênh lệch đạt điều kiện $\ge 120$ phút trước giờ khám [G-06].<br>• *5.3.* Bệnh nhân chọn lý do hủy và nhấn "Xác nhận hủy lịch".<br>• *5.4.* Hệ thống chuyển trạng thái lịch hẹn sang "Đã hủy bởi bệnh nhân", ghi nhận lý do và thời gian.<br>• *5.5.* *(CR-01):* Nếu là ca khám online đã thanh toán trước hủy $\ge 2$ tiếng, tự động gọi API cổng thanh toán hoàn trả 100% viện phí, cập nhật bảng `GiaoDich` sang "Đã hoàn tiền".<br>• *5.6.* Kích hoạt tự động giải phóng khung giờ (`FR-07`), đổi slot về "Khả dụng" (với điều kiện ca trực bác sĩ vẫn mở bình thường [VR-10]).<br>• *5.7.* Tự động gửi SMS xác nhận hủy lịch thành công (kèm xác nhận lệnh hoàn tiền 100% đối với ca khám online). | **5a (Hủy quá trễ < 120 phút - `G-06`):** Thời gian đến giờ hẹn $< 120$ phút $\rightarrow$ Làm mờ nút hủy, thông báo hướng dẫn gọi hotline phòng khám; phòng khám không hỗ trợ hoàn tiền online tự động [Q-03]. | **5b (Lỗi kết nối cổng TT khi hoàn tiền - `CR-01`):** Cổng thanh toán timeout hoặc lỗi hệ thống $\rightarrow$ Tự động chuyển trạng thái sang "Chờ đối soát hoàn tiền thủ công" và tạo cảnh báo cho kế toán đối soát thủ công. |
-| **6** | **Trường hợp B – Bệnh nhân chọn "Đổi khung giờ khám":**<br>• *6.1.* Hệ thống kiểm tra điều kiện thời gian $\ge 120$ phút trước giờ khám [G-06].<br>• *6.2.* Mở bảng lịch công tác của bác sĩ phụ trách và hiển thị các khung giờ còn trống khác.<br>• *6.3.* Bệnh nhân chọn 01 khung giờ khám mới và nhấn "Lưu thay đổi".<br>• *6.4.* Hệ thống cập nhật thời gian khám mới vào bản ghi lịch hẹn, khóa khung giờ mới.<br>• *6.5.* Hệ thống giải phóng khung giờ cũ trở về trạng thái "Khả dụng".<br>• *6.6.* Hệ thống gửi SMS thông báo cập nhật lịch hẹn mới thành công cho bệnh nhân. | **6a (Đổi lịch trễ < 120 phút - `G-06`):** Thời gian còn lại $< 120$ phút $\rightarrow$ Từ chối tự đổi trên web, hướng dẫn gọi hotline lễ tân phòng khám. | **6b (Khung giờ mới vừa bị người khác chọn trước):** Slot mới chọn bị trùng ở phiên khác $\rightarrow$ Hệ thống giữ nguyên lịch hẹn cũ và yêu cầu bệnh nhân chọn lại một khung giờ khác. |
+**Luồng chính:**
+1. Bệnh nhân nhập Mã lịch hẹn và Số điện thoại đăng ký, sau đó nhấn nút "Tiếp tục".
+2. Hệ thống kiểm tra tính hợp lệ của mã và SĐT, tự động sinh mã xác thực OTP gồm 6 chữ số gửi qua SMS đến SĐT bệnh nhân (thời hạn hiệu lực 180 giây [G-07]).
+3. Bệnh nhân nhập mã OTP và nhấn nút "Xác thực".
+4. Hệ thống xác thực OTP thành công và hiển thị chi tiết ca khám kèm 02 nút hành động: "Hủy lịch hẹn" và "Đổi khung giờ khám".
+5. Bệnh nhân chọn "Hủy lịch hẹn". Hệ thống tính toán khoảng thời gian chênh lệch từ hiện tại đến giờ hẹn khám và xác nhận đạt điều kiện $\ge 120$ phút trước giờ khám [G-06].
+6. Bệnh nhân chọn lý do hủy và nhấn nút "Xác nhận hủy lịch".
+7. Hệ thống chuyển trạng thái lịch hẹn sang "Đã hủy bởi bệnh nhân", ghi nhận lý do và thời gian hủy.
+8. *(CR-01):* Nếu là ca khám online đã thanh toán trước hủy $\ge 2$ tiếng, hệ thống tự động gọi API cổng thanh toán hoàn trả 100% viện phí, cập nhật bảng `GiaoDich` sang "Đã hoàn tiền".
+9. Hệ thống tự động giải phóng khung giờ (`FR-07`), đổi slot về "Khả dụng" (với điều kiện ca trực bác sĩ vẫn mở bình thường [VR-10]).
+10. Hệ thống tự động gửi tin nhắn SMS xác nhận hủy lịch thành công cho bệnh nhân (kèm xác nhận lệnh hoàn tiền 100% đối với ca khám online).
 
-* **Hậu điều kiện:**
-  * Khung giờ cũ được mở lại ở trạng thái "Khả dụng", sẵn sàng cho các bệnh nhân khác đặt chỗ.
-  * Danh sách khám của bác sĩ và màn hình điều phối của nhân viên tiếp nhận được cập nhật đồng bộ theo thời gian thực.
-  * Nghĩa vụ hoàn tiền (nếu hủy lịch online hợp lệ) được thực thi minh bạch.
+**Luồng thay thế/ngoại lệ:**
+* *Rẽ nhánh tại bước 1a (Sai thông tin tra cứu):* Mã lịch hẹn hoặc SĐT không khớp với bản ghi nào $\rightarrow$ Hệ thống hiển thị cảnh báo không tìm thấy thông tin, yêu cầu kiểm tra lại.
+* *Rẽ nhánh tại bước 3a (Nhập sai hoặc hết hạn OTP - `NFR-03`):* Bệnh nhân nhập sai OTP đến lần thứ 3 hoặc để quá hạn 180 giây [G-07] $\rightarrow$ Hệ thống khóa ngay phiên xác thực, hiển thị nút yêu cầu gửi lại OTP mới.
+* *Rẽ nhánh tại bước 5a (Hủy quá trễ < 120 phút - `G-06`):* Thời gian đến giờ hẹn $< 120$ phút $\rightarrow$ Hệ thống làm mờ nút hủy trực tuyến, thông báo hướng dẫn gọi hotline phòng khám; phòng khám không hỗ trợ hoàn tiền online tự động [Q-03].
+* *Rẽ nhánh tại bước 5b (Bệnh nhân chọn Đổi khung giờ khám thay vì Hủy):* Bệnh nhân bấm chọn "Đổi khung giờ khám" $\rightarrow$ Hệ thống kiểm tra điều kiện $\ge 120$ phút [G-06]; mở bảng lịch công tác của bác sĩ và hiển thị các khung giờ còn trống khác; bệnh nhân chọn 01 khung giờ khám mới và nhấn "Lưu thay đổi"; hệ thống cập nhật giờ mới, khóa slot mới, giải phóng slot cũ về "Khả dụng" và gửi SMS thông báo cập nhật thành công. (Nếu slot mới vừa bị người khác chọn trước, hệ thống giữ nguyên lịch cũ và yêu cầu chọn lại).
+* *Rẽ nhánh tại bước 8a (Lỗi kết nối cổng TT khi hoàn tiền - `CR-01`):* Cổng thanh toán timeout hoặc lỗi hệ thống $\rightarrow$ Tự động chuyển trạng thái sang "Chờ xử lý hoàn tiền thủ công" và tạo cảnh báo đỏ trên giao diện Quản lý để kế toán đối soát trực tiếp, lịch hẹn vẫn được hủy thành công.
+
+**Hậu điều kiện:**
+* **Trạng thái thành công:** Lịch hẹn chuyển sang trạng thái "Đã hủy bởi bệnh nhân" (hoặc "Đã dời lịch"); Khung giờ cũ được mở lại ở trạng thái "Khả dụng", sẵn sàng cho bệnh nhân khác đặt; Danh sách khám của bác sĩ và màn hình điều phối lễ tân được đồng bộ theo thời gian thực; Nghĩa vụ hoàn tiền (nếu hủy lịch online hợp lệ) được thực thi minh bạch.
+* **Trạng thái thất bại:** Trạng thái lịch hẹn và khung giờ giữ nguyên; không phát sinh giao dịch tài chính hay hủy lịch sai quy định.
 
 ---
 
-### SC-04: Bác sĩ nghỉ ca đột xuất và xử lý hoàn tiền
-* **Mã kịch bản:** `SC-04`
+### SC-04 · Bác sĩ nghỉ ca đột xuất và xử lý hoàn tiền
+
 * **Tác nhân chính:** Quản lý phòng khám (`STK-01`)
-* **Tiền điều kiện:** 
-  1. Quản lý phòng khám đã đăng nhập thành công vào hệ thống với vai trò Quản trị viên (Admin).
-  2. Bác sĩ có lịch làm việc trong ngày phát sinh sự cố khẩn cấp (ốm đau, việc gia đình) và đã thông báo nghỉ đột xuất.
-  3. Đã có bệnh nhân đặt hẹn trước trong ca làm việc bị ảnh hưởng.
+* **Tiền điều kiện:** Quản lý phòng khám đã đăng nhập thành công vào hệ thống với vai trò Quản trị viên (Admin); Bác sĩ có lịch làm việc trong ngày phát sinh sự cố khẩn cấp (ốm đau, việc gia đình) và đã thông báo nghỉ đột xuất; Đã có bệnh nhân đặt hẹn trước trong ca làm việc bị ảnh hưởng.
 * **Kích hoạt:** Quản lý phòng khám chọn ca trực của bác sĩ trên giao diện điều hành và nhấn nút "Báo nghỉ đột xuất / Hủy ca trực".
-* **Bảng các bước thực hiện & Ngoại lệ:**
 
-| Bước | Luồng sự kiện chính | Luồng ngoại lệ a | Luồng ngoại lệ b |
-| :---: | :--- | :--- | :--- |
-| **1** | Quản lý chọn Bác sĩ, Ngày khám và Ca trực cần báo nghỉ (Sáng/Chiều), sau đó chọn hoặc nhập lý do nghỉ đột xuất. | — | — |
-| **2** | Hệ thống truy vấn CSDL và hiển thị danh sách tổng hợp toàn bộ bệnh nhân đã đặt hẹn trong ca trực, phân tách rõ 02 nhóm: Khám trực tiếp và Khám trực tuyến (đã thanh toán trước). | — | — |
-| **3** | Quản lý kiểm tra thông tin và nhấn nút "Xác nhận đóng ca trực & Kích hoạt xử lý sự cố". | — | — |
-| **4** | Hệ thống tự động chuyển trạng thái của toàn bộ các khung giờ còn lại trong ca trực sang "Đã khóa do bác sĩ nghỉ đột xuất" (`FR-08`) để ngăn chặn đặt lịch mới. | — | — |
-| **5** | Hệ thống chuyển đổi trạng thái của toàn bộ lịch hẹn thuộc ca trực sang "Đã hủy bởi phòng khám do bác sĩ vắng mặt". | — | — |
-| **6** | **Quy trình hoàn tiền tự động cho ca khám trực tuyến (theo `CR-01` & `FR-12`):**<br>• Lọc danh sách bệnh nhân thuộc Nhóm 2 có trạng thái "Đã thanh toán".<br>• Tự động tạo yêu cầu hoàn tiền và gọi API sang cổng thanh toán (VNPay/MoMo) phát lệnh hoàn 100% tiền viện phí về tài khoản ban đầu.<br>• Nhận mã xác nhận hoàn tiền từ cổng thanh toán, cập nhật trạng thái bảng `GiaoDich` sang "Đã hoàn tiền", ghi nhận mã và thời gian hoàn. | **6a (Lỗi kết nối cổng thanh toán / Giao dịch hoàn thất bại - `CR-01`):** Cổng TT bị timeout hoặc trả về lỗi $\rightarrow$ Ghi log cảnh báo đỏ, tự chuyển trạng thái giao dịch sang "Chờ xử lý hoàn tiền thủ công" và hiển thị cảnh báo đỏ trên UI Quản lý để kế toán đối soát trực tiếp. | — |
-| **7** | **Tiến trình gửi thông báo hàng loạt (theo `FR-09`):**<br>• Kích hoạt gửi tin nhắn SMS Brandname và Email đồng loạt đến 100% bệnh nhân bị ảnh hưởng.<br>• *Bệnh nhân khám trực tiếp:* Lời xin lỗi sự cố của bác sĩ, kèm link ưu tiên dời lịch sang ca khác không mất phí.<br>• *Bệnh nhân khám online:* Lời xin lỗi, lý do hủy ca, xác nhận lệnh hoàn tiền 100% (mã tra soát, tiền về theo quy định ngân hàng) cùng link ưu tiên dời lịch. | **7a (Lỗi mạng viễn thông gửi tin nhắn SMS thất bại):** Tin nhắn gửi đến một số thuê bao bị lỗi mạng $\rightarrow$ Hệ thống đánh dấu cờ (flag) "Chưa gửi được SMS" trên danh sách bệnh nhân để nhân viên quầy tiếp nhận gọi điện trực tiếp. | — |
-| **8** | Hệ thống xuất báo cáo tổng kết trên màn hình Quản lý: Tổng số lịch hẹn đã hủy, số SMS gửi thành công, số giao dịch hoàn tiền online đã xử lý thành công. | — | — |
+**Luồng chính:**
+1. Quản lý chọn Bác sĩ, Ngày khám và Ca trực cần báo nghỉ (Sáng/Chiều), sau đó chọn hoặc nhập lý do nghỉ đột xuất.
+2. Hệ thống truy vấn CSDL và hiển thị danh sách tổng hợp toàn bộ bệnh nhân đã đặt hẹn trong ca trực, phân tách rõ 02 nhóm: Khám trực tiếp và Khám trực tuyến (đã thanh toán trước).
+3. Quản lý kiểm tra thông tin và nhấn nút "Xác nhận đóng ca trực & Kích hoạt xử lý sự cố".
+4. Hệ thống tự động chuyển trạng thái của toàn bộ các khung giờ còn lại trong ca trực sang "Đã khóa do bác sĩ nghỉ đột xuất" (`FR-08`) để ngăn chặn đặt lịch mới.
+5. Hệ thống chuyển đổi trạng thái của toàn bộ lịch hẹn thuộc ca trực sang "Đã hủy bởi phòng khám do bác sĩ vắng mặt".
+6. Hệ thống tự động kích hoạt quy trình hoàn tiền cho ca khám trực tuyến (theo `CR-01` & `FR-12`): lọc danh sách bệnh nhân thuộc Nhóm 2 có trạng thái "Đã thanh toán", tự động gọi API sang cổng thanh toán (VNPay/MoMo) phát lệnh hoàn 100% tiền viện phí về tài khoản ban đầu, nhận mã xác nhận và cập nhật bảng `GiaoDich` sang "Đã hoàn tiền".
+7. Hệ thống tự động kích hoạt tiến trình gửi thông báo hàng loạt (theo `FR-09`): gửi tin nhắn SMS Brandname và Email đồng loạt đến 100% bệnh nhân bị ảnh hưởng (bệnh nhân khám trực tiếp nhận thông báo xin lỗi kèm link ưu tiên dời lịch; bệnh nhân khám online nhận thông báo xin lỗi, link dời lịch và xác nhận lệnh hoàn tiền 100% kèm mã đối soát).
+8. Hệ thống xuất báo cáo tổng kết trên màn hình Quản lý: Tổng số lịch hẹn đã hủy, số SMS gửi thành công, số giao dịch hoàn tiền online đã xử lý thành công.
 
-* **Hậu điều kiện:**
-  * Toàn bộ ca trực bị đóng hoàn toàn, không thể tiếp nhận thêm lịch hẹn.
-  * 100% bệnh nhân bị ảnh hưởng nhận được thông báo sự cố kịp thời, hạn chế tối đa việc bệnh nhân di chuyển đến phòng khám trong vô vọng.
-  * Nghĩa vụ hoàn trả tài chính cho các ca khám online được xử lý minh bạch và chính xác.
+**Luồng thay thế/ngoại lệ:**
+* *Rẽ nhánh tại bước 3a (Người dùng không có quyền Quản trị viên - `NFR-04`):* Tài khoản thao tác không có quyền Admin $\rightarrow$ Hệ thống từ chối thực hiện, trả về mã lỗi HTTP 403 Forbidden và ghi nhật ký vi phạm bảo mật (Audit Log).
+* *Rẽ nhánh tại bước 6a (Lỗi kết nối cổng thanh toán / Giao dịch hoàn thất bại - `CR-01`):* Cổng thanh toán bị timeout hoặc trả về lỗi $\rightarrow$ Ghi log cảnh báo đỏ, tự chuyển trạng thái giao dịch sang "Chờ xử lý hoàn tiền thủ công" và hiển thị cảnh báo đỏ trên UI Quản lý để kế toán đối soát trực tiếp.
+* *Rẽ nhánh tại bước 7a (Lỗi mạng viễn thông gửi tin nhắn SMS thất bại):* Tin nhắn gửi đến một số thuê bao bị lỗi mạng viễn thông $\rightarrow$ Hệ thống đánh dấu cờ "Chưa gửi được SMS" trên danh sách bệnh nhân để nhân viên quầy tiếp nhận gọi điện thoại trực tiếp.
+
+**Hậu điều kiện:**
+* **Trạng thái thành công:** Toàn bộ ca trực bị đóng hoàn toàn, không thể tiếp nhận thêm lịch hẹn; 100% bệnh nhân bị ảnh hưởng nhận được thông báo sự cố kịp thời, hạn chế tối đa việc bệnh nhân di chuyển đến phòng khám trong vô vọng; Nghĩa vụ hoàn trả tài chính cho các ca khám online được xử lý minh bạch và chính xác.
+* **Trạng thái thất bại:** Thao tác bị từ chối nếu không đủ thẩm quyền Admin; dữ liệu ca trực và lịch hẹn giữ nguyên trạng thái ban đầu.
 
 ---
 
@@ -623,10 +698,10 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 
 | Mã | Nội dung câu hỏi cần Stakeholder xác nhận | Người có thẩm quyền quyết định | Phần chịu ảnh hưởng trong hệ thống |
 | :---: | :--- | :---: | :---: |
-| **QA-Q01** | Bệnh nhân tự hủy lịch online trước giờ khám thì có được hoàn tiền không; tỷ lệ hoàn bao nhiêu % và điều kiện thời gian tối thiểu là gì? | Quản lý (`STK-01`), Kế toán | `FR-05`, `FR-12`, `SC-03`, Giả định `Q-03` |
-| **QA-Q02** | Trường hợp tín hiệu thanh toán Webhook đến sau khi hết hạn 15 phút nhưng tài khoản người dùng đã bị trừ tiền thì xử lý tài chính ra sao? | Quản lý (`STK-01`), Cổng thanh toán | `FR-11`, `SC-01`, `TC-18` |
-| **QA-Q03** | Cổng thanh toán được lựa chọn chính thức có quy chuẩn kỹ thuật đối soát, đối chiếu chữ ký và cơ chế chống gửi lặp thế nào? | Đội ngũ kỹ thuật, Cổng thanh toán | `FR-11`, `FR-12`, `TC-18` |
-| **QA-Q04** | Thời gian cam kết ngân hàng ghi có tiền hoàn thực tế là bao lâu để ghi chính xác vào nội dung tin nhắn SMS Brandname gửi bệnh nhân? | Đơn vị cổng thanh toán, Quản lý | `FR-09`, `FR-12`, `SC-04`, `TC-06` |
+| **QA-Q01** | Bệnh nhân tự hủy lịch online trước giờ khám thì có được hoàn tiền không; tỷ lệ hoàn bao nhiêu % và điều kiện thời gian tối thiểu là gì? | Quản lý (`STK-01`), Kế toán (`STK-05`) | `FR-05`, `FR-12`, `SC-03`, Giả định `Q-03` |
+| **QA-Q02** | Trường hợp tín hiệu thanh toán Webhook đến sau khi hết hạn 15 phút nhưng tài khoản người dùng đã bị trừ tiền thì xử lý tài chính ra sao? | Quản lý (`STK-01`), Cổng TT (`STK-06`), Kế toán (`STK-05`) | `FR-11`, `SC-01`, `TC-18` |
+| **QA-Q03** | Cổng thanh toán được lựa chọn chính thức có quy chuẩn kỹ thuật đối soát, đối chiếu chữ ký và cơ chế chống gửi lặp thế nào? | Kỹ thuật, Cổng thanh toán (`STK-06`) | `FR-11`, `FR-12`, `TC-18` |
+| **QA-Q04** | Thời gian cam kết ngân hàng ghi có tiền hoàn thực tế là bao lâu để ghi chính xác vào nội dung tin nhắn SMS Brandname gửi bệnh nhân? | Cổng thanh toán (`STK-06`), Quản lý (`STK-01`) | `FR-09`, `FR-12`, `SC-04`, `TC-06` |
 | **QA-Q05** | Nền tảng hội nghị trực tuyến video nào được chốt triển khai; quyền truy cập link và hướng xử lý khi không tạo được link phòng khám? | Quản lý (`STK-01`), Bác sĩ (`STK-02`) | `SC-01`, `TC-05` |
 
 ---
@@ -654,7 +729,7 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 | **VR-02** | Mục 2.1 và nhiều hàng mục 3 của Mini-SRS còn thiếu nội dung về môi trường vận hành, nguồn và đặc tả yêu cầu; lịch sử phiên bản chưa ghi ngày cập nhật. | Đầy đủ; Rõ ràng | Mini-SRS, mục 2, 3 và lịch sử thay đổi | **Đồng ý sửa** | Chuyển đặc tả đã có ở Danh mục yêu cầu vào Mini-SRS; điền môi trường theo dữ liệu được xác nhận hoặc ghi nhãn giả định. Ngày phiên bản phải dựa trên lần cập nhật thực tế. Bản SRS cần có nội dung đặc tả thay cho các ô chưa hoàn thiện. | TV1, TV2; đóng khi không còn ô mẫu trong bản tổng hợp. |
 | **VR-03** | Mini-SRS đặt NFR-03 là “Mã hóa dữ liệu y tế”, NFR-06 là “Sao lưu & Khôi phục CSDL”; Danh mục yêu cầu dùng cùng ID cho OTP và lưu trữ lịch hẹn/giao dịch. | Nhất quán | Danh mục yêu cầu; Mini-SRS, mục 3.3; ma trận | **Đồng ý sửa** | Giữ ý nghĩa ID theo Danh mục yêu cầu: NFR-03 là OTP, NFR-06 là lưu trữ và bảo toàn dữ liệu. Mã hóa hoặc sao lưu, nếu nhóm giữ trong phạm vi, phải được đặc tả bằng ID riêng; TC về OTP không chứng minh mã hóa hoặc khả năng khôi phục. | TV2; đóng khi tên, mô tả, tiêu chí và TC thống nhất. |
 | **VR-04** | TC-03 gắn FR-06, FR-07, trong khi FR-06 kiểm tra dữ liệu lúc đặt lịch; việc tra cứu OTP và tự hủy thuộc FR-04, FR-05. | Nhất quán; Đúng đắn | Báo cáo kiểm định và kịch bản kiểm thử, TC-03; Mini-SRS, mục 6.2 và 7 | **Đồng ý sửa** | Liên kết hiệu chỉnh là FR-04, FR-05, FR-07, NFR-03. Bỏ FR-06 khỏi TC-03; kiểm tra dữ liệu không hợp lệ bằng TC-07. | TV3, TV4; áp dụng tại mục 8.1 và Phần 9 báo cáo này. |
-| **VR-05** | Ma trận trước hiệu chỉnh gắn N-02/STK-02 với FR-05 và SC-01; gắn N-04 với FR-06/SC-03; các hàng NFR dùng “Toàn bộ” và TC không có bước kiểm chứng tương ứng. | Nhất quán; Rõ ràng | Mini-SRS, mục 7 | **Đồng ý sửa** | FR-05 là đổi/hủy của bệnh nhân, không phải bác sĩ xem danh sách. Tách mỗi Requirement ID thành một hàng; dùng STK, SC và TC cụ thể. Nhu cầu chưa có FR được ghi riêng, không gán vào chức năng khác để lấp ô. | TV4; ma trận hiệu chỉnh tại Phần 9; ghi nhận khoảng thiếu tại mục 9.5. |
+| **VR-05** | Ma trận trước hiệu chỉnh gắn N-02/STK-02 với FR-05 và SC-01; gắn N-04 với FR-06/SC-03; các hàng NFR dùng “Toàn bộ” và TC không có bước kiểm chứng tương ứng. | Nhất quán; Rõ ràng | Mini-SRS, mục 7 | **Đồng ý sửa** | FR-05 là đổi/hủy của bệnh nhân, không phải bác sĩ xem danh sách. Tách mỗi Requirement ID thành một hàng; dùng STK, SC và TC cụ thể. Nhu cầu chưa có FR được ghi riêng, không gán vào chức năng khác để lấp ô. | TV4; ma trận hiệu chỉnh tại Phần 9; ghi nhận khoảng thiếu tại mục 9.4. |
 | **VR-06** | Bộ TC-01 đến TC-06 chưa có test trực tiếp cho 30 phiên đồng thời, OTP sai/hết hạn, phân quyền, uptime và truy xuất dữ liệu sau khi lịch kết thúc. | Đầy đủ; Đo lường được | NFR-02 đến NFR-06; Báo cáo kiểm định và kịch bản kiểm thử | **Đồng ý sửa** | Bổ sung TC-09, TC-11, TC-12, TC-13, TC-14. Một TC thao tác thành công không thay thế test từ chối quyền, kiểm tra uptime hoặc lưu trữ. | TV3, TV4; đã đặc tả chi tiết tại mục 8.3. |
 | **VR-07** | NFR-01 yêu cầu ít nhất 95% request phản hồi trong 2 giây; TC-04 chỉ yêu cầu trung bình không quá 2 giây và p95 không quá 2,5 giây. | Nhất quán; Đo lường được | NFR-01; TC-04; Mini-SRS, mục 6.2 | **Đồng ý sửa** | Trung bình đạt không chứng minh 95% request đạt. Dùng tỷ lệ request phản hồi trong 2.000 ms ít nhất 95%, đối chiếu p95 không quá 2.000 ms. Ngưỡng 2,5 giây không dùng để nghiệm thu NFR-01. | TV2, TV3; quy tắc hiệu chỉnh tại mục 8.2. |
 | **VR-08** | TC-04 dùng 100 VU làm tải nghiệm thu; NFR-02 hiện hành đặt tối thiểu 30 phiên đồng thời và NFR-01 chưa định nghĩa tải bình thường. | Rõ ràng; Đo lường được | NFR-01, NFR-02; TC-04 | **Đồng ý sửa** | Định nghĩa tạm tải bình thường là 30 phiên trong cấu hình kiểm thử, có nhãn giả định. Bài 100 VU được giữ làm kiểm tra tải mở rộng, không suy ra đó là ngưỡng stakeholder đã chốt. | TV2, TV3; ghi nhận thống nhất tại mục 8.2. |
@@ -671,7 +746,7 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 | **VR-19** | Mô hình `GiaoDich` trong CR-01 thiếu mã yêu cầu/mã giao dịch hoàn tiền và trạng thái chờ xử lý thủ công, dù SC-04 và FR-12 cần lưu/hiển thị chúng. | Đầy đủ; Nhất quán | CR-01, mô hình dữ liệu; NFR-06; SC-04 | **Đồng ý sửa** | Bổ sung trường phục vụ liên kết lệnh hoàn và phản hồi, trạng thái chờ xử lý thủ công, lỗi và thời điểm xử lý. `ThoiGianHoanTien` để trống trước khi có kết quả hoàn thành; không điền thời điểm giả để đủ cột. | TV2, TV3; đã bổ sung vào Phần 6 và kiểm tra bằng TC-14, TC-16. |
 | **VR-20** | G-12 giả định lưu 5 năm, còn NFR-06 để thời gian lưu tối thiểu cần xác nhận. NFR-05 cũng chưa định nghĩa cửa sổ đo uptime và cách loại bảo trì. | Nhất quán; Đo lường được | NFR-05, NFR-06; G-12 | **Đồng ý sửa** | 5 năm tiếp tục là G-12, không biến thành cam kết chính thức. Viết công thức uptime và quy tắc loại bảo trì; thử truy xuất sau khi lịch kết thúc. Kiểm thử chính sách 5 năm chỉ là nhánh có điều kiện cho đến khi được xác nhận. | TV1, TV2; TC-13, TC-14 có phương pháp đo cụ thể. |
 | **VR-21** | NFR-04 mới nêu quyền đóng ca/hủy ca/hoàn tiền; chưa có quyền đọc lịch theo bác sĩ, quyền tiếp nhận hoặc quyền xem lịch bệnh nhân khác. G-11 còn nói chẩn đoán nằm ngoài phạm vi. | Đầy đủ; Rõ ràng | NFR-04; G-11; phạm vi EMR | **Đồng ý sửa** | Kiểm thử ngay các quyền quản lý đã đặc tả. Lập câu hỏi quyền đọc/sửa dữ liệu hành chính và danh sách ca; không lấy quyền với bệnh án chuyên sâu làm tiêu chí nghiệm thu hệ thống đặt lịch. | TV1, TV2; TC-12 kiểm tra quyền hiện có; bảng quyền đầy đủ được ghi nhận tại Phần 9. |
-| **VR-22** | Phạm vi mục 1.3 Mini-SRS có bác sĩ xem danh sách, chuẩn bị hồ sơ, check-in, đến trễ và khám gấp; FR-01 đến FR-12 chưa đặc tả chức năng xem danh sách ca hoặc check-in. | Đầy đủ; Đúng đắn | N-02, N-03; Mini-SRS, mục 1.3; danh mục FR | **Đồng ý sửa** | Ghi nhận khoảng trống phạm vi: Báo cáo giữ 18 ID hiện có và ghi nhận rõ ràng các chức năng xem ca/check-in thuộc backlog giai đoạn 2 tại mục 9.5; không gán nhu cầu xem ca của bác sĩ vào FR-05. | TV1, TV2; ghi nhận minh bạch tại mục 9.5. |
+| **VR-22** | Phạm vi mục 1.3 Mini-SRS có bác sĩ xem danh sách, chuẩn bị hồ sơ, check-in, đến trễ và khám gấp; FR-01 đến FR-12 chưa đặc tả chức năng xem danh sách ca hoặc check-in. | Đầy đủ; Đúng đắn | N-02, N-03; Mini-SRS, mục 1.3; danh mục FR | **Đồng ý sửa** | Ghi nhận khoảng trống phạm vi: Báo cáo giữ 18 ID hiện có và ghi nhận rõ ràng các chức năng xem ca/check-in thuộc backlog giai đoạn 2 tại mục 9.4; không gán nhu cầu xem ca của bác sĩ vào FR-05. | TV1, TV2; ghi nhận minh bạch tại mục 9.4. |
 | **VR-23** | Tài liệu dùng “dễ dàng”, “kịp thời”, “tức thì”, “an toàn”, “bảo mật”, “minh bạch và chính xác” mà không có điều kiện cụ thể. | Rõ ràng; Đo lường được | Tài liệu Vấn đề và phạm vi, Danh mục yêu cầu, Đặc tả tình huống sử dụng, bộ test và CR-01 | **Đồng ý sửa** | Thay câu mang tính đặc tả bằng hành vi, quyền, dữ liệu hoặc ngưỡng tại mục 7.3. Lời nói và nhu cầu stakeholder được giữ làm nguồn, nhưng phải có yêu cầu kiểm chứng riêng. | TV4 phối hợp tác giả từng phần; bảng chuyển đổi áp dụng tại mục 7.3. |
 | **VR-24** | Bảng tác động CR-01 mới nêu FR-03, FR-11, FR-12; chưa chỉ ra NFR-06 bản 1.1 và các yêu cầu liên đới. Lịch sử thay đổi chưa có ngày và nội dung theo ID. | Đầy đủ; Nhất quán | CR-01; Mini-SRS, mục 5 và lịch sử phiên bản | **Đồng ý sửa** | Bổ sung tác động dữ liệu/giao dịch lên NFR-06, quyền hoàn tiền lên NFR-04, tra cứu/đặt lịch online và đóng ca/thông báo lên FR liên đới. Chỉ tăng phiên bản yêu cầu có nội dung thay đổi. | TV1, TV2, TV3; bảng truy vết thay đổi chi tiết tại mục 9.3. |
 | **VR-25** | Cần xem xét giảm thời gian giữ chỗ 15 phút vì có thể chiếm slot lâu; tài liệu ghi giá trị này là G-05 và có nhánh giải phóng. | Khả thi | FR-11; G-05; SC-01 | **Không sửa** | Giữ 15 phút ở mức giả định kiểm thử. Chưa có số liệu thời gian thanh toán hoặc quy tắc hết hạn của cổng để chọn giá trị khác. Cơ chế hết hạn đã được đặc tả; kiểm chứng bằng TC-15. No-fix không có nghĩa stakeholder đã chấp thuận 15 phút. | TV2/TV3 giữ G-05; xem lại khi có số liệu hoặc cấu hình cổng. |
@@ -984,24 +1059,56 @@ Sau khi hoàn tất quá trình thu thập yêu cầu, nhóm xác định đư�
 ### 9.2. Bảng ma trận truy vết yêu cầu
 *Nguyên tắc ma trận: Mỗi Requirement ID là 1 hàng độc lập; 100% các ô đều có giá trị liên kết cụ thể, tuyệt đối không dùng từ "Toàn bộ" và không để trống ô.*
 
-| Nhu cầu | Stakeholder | Mã yêu cầu | Kịch bản sử dụng | Kịch bản kiểm thử | Thay đổi yêu cầu |
+| Nhu cầu | Stakeholder | Requirement ID | Scenario | Test case | Change request |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| **N-01, N-05** | STK-04, STK-01 | **FR-01** - Tra cứu chuyên khoa, bác sĩ, khung giờ | SC-01, SC-02 | TC-01, TC-05, TC-08, TC-11, TC-15 | **CR-01** - Nhánh khám trực tuyến |
-| **N-01, N-05** | STK-04 | **FR-02** - Đăng ký thông tin và tạo lịch khám | SC-01, SC-02 | TC-01, TC-05, TC-07, TC-08, TC-11 | **CR-01** - Nhánh khám trực tuyến |
-| **N-01, N-05** | STK-04, STK-01 | **FR-03** - Xác nhận và thông báo lịch hẹn | SC-01 | TC-01, TC-05, TC-15, TC-17, TC-18 | **CR-01** - Điều kiện thanh toán trực tuyến |
-| **N-04** | STK-04 | **FR-04** - Tra cứu và xác thực OTP lịch hẹn | SC-03 | TC-03, TC-09, TC-10 | Không áp dụng |
-| **N-04** | STK-04 | **FR-05** - Đổi hoặc hủy lịch hẹn trực tuyến | SC-03 | TC-03, TC-10 | **CR-01** - Hồi quy lịch trực tuyến |
-| **N-01** | STK-04, STK-03 | **FR-06** - Kiểm tra và xác thực dữ liệu nhập | SC-01 | TC-07 | Không áp dụng |
-| **N-03, N-04** | STK-03, STK-04 | **FR-07** - Giải phóng khung giờ sau khi hủy | SC-03, SC-04 | TC-03, TC-10, TC-16 | **CR-01** - Hồi quy mở lại khung giờ |
-| **N-03, N-05** | STK-01, STK-02 | **FR-08** - Khóa ca trực khi bác sĩ nghỉ đột xuất | SC-04 | TC-06, TC-12, TC-15, TC-16, TC-17 | **CR-01** - Kích hoạt hoàn tiền |
-| **N-03, N-05** | STK-01, STK-04 | **FR-09** - Thông báo hủy hoặc đổi lịch do phòng khám | SC-04 | TC-06, TC-16, TC-17 | **CR-01** - Thông báo hoàn tiền |
-| **N-01** | STK-04, STK-03 | **FR-10** - Ngăn chặn đặt trùng lịch hẹn | SC-01 | TC-02, TC-11 | Không áp dụng |
-| **N-05** | STK-01, STK-04 | **FR-11** - Thanh toán trực tuyến trước khi khám | SC-01 | TC-05, TC-14, TC-15, TC-18 | **CR-01** - Yêu cầu mới |
-| **N-05** | STK-01, STK-04 | **FR-12** - Tự động hoàn tiền khi bác sĩ hủy | SC-04 | TC-06, TC-12, TC-14, TC-16, TC-18 | **CR-01** - Yêu cầu mới |
-| **N-07** | STK-01, STK-04 | **NFR-01** - Thời gian phản hồi thao tác $\le 2\text{s}$ | SC-01 | TC-04 | Không áp dụng |
-| **N-07** | STK-01, STK-03 | **NFR-02** - Khả năng chịu tải $\ge 30$ phiên đồng thời | SC-01, SC-02 | TC-11 | **CR-01** - Tải thanh toán |
-| **N-04** | STK-04 | **NFR-03** - Bảo mật OTP 6 số, 180 giây, 3 lần sai | SC-03 | TC-03, TC-09 | Không áp dụng |
-| **N-06** | STK-01, STK-02 | **NFR-04** - Phân quyền truy cập vai trò chặt chẽ | SC-04 | TC-12 | **CR-01** - Quyền hoàn tiền |
-| **N-07** | STK-01, STK-03 | **NFR-05** - Độ sẵn sàng hệ thống Uptime $\ge 99,5\%$/tháng | SC-01, SC-03 | TC-13 | Không áp dụng |
-| **N-06, N-05** | STK-01, STK-04 | **NFR-06** - Lưu trữ dữ liệu lịch hẹn và giao dịch | SC-01, SC-04 | TC-05, TC-06, TC-14, TC-16, TC-18 | **CR-01** - Dữ liệu giao dịch |
+| **N-01, N-05** | STK-04, STK-01 | FR-01 | SC-01, SC-02 | TC-01, TC-05, TC-08, TC-11, TC-15 | CR-01 |
+| **N-01, N-05** | STK-04 | FR-02 | SC-01, SC-02 | TC-01, TC-05, TC-07, TC-08, TC-11 | CR-01 |
+| **N-01, N-05** | STK-04, STK-01 | FR-03 | SC-01 | TC-01, TC-05, TC-15, TC-17, TC-18 | CR-01 |
+| **N-04** | STK-04 | FR-04 | SC-03 | TC-03, TC-09, TC-10 | — |
+| **N-04** | STK-04 | FR-05 | SC-03 | TC-03, TC-10 | CR-01 |
+| **N-01** | STK-04, STK-03 | FR-06 | SC-01 | TC-07 | — |
+| **N-03, N-04** | STK-03, STK-04 | FR-07 | SC-03, SC-04 | TC-03, TC-10, TC-16 | CR-01 |
+| **N-03, N-05** | STK-01, STK-02 | FR-08 | SC-04 | TC-06, TC-12, TC-15, TC-16, TC-17 | CR-01 |
+| **N-03, N-05** | STK-01, STK-04 | FR-09 | SC-04 | TC-06, TC-16, TC-17 | CR-01 |
+| **N-01** | STK-04, STK-03 | FR-10 | SC-01 | TC-02, TC-11 | — |
+| **N-05** | STK-01, STK-04, STK-05 | FR-11 | SC-01 | TC-05, TC-14, TC-15, TC-18 | CR-01 |
+| **N-05** | STK-01, STK-04, STK-05 | FR-12 | SC-04 | TC-06, TC-12, TC-14, TC-16, TC-18 | CR-01 |
+| **N-07** | STK-01, STK-04 | NFR-01 | SC-01 | TC-04 | — |
+| **N-07** | STK-01, STK-03 | NFR-02 | SC-01, SC-02 | TC-11 | CR-01 |
+| **N-04** | STK-04 | NFR-03 | SC-03 | TC-03, TC-09 | — |
+| **N-06** | STK-01, STK-02 | NFR-04 | SC-04 | TC-12 | CR-01 |
+| **N-07** | STK-01, STK-03 | NFR-05 | SC-01, SC-03 | TC-13 | — |
+| **N-06, N-05** | STK-01, STK-04, STK-05 | NFR-06 | SC-01, SC-04 | TC-05, TC-06, TC-14, TC-16, TC-18 | CR-01 |
+
+---
+
+### 9.3. Bảng phân tích độ bao phủ và tác động tập trung của CR-01
+
+#### 1. Phân tích độ bao phủ yêu cầu (Requirements Coverage Analysis):
+* **Độ bao phủ Yêu cầu Chức năng (FR Coverage):** Đạt **100%** (12/12 Yêu cầu Chức năng đều có kịch bản nghiệp vụ Scenario và có ít nhất một kịch bản kiểm thử Test Case trực tiếp).
+* **Độ bao phủ Yêu cầu Phi chức năng (NFR Coverage):** Đạt **100%** (6/6 Yêu cầu Phi chức năng thuộc đủ 3 nhóm Hiệu năng, Bảo mật, Khả dụng/Lưu trữ đều có kịch bản kiểm thử riêng biệt với ngưỡng định lượng đo lường được).
+* **Độ bao phủ Kịch bản kiểm thử (Test Case Coverage):** Toàn bộ **18 Test Cases** (`TC-01` → `TC-18`) đều ánh xạ ngược về ít nhất một Requirement ID cụ thể; không có kịch bản kiểm thử nào bị mồ côi (No Orphan Test Cases).
+* **Độ bao phủ Tình huống sử dụng (Scenario Coverage):** 4/4 Scenarios (`SC-01` → `SC-04`) đều được liên kết chặt chẽ với các FR và NFR tương ứng.
+
+#### 2. Phân tích tác động tập trung của Yêu cầu thay đổi CR-01:
+* CR-01 bổ sung **02 Yêu cầu Chức năng mới:** `FR-11` (Bắt buộc thanh toán online) và `FR-12` (Tự động hoàn tiền 100%).
+* CR-01 sửa đổi trực tiếp logic của **01 Chức năng:** `FR-03` (Chỉ xác nhận lịch sau khi nhận phản hồi giao dịch thành công).
+* CR-01 mở rộng phạm vi lưu trữ của **01 Yêu cầu Phi chức năng:** `NFR-06` (Lưu trữ và bảo toàn các thuộc tính giao dịch thanh toán/hoàn tiền).
+* CR-01 tác động hồi quy lên **05 Chức năng khác:** `FR-01`, `FR-02`, `FR-05`, `FR-07`, `FR-08`, `FR-09` và phân quyền `NFR-04`.
+* Toàn bộ các nhánh tác động của CR-01 đều được kiểm chứng độc lập bằng các test case: `TC-05`, `TC-06`, `TC-14`, `TC-15`, `TC-16`, `TC-18`.
+
+---
+
+### 9.4. Ghi nhận khoảng trống phạm vi & định hướng giai đoạn 2
+*(Giải quyết triệt để khiếm khuyết kiểm định VR-05 & VR-22)*
+
+Trong quá trình đối soát ma trận truy vết, nhóm nhận diện hai nhu cầu thực tế của Stakeholder chưa được chuyển hóa thành Yêu cầu Chức năng trong phiên bản Mini-SRS này:
+1. **Nhu cầu N-02 (`STK-02` - Bác sĩ):** Bác sĩ cần màn hình đăng nhập riêng để xem danh sách ca khám và triệu chứng trước ca trực.
+2. **Nhu cầu N-03 (`STK-03` - Tiếp nhận):** Nhân viên tiếp nhận cần chức năng bấm "Check-in" khi bệnh nhân có mặt tại quầy để đổi trạng thái sang "Đã đến khám".
+
+**Quyết định quản lý yêu cầu:**
+* Để đảm bảo tài liệu tập trung đúng trọng tâm đề tài Mini-SRS (hệ thống đặt lịch khám trực tuyến của phòng khám đa khoa nhỏ), nhóm thống nhất **không gán ép tùy tiện N-02 vào `FR-05`** (đổi/hủy của bệnh nhân) để lấp ô ma trận.
+* Hai chức năng trên được ghi nhận minh bạch vào **Product Backlog giai đoạn 2** của dự án:
+  * `FR-13 (Backlog)`: Giao diện điều phối ca trực và danh sách bệnh nhân dành riêng cho Bác sĩ.
+  * `FR-14 (Backlog)`: Chức năng Check-in và phân luồng tiếp đón bệnh nhân tại quầy lễ tân.
 
